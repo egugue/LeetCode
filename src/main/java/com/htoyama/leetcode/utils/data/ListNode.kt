@@ -13,13 +13,11 @@ class ListNode(var `val`: Int) {
   }
 
   companion object {
-    fun of(vararg values: Int): ListNode? {
-      if (values.isEmpty()) return null
-
-      val root = ListNode(values.first())
+    fun of(first: Int, vararg others: Int): ListNode {
+      val root = ListNode(first)
       var curr = root
-      for (i in 1..values.lastIndex) {
-        val node = ListNode(values[i])
+      for (value in others) {
+        val node = ListNode(value)
         curr.next = node
         curr = node
       }
