@@ -7,7 +7,11 @@ fun main() {
   }
 }
 
+/**
+ * https://leetcode.com/problems/count-primes
+ */
 class Solution {
+  // TODO: Have to Review later and implement more efficient
   fun countPrimes(n: Int): Int {
     if (n <= 2) return 0
 
