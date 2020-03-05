@@ -34,6 +34,7 @@ class TreeNode(var `val`: Int) {
          / \ / \
         4  5 6  7
      */
+    @JvmStatic
     fun of(vararg nums: Int?): TreeNode {
       if (nums.isEmpty()) throw IllegalArgumentException()
 
