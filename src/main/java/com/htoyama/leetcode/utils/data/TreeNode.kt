@@ -10,8 +10,12 @@ fun main() {
   println(TreeNode.of(3,9,20,null,null,15,7).maxDepth())
 }
 
-class TreeNode(var `val`: Int) {
+class TreeNode(@JvmField var `val`: Int) {
+
+  @JvmField
   var left: TreeNode? = null
+
+  @JvmField
   var right: TreeNode? = null
 
   fun maxDepth(): Int {
