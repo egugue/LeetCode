@@ -32,11 +32,33 @@ class Solution {
        000000100 - 8
        000001000 - 8
    */
+  /**
+   * 136 ms	31.7 MB
+   */
   fun isPowerOfFour(num: Int): Boolean {
     if (num <= 0) return false
     if (num == 1) return true
 
     return Integer.bitCount(num) == 1
       && (Integer.numberOfTrailingZeros(num) % 2) == 0
+  }
+
+  /**
+   * Tried to solve the problem like toHex approach.
+   *
+   * 128 ms	32 MB
+   *
+   * @see com.htoyama.leetcode._405.Solution
+   */
+  fun isPowerOfFour_likeToHex(num: Int): Boolean {
+    var curr = num
+
+    while(curr != 0) {
+      if (curr == 1) return true
+      if (curr and 3 != 0) return false
+      curr = curr ushr 2
+    }
+
+    return false
   }
 }

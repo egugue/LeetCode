@@ -2,6 +2,9 @@ package com.htoyama.leetcode._405;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+/**
+ * https://leetcode.com/problems/convert-a-number-to-hexadecimal/
+ */
 public class Solution {
 
   public static void main(String[] args) {
