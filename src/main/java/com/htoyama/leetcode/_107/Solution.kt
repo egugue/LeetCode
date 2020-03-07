@@ -1,10 +1,13 @@
 package com.htoyama.leetcode._107
 
 import com.htoyama.leetcode.utils.data.TreeNode
+import java.util.ArrayDeque
 
 fun main() {
   Solution().apply {
     println(levelOrderBottom(TreeNode.of(3, 9, 20, null, null, 15, 7)))
+
+    println(levelOrderBottom_loop(TreeNode.of(3, 9, 20, null, null, 15, 7)))
   }
 }
 
@@ -14,6 +17,28 @@ fun main() {
  * TODO: Must review (2020/3/3)
  */
 class Solution {
+
+  fun levelOrderBottom_loop(root: TreeNode?): List<List<Int>> {
+    root ?: return emptyList()
+    val queue = ArrayDeque<TreeNode>()
+    queue.add(root)
+
+    val result = ArrayList<ArrayList<Int>>()
+    while(queue.isNotEmpty()) {
+
+      val list = ArrayList<Int>()
+      for (i in 0 until queue.size) {
+        val curr = queue.poll()
+        list.add(curr.`val`)
+        curr.left?.let { queue.add(it) }
+        curr.right?.let { queue.add(it) }
+      }
+
+      result.add(0, list)
+    }
+
+    return result.map { it.toList() }
+  }
 
   fun levelOrderBottom(root: TreeNode?): List<List<Int>> {
     val result = ArrayList<ArrayList<Int>>()
