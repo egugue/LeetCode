@@ -10,6 +10,9 @@ fun main() {
 
     findTheDifference2("abcd", "abcde") shouldEqual 'e'
     findTheDifference2("abcd", "abcdd") shouldEqual 'd'
+
+    findTheDifference_Discuss1("abcd", "abcde") shouldEqual 'e'
+    findTheDifference_Discuss1("abcd", "abcdd") shouldEqual 'd'
   }
 }
 
@@ -53,5 +56,19 @@ class Solution {
     }
 
     return tChars.last()
+  }
+
+  /**
+   * TODO: Must review later
+   *
+   * 168 ms	33.9 MB	kotlin
+   */
+  fun findTheDifference_Discuss1(s: String, t: String): Char {
+    var charCode = t.last().toInt()
+    for (i in 0..s.lastIndex) {
+      charCode -= s[i].toInt()
+      charCode += t[i].toInt()
+    }
+    return charCode.toChar()
   }
 }
