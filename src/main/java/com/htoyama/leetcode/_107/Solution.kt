@@ -18,15 +18,18 @@ fun main() {
  */
 class Solution {
 
+  /**
+   * 208 ms	36.1 MB
+   */
   fun levelOrderBottom_loop(root: TreeNode?): List<List<Int>> {
     root ?: return emptyList()
     val queue = ArrayDeque<TreeNode>()
     queue.add(root)
 
-    val result = ArrayList<ArrayList<Int>>()
+    val result = ArrayList<List<Int>>()
     while(queue.isNotEmpty()) {
 
-      val list = ArrayList<Int>()
+      val list = ArrayList<Int>(queue.size)
       for (i in 0 until queue.size) {
         val curr = queue.poll()
         list.add(curr.`val`)
@@ -37,7 +40,7 @@ class Solution {
       result.add(0, list)
     }
 
-    return result.map { it.toList() }
+    return result
   }
 
   fun levelOrderBottom(root: TreeNode?): List<List<Int>> {
