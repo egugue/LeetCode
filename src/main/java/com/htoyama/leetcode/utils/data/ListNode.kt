@@ -1,6 +1,7 @@
 package com.htoyama.leetcode.utils.data
 
-class ListNode(var `val`: Int) {
+class ListNode(@JvmField var `val`: Int) {
+  @JvmField
   var next: ListNode? = null
 
   fun printAll() {
@@ -13,6 +14,7 @@ class ListNode(var `val`: Int) {
   }
 
   companion object {
+    @JvmStatic
     fun of(first: Int, vararg others: Int): ListNode {
       val root = ListNode(first)
       var curr = root
