@@ -2,6 +2,11 @@ package com.htoyama.leetcode._112;
 
 import com.htoyama.leetcode.utils.data.TreeNode;
 
+/**
+ * https://leetcode.com/problems/path-sum/
+ *
+ * TODO: Solve using loop
+ */
 class Solution {
   public static void main(String[] args) {
     Solution s = new Solution();
