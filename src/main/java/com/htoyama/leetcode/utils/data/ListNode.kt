@@ -6,7 +6,7 @@ class ListNode(@JvmField var `val`: Int) {
 
   fun printAll() {
     var curr: ListNode? = this
-    while(curr != null) {
+    while (curr != null) {
       print("${curr.`val`} -> ")
       curr = curr.next
     }
@@ -14,6 +14,21 @@ class ListNode(@JvmField var `val`: Int) {
   }
 
   companion object {
+
+    /**
+     * 1->2->3->3->4->4->5
+     */
+    @JvmStatic
+    fun of(str: String): ListNode {
+      val sp = str.split("->").map { it.toInt() }
+
+      return if (sp.size == 1) {
+        ListNode(sp.first())
+      } else {
+        of(sp.first(), *sp.takeLast(sp.lastIndex).toIntArray())
+      }
+    }
+
     @JvmStatic
     fun of(first: Int, vararg others: Int): ListNode {
       val root = ListNode(first)
