@@ -39,6 +39,11 @@ class TreeNode(@JvmField var `val`: Int) {
          / \ / \
         4  5 6  7
      */
+    /**
+     * TODO: the result from [1,2,null,3,null,4,null,5] was different from the official output which is shown on 102.
+     *
+     * https://leetcode.com/problems/binary-tree-level-order-traversal/
+     */
     @JvmStatic
     fun of(vararg nums: Int?): TreeNode {
       if (nums.isEmpty()) throw IllegalArgumentException()
