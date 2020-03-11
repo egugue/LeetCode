@@ -6,3 +6,6 @@ package com.htoyama.leetcode.utils
 
 @Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)
 annotation class SlidingWindow
+
+@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)
+annotation class BitManipulation
