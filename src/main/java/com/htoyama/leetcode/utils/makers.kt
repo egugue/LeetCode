@@ -15,3 +15,6 @@ annotation class Graph
 
 @Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)
 annotation class DFS
+
+@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)
+annotation class UnionFind
