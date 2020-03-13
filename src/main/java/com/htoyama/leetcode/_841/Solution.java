@@ -18,7 +18,7 @@ class Solution {
   public static void main(String[] args) {
     Solution s = new Solution();
     System.out.println(
-      s.canVisitAllRooms(asList(
+      s.canVisitAllRooms_rec(asList(
         asList(1),
         asList(2),
         asList(3),
@@ -27,7 +27,7 @@ class Solution {
     );
 
     System.out.println(
-      s.canVisitAllRooms(asList(
+      s.canVisitAllRooms_rec(asList(
         asList(1, 3),
         asList(3, 0, 1),
         asList(2),
@@ -61,5 +61,30 @@ class Solution {
       if (!canVisit) return false;
     }
     return true;
+  }
+
+  /**
+   * 0 ms	41.1 MB
+   */
+  @DFS
+  public boolean canVisitAllRooms_rec(List<List<Integer>> rooms) {
+    if (rooms == null || rooms.isEmpty()) return false;
+
+    boolean[] seen = new boolean[rooms.size()];
+    dfs(0, rooms, seen);
+
+    for (boolean canVisit : seen) {
+      if (!canVisit) return false;
+    }
+    return true;
+  }
+
+  private void dfs(int room, List<List<Integer>> rooms, boolean[] seen) {
+    seen[room] = true;
+
+    for (int visitableRoom : rooms.get(room)) {
+      if (seen[visitableRoom]) continue;
+      dfs(visitableRoom, rooms, seen);
+    }
   }
 }
