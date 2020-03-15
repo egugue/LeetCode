@@ -10,6 +10,17 @@ annotation class SlidingWindow
 @Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)
 annotation class BitManipulation
 
+annotation class Level {
+  @Target(AnnotationTarget.CLASS)
+  annotation class Easy
+
+  @Target(AnnotationTarget.CLASS)
+  annotation class Medium
+
+  @Target(AnnotationTarget.CLASS)
+  annotation class Hard
+}
+
 //
 // graph related
 //
