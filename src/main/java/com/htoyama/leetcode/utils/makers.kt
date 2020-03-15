@@ -10,6 +10,9 @@ annotation class SlidingWindow
 @Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)
 annotation class BitManipulation
 
+//
+// graph related
+//
 @Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)
 annotation class Graph
 
@@ -18,3 +21,6 @@ annotation class DFS
 
 @Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)
 annotation class UnionFind
+
+@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)
+annotation class Dijkstra
