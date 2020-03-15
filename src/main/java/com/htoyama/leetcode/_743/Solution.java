@@ -36,7 +36,8 @@ class Solution {
   }
 
   /**
-   * 13 ms	43.5 MB
+   * 9 ms	46.2 MB
+   *
    * TODO: Must try to solve later
    */
   @Dijkstra
@@ -44,26 +45,26 @@ class Solution {
     if (times.length == 0) return -1;
     if (K <= 0 || K > N) return -1;
 
-    Map<Integer, Integer>[] graph = new HashMap[N + 1];
+    List<int[]>[] graph = new ArrayList[N + 1];
     for (int i = 1; i < graph.length; i++) {
-      graph[i] = new HashMap<>();
+      graph[i] = new ArrayList<>();
     }
 
     for (int[] time : times) {
       int source = time[0];
       int dest = time[1];
       int weight = time[2];
-      graph[source].put(dest, weight);
+      graph[source].add(new int[]{dest, weight});
     }
 
     boolean[] visited = new boolean[graph.length];
-    PriorityQueue<int[]> minHeap = new PriorityQueue<>((o1, o2) -> o1[1] - o2[1]);
-    minHeap.add(new int[]{K, 0});
+    PriorityQueue<int[]> minDistanceHeap = new PriorityQueue<>((o1, o2) -> o1[1] - o2[1]);
+    minDistanceHeap.add(new int[]{K, 0});
 
     int maxDistance = -1;
     int restNodes = N;
-    while (!minHeap.isEmpty()) {
-      int[] nodeAndDistance = minHeap.poll();
+    while (!minDistanceHeap.isEmpty()) {
+      int[] nodeAndDistance = minDistanceHeap.poll();
 
       int curNode = nodeAndDistance[0];
       if (visited[curNode]) continue;
@@ -73,11 +74,11 @@ class Solution {
       maxDistance = curDistance;
       if (--restNodes == 0) break;
 
-      Set<Map.Entry<Integer, Integer>> edges = graph[curNode].entrySet();
-      for (Map.Entry<Integer, Integer> edge : edges) {
-        int nextNode = edge.getKey();
+      List<int[]> edges = graph[curNode];
+      for (int[] edge : edges) {
+        int nextNode = edge[0];
         if (visited[nextNode]) continue;
-        minHeap.add(new int[]{nextNode, curDistance + edge.getValue()});
+        minDistanceHeap.add(new int[]{nextNode, curDistance + edge[1]});
       }
     }
 
