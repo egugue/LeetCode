@@ -12,6 +12,9 @@ annotation class SlidingWindow
 @Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)
 annotation class BitManipulation
 
+@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)
+annotation class Backtracking
+
 annotation class Level {
   @Target(AnnotationTarget.CLASS)
   annotation class Easy
