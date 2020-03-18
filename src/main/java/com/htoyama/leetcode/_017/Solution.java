@@ -1,11 +1,11 @@
 package com.htoyama.leetcode._017;
 
+import com.htoyama.leetcode.utils.Backtracking;
 import com.htoyama.leetcode.utils.Level;
 import com.htoyama.leetcode.utils.String_;
 
 import java.util.*;
 
-import static java.util.Arrays.asList;
 import static org.assertj.core.api.Assertions.assertThat;
 
 /**
@@ -43,7 +43,7 @@ class Solution {
    *
    * TODO: Must solve later
    */
-  public List<String> letterCombinations(String digits) {
+  public List<String> letterCombinations_(String digits) {
     if (digits.length() == 0) return Collections.emptyList();
 
     char[] chars = digits.toCharArray();
@@ -64,5 +64,31 @@ class Solution {
     }
 
     return combinations;
+  }
+
+  /**
+   * 0 ms	38.3 MB
+   */
+  @Backtracking
+  public List<String> letterCombinations(String digits) {
+    if (digits.isEmpty()) return Collections.emptyList();
+
+    List<String> combination = new ArrayList<>();
+    backtrack(0, digits.toCharArray(), new StringBuilder(digits.length()), combination);
+    return combination;
+  }
+
+  private void backtrack(int i, char[] chars, StringBuilder sb, List<String> combination) {
+    if (sb.length() == chars.length) {
+      combination.add(sb.toString());
+      return;
+    }
+
+    String[] candidates = table[chars[i] - '0'];
+    for (String candidate : candidates) {
+      sb.append(candidate);
+      backtrack(i + 1, chars, sb, combination);
+      sb.setLength(sb.length() - 1);
+    }
   }
 }
