@@ -3,6 +3,18 @@ package com.htoyama.leetcode.utils
 /**
  * For review later
  */
+
+annotation class Level {
+  @Target(AnnotationTarget.CLASS)
+  annotation class Easy
+
+  @Target(AnnotationTarget.CLASS)
+  annotation class Medium
+
+  @Target(AnnotationTarget.CLASS)
+  annotation class Hard
+}
+
 @Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)
 annotation class String_
 
@@ -15,16 +27,8 @@ annotation class BitManipulation
 @Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)
 annotation class Backtracking
 
-annotation class Level {
-  @Target(AnnotationTarget.CLASS)
-  annotation class Easy
-
-  @Target(AnnotationTarget.CLASS)
-  annotation class Medium
-
-  @Target(AnnotationTarget.CLASS)
-  annotation class Hard
-}
+@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)
+annotation class DynamicProgramming
 
 //
 // graph related
