@@ -18,8 +18,6 @@ annotation class Level {
 @Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)
 annotation class String_
 
-@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)
-annotation class SlidingWindow
 
 @Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)
 annotation class BitManipulation
@@ -29,6 +27,18 @@ annotation class Backtracking
 
 @Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)
 annotation class DynamicProgramming
+
+//
+// array related
+//
+@Target(AnnotationTarget.CLASS)
+annotation class Array_
+
+@Target(AnnotationTarget.FUNCTION)
+annotation class SlidingWindow
+
+@Target(AnnotationTarget.FUNCTION)
+annotation class BinarySearch
 
 //
 // graph related
