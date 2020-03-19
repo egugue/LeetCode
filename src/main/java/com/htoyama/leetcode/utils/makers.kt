@@ -18,7 +18,6 @@ annotation class Level {
 @Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)
 annotation class String_
 
-
 @Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)
 annotation class BitManipulation
 
@@ -39,6 +38,9 @@ annotation class SlidingWindow
 
 @Target(AnnotationTarget.FUNCTION)
 annotation class BinarySearch
+
+@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)
+annotation class Sort
 
 //
 // graph related
