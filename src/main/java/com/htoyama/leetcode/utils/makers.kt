@@ -58,6 +58,15 @@ annotation class DFS
 annotation class BFS
 
 @Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)
+annotation class InOrderTraversal
+
+@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)
+annotation class PreOrderTraversal
+
+@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)
+annotation class PostOrderTraversal
+
+@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)
 annotation class UnionFind
 
 @Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)
