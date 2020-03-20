@@ -3,7 +3,6 @@ package com.htoyama.leetcode._094;
 import com.htoyama.leetcode.utils.Graph;
 import com.htoyama.leetcode.utils.InOrderTraversal;
 import com.htoyama.leetcode.utils.Level;
-import com.htoyama.leetcode.utils.Tree;
 import com.htoyama.leetcode.utils.data.TreeNode;
 
 import java.util.*;
@@ -36,8 +35,7 @@ class Solution {
    * 0 ms	37.7 MB
    *
    * TODO: Must try to solve later
-   * The key to this solution is `curr = node.right`.
-   * If curr is null, then it can be said that a previous node was traversed
+   * The below approach is a little bit modified the official approach
    */
   public List<Integer> inorderTraversal(TreeNode root) {
     if (root == null) return Collections.emptyList();
@@ -45,16 +43,23 @@ class Solution {
 
     Stack<TreeNode> stack = new Stack<>();
     stack.push(root);
-    TreeNode curr = root;
+
+    boolean wasPrevNodeTraversed = false;
     while(!stack.isEmpty()) {
-      while(curr != null && curr.left != null) {
-        stack.push(curr.left);
-        curr = curr.left;
+      TreeNode node = stack.peek();
+      while(!wasPrevNodeTraversed && node.left != null) {
+        stack.push(node.left);
+        node = node.left;
       }
-      TreeNode node = stack.pop();
+      stack.pop();
       nodes.add(node.val);
-      if (node.right != null) stack.push(node.right);
-      curr = node.right;
+
+      if (node.right != null) {
+        stack.push(node.right);
+        wasPrevNodeTraversed = false;
+      } else {
+        wasPrevNodeTraversed = true;
+      }
     }
 
     return nodes;
