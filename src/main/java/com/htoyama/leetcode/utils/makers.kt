@@ -27,6 +27,9 @@ annotation class Backtracking
 @Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)
 annotation class DynamicProgramming
 
+@Target(AnnotationTarget.CLASS)
+annotation class LinkedList_
+
 //
 // array related
 //
