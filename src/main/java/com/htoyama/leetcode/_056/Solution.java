@@ -61,10 +61,6 @@ class Solution {
       }
     }
 
-    int[][] result = new int[merged.size()][2];
-    for (int i = 0; i < merged.size(); i++) {
-      result[i] = merged.get(i);
-    }
-    return result;
+    return merged.toArray(new int[merged.size()][]);
   }
 }
