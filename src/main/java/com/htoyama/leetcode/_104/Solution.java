@@ -1,4 +1,4 @@
-package com.htoyama.leetcode._114;
+package com.htoyama.leetcode._104;
 
 import com.htoyama.leetcode.utils.data.TreeNode;
 
