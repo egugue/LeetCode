@@ -4,6 +4,7 @@ import com.htoyama.leetcode.utils.Array_;
 import com.htoyama.leetcode.utils.Level;
 
 import java.util.Arrays;
+import java.util.PriorityQueue;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -23,8 +24,18 @@ class Solution {
   /**
    * 2 ms	41.3 MB
    */
-  public int findKthLargest(int[] nums, int k) {
+  public int findKthLargest_(int[] nums, int k) {
     Arrays.sort(nums);
     return nums[nums.length - k];
+  }
+
+  /**
+   * 6 ms	40.9 MB
+   */
+  public int findKthLargest(int[] nums, int k) {
+    PriorityQueue<Integer> maxHeap = new PriorityQueue<>(nums.length, (o1, o2) -> o1 - o2);
+    for (int num : nums) maxHeap.add(num);
+    for (int i = k; i < nums.length; i++) maxHeap.poll();
+    return maxHeap.poll();
   }
 }
