@@ -1,4 +1,4 @@
-package com.htoyama.leetcode._322;
+package com.htoyama.leetcode._332;
 
 import com.htoyama.leetcode.utils.DFS;
 import com.htoyama.leetcode.utils.Graph;
