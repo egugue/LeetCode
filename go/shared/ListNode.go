@@ -1,6 +1,7 @@
 package shared
 
 import (
+	"fmt"
 	"strconv"
 	"strings"
 )
@@ -37,7 +38,7 @@ func NewListNodeFromFormat(str string) (root *ListNode) {
 	for _, sp := range strings.Split(str, "->") {
 		n, err := strconv.Atoi(sp)
 		if err != nil {
-			panic("unexpected format")
+			panic(fmt.Sprintf("unexpected format: %v", str))
 		}
 		nums = append(nums, n)
 	}
