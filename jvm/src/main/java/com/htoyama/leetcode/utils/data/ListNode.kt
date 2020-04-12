@@ -4,6 +4,14 @@ class ListNode(@JvmField var `val`: Int) {
   @JvmField
   var next: ListNode? = null
 
+  val tail: ListNode
+    get() {
+      var t = this
+      while (true) {
+        t.next?.let { t = it } ?: return t
+      }
+    }
+
   fun printAll() {
     var curr: ListNode? = this
     while (curr != null) {
