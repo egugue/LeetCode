@@ -9,7 +9,7 @@ public class Solution {
     Solution s = new Solution();
     ListNode head;
 
-    head = ListNode.of(1, 2, 3, 4);
+    head = ListNode.of(1, 2, 3, 4, 5);
     head.getTail().next = head.next;
     assertThat(s.detectCycle(head)).isEqualTo(head.next);
 
@@ -22,29 +22,18 @@ public class Solution {
   }
 
   /**
-   * 0 ms	39.5 MB
+   * 0 ms	39.6 MB
    */
   public ListNode detectCycle(ListNode head) {
     ListNode collision = findCollisionNode(head);
     if (collision == null) return null;
 
-    ListNode fromHead = head;
-    ListNode fromCollision = collision;
-    int count = 0;
-    while (fromHead != fromCollision) {
-      if (fromHead == collision) {
-        fromHead = head;
-
-        fromCollision = collision;
-        count++;
-        for (int i = 0; i < count; i++) fromCollision = fromCollision.next;
-      } else {
-        fromHead = fromHead.next;
-        fromCollision = fromCollision.next;
-      }
+    ListNode start = head;
+    while(start != collision) {
+      start = start.next;
+      collision = collision.next;
     }
-
-    return fromHead;
+    return start;
   }
 
   private ListNode findCollisionNode(ListNode head) {
