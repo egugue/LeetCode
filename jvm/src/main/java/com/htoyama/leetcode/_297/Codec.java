@@ -6,6 +6,8 @@ import com.htoyama.leetcode.utils.data.TreeNode;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.Deque;
+import java.util.LinkedList;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -35,44 +37,38 @@ class Main {
 }
 
 /**
- * 10 ms	40.7 MB
+ * 9 ms	41.1 MB
  */
 public class Codec {
 
   // Encodes a tree to a single string.
   public String serialize(TreeNode root) {
     if (root == null) return "[]";
-    ArrayDeque<Item> queue = new ArrayDeque<>();
-    queue.add(new Item(root));
+    Deque<TreeNode> queue = new LinkedList<>();
+    queue.add(root);
 
-    ArrayList<Item> items = new ArrayList<>();
+    ArrayList<TreeNode> nodeList = new ArrayList<>();
     while (!queue.isEmpty()) {
-      ArrayList<TreeNode> levelList = new ArrayList<>(queue.size());
-
-      while (!queue.isEmpty()) {
-        Item item = queue.poll();
-        items.add(item);
-
-        TreeNode node = item.node;
-        if (node == null) continue;
-        levelList.add(node);
-      }
-
-      for (TreeNode node : levelList) {
-        queue.add(new Item(node.left));
-        queue.add(new Item(node.right));
+      int size = queue.size();
+      for (int i = 0; i < size; i++) {
+        TreeNode node = queue.poll();
+        nodeList.add(node);
+        if (node != null) {
+          queue.add(node.left);
+          queue.add(node.right);
+        }
       }
     }
 
     int lastNonNullIndex = 0;
-    for (int i = 0; i < items.size(); i++) {
-      if (items.get(i).node != null) lastNonNullIndex = i;
+    for (int i = 0; i < nodeList.size(); i++) {
+      if (nodeList.get(i) != null) lastNonNullIndex = i;
     }
 
     StringBuilder sb = new StringBuilder();
     sb.append('[');
     for (int i = 0; i <= lastNonNullIndex; i++) {
-      TreeNode node = items.get(i).node;
+      TreeNode node = nodeList.get(i);
       sb.append(node == null ? "null" : String.valueOf(node.val))
         .append(",");
     }
@@ -80,14 +76,6 @@ public class Codec {
     sb.append("]");
 
     return sb.toString();
-  }
-
-  static class Item {
-    final TreeNode node;
-
-    Item(TreeNode node) {
-      this.node = node;
-    }
   }
 
   // Decodes your encoded data to tree.
