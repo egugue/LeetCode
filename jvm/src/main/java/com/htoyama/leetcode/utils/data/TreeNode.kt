@@ -1,13 +1,14 @@
 package com.htoyama.leetcode.utils.data
 
+import java.lang.StringBuilder
 import java.util.ArrayDeque
+import java.util.LinkedList
 
 fun main() {
   val node = TreeNode.of(1, 2, 3, 4, 5, null, 7, 8)
   println(node.maxDepth())
   println(TreeNode.of(1).maxDepth())
   println(TreeNode.of(3, 9, 20, null, null, 15, 7).maxDepth())
-  val node2 = TreeNode.of(3, null, 3, null, null, 3)
 }
 
 class TreeNode(@JvmField var `val`: Int) {
@@ -17,6 +18,34 @@ class TreeNode(@JvmField var `val`: Int) {
 
   @JvmField
   var right: TreeNode? = null
+
+  override fun toString(): String {
+    val queue = LinkedList<TreeNode?>().also { it.add(this) }
+
+    val nodeList = mutableListOf<TreeNode?>()
+    while(queue.isNotEmpty()) {
+      val size = queue.size
+      for (i in 0 until size) {
+        val node = queue.poll()
+        nodeList.add(node)
+        node?.let {
+          queue.add(it.left)
+          queue.add(it.right)
+        }
+      }
+    }
+
+    val lastNonNullIndex = nodeList.indexOfLast { it != null }
+    val sb = StringBuilder()
+    for (i in 0..lastNonNullIndex) {
+      val node = nodeList[i]
+      sb.append(node?.`val`.toString())
+        .append("->")
+    }
+    sb.setLength(sb.length - 2)
+
+    return sb.toString()
+  }
 
   fun maxDepth(): Int {
     if (left == null && right == null) return 1
