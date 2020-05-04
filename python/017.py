@@ -1,6 +1,6 @@
 from typing import List
 
-letters = {
+letterMap = {
     '2': 'abc',
     '3': 'def',
     '4': 'ghi',
@@ -14,6 +14,25 @@ letters = {
 
 class Solution:
     def letterCombinations(self, digits: str) -> List[str]:
+        # 32 ms	13.8 MB
+
+        if len(digits) == 0:
+            return []
+
+        comb = [""]
+        for digit in digits:
+            tmpComb = []
+            letters = letterMap[digit]
+            for i in range(len(comb)):
+                for letter in letters:
+                    tmpComb.append(comb[i] + letter)
+
+            comb = tmpComb
+
+        return comb
+
+    def letterCombinations_(self, digits: str) -> List[str]:
+        # backtrack
         # 28 ms	13.9 MB
 
         if len(digits) == 0:
@@ -29,7 +48,7 @@ class Solution:
             return
 
         digit = digits[index]
-        for letter in letters[digit]:
+        for letter in letterMap[digit]:
             self.__helper(cur + letter, index + 1, comb, digits)
 
 
