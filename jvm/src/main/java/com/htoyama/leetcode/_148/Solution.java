@@ -6,8 +6,8 @@ class Solution {
   public static void main(String[] args) {
     Solution s = new Solution();
     ListNode l;
-    l = ListNode.of(-1, 5, 3, 5, 0);
-    //l = ListNode.of(-1, 5, 3);
+    //l = ListNode.of(-1, 5, 3, 5, 0);
+    l = ListNode.of(-1, 5, 3, 4);
     s.sortList(l).printAll();
   }
 
@@ -15,36 +15,24 @@ class Solution {
    * 3 ms	42.3 MB
    */
   public ListNode sortList(ListNode head) {
-    if (head == null || head.next == null) return head;
-
-    int length = 0;
-    ListNode cur = head;
-    while (cur != null) {
-      length++;
-      cur = cur.next;
-    }
-
-    return mergeSort(head, length);
+    return mergeSort(head);
   }
 
-  public ListNode mergeSort(ListNode head, int length) {
-    assert head != null;
-    if (head.next == null || length == 1) {
-      head.next = null;
-      return head;
-    }
+  public ListNode mergeSort(ListNode head) {
+    if (head == null || head.next == null) return head;
 
-    ListNode leftStart = head;
-    ListNode leftEnd = leftStart;
-    int mid = length / 2;
-    for (int i = 1; i < mid; i++) {
-      leftEnd = leftEnd.next;
+    ListNode leftEnd = null;
+    ListNode rightStart = head;
+    ListNode fast = head;
+    while(fast != null && fast.next != null) {
+      leftEnd = rightStart;
+      rightStart = rightStart.next;
+      fast = fast.next.next;
     }
-    ListNode rightStart = leftEnd.next;
     leftEnd.next = null;
 
-    leftStart = mergeSort(leftStart, length / 2);
-    rightStart = mergeSort(rightStart, length - mid);
+    ListNode leftStart = mergeSort(head);
+    rightStart = mergeSort(rightStart);
 
     return merge(leftStart, rightStart);
   }
