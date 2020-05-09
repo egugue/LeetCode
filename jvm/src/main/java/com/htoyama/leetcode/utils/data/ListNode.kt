@@ -12,6 +12,18 @@ class ListNode(@JvmField var `val`: Int) {
       }
     }
 
+  override fun toString(): String {
+    val sb = StringBuilder()
+    var curr: ListNode? = this
+    while (curr != null) {
+      sb.append(curr.`val`)
+        .append("->")
+      curr = curr.next
+    }
+    sb.setLength(sb.length - 2)
+    return sb.toString()
+  }
+
   fun printAll() {
     var curr: ListNode? = this
     while (curr != null) {
