@@ -1,5 +1,11 @@
 package leetcode
 
+import (
+	"encoding/json"
+	"io/ioutil"
+	"net/http"
+)
+
 type Problems struct {
 	StatStatusPairs []StatStatusPairs `json:"stat_status_pairs"`
 }
@@ -29,6 +35,25 @@ type Stat struct {
 
 type Difficulty struct {
 	Level int `json:"level"`
+}
+
+func GetAllProblems() (*Problems, error) {
+	resp, err := http.Get("https://leetcode.com/api/problems/all/")
+	if err != nil {
+		return nil, err
+	}
+	defer resp.Body.Close()
+
+	body, err := ioutil.ReadAll(resp.Body)
+	if err != nil {
+		return nil, err
+	}
+
+	allProblems := &Problems{}
+	if err := json.Unmarshal(body, &allProblems); err != nil {
+		return nil, err
+	}
+	return allProblems, nil
 }
 
 func (problems *Problems) filter(predicate func(*StatStatusPairs) bool) {
