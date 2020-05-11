@@ -1,21 +1,20 @@
+import collections
 from typing import List
 
 
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        # 96 ms	16.8 MB
+        # 88 ms	16.8 MB
         if len(strs) == 0:
             return []
 
-        map = {}
-        for i, s in enumerate(strs):
-            sort = ''.join(sorted(s))
-            if sort not in map:
-                map[sort] = []
-            map[sort].append(s)
+        table = collections.defaultdict(list)
+        for s in strs:
+            key = ''.join(sorted(s))
+            table[key].append(s)
 
         res = []
-        for v in map.values():
+        for v in table.values():
             res.append(v)
         return res
 
