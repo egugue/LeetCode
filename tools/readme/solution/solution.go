@@ -8,6 +8,10 @@ const (
 	Python3
 )
 
+var Languages = []Language{
+	JavaKotlin, Python3,
+}
+
 type Solution struct {
 	ProblemID ProblemID
 	URL       string
@@ -15,15 +19,15 @@ type Solution struct {
 
 type Solutions map[ProblemID][]Solution
 
-type Solutions2 map[Language]Solutions
+type SolutionsTable map[Language]Solutions
 
 func (s *Solutions) SolvedCount() int {
 	return len(*s)
 }
 
-func GetAllProblemIDSet(m map[Language]Solutions) map[ProblemID]bool {
+func (table *SolutionsTable) GetAllProblemIDSet() map[ProblemID]bool {
 	idSet := make(map[ProblemID]bool)
-	for _, solutions := range m {
+	for _, solutions := range *table {
 		for id := range solutions {
 			idSet[id] = true
 		}
@@ -31,7 +35,7 @@ func GetAllProblemIDSet(m map[Language]Solutions) map[ProblemID]bool {
 	return idSet
 }
 
-func GetAllSolutions() map[Language]Solutions {
+func GetAllSolutions() SolutionsTable {
 	r := make(map[Language]Solutions)
 	r[Python3] = getPython3Solutions()
 	return r

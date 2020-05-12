@@ -33,9 +33,19 @@ type Stat struct {
 	// IsNewQuestion       bool   `json:"is_new_question"`
 }
 
+func (stat *Stat) QuestionUrl() string {
+	return "https://leetcode.com/problems/" + stat.QuestionTitleSlug
+}
+
 type Difficulty struct {
 	Level int `json:"level"`
 }
+
+const (
+	DifficultyEasy = iota + 1
+	DifficultyMedium
+	DifficultyHard
+)
 
 func GetAllProblems() (*Problems, error) {
 	resp, err := http.Get("https://leetcode.com/api/problems/all/")
@@ -56,7 +66,7 @@ func GetAllProblems() (*Problems, error) {
 	return allProblems, nil
 }
 
-func (problems *Problems) filter(predicate func(*StatStatusPairs) bool) {
+func (problems *Problems) Filter(predicate func(*StatStatusPairs) bool) {
 	i := 0
 	for _, pair := range problems.StatStatusPairs {
 		if predicate(&pair) {

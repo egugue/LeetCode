@@ -41,7 +41,7 @@ func TestProblems_Filter(t *testing.T) {
 	problems.StatStatusPairs = append(problems.StatStatusPairs, toBeFiltered)
 
 	t.Run("filter", func(t *testing.T) {
-		problems.filter(func(pairs *StatStatusPairs) bool {
+		problems.Filter(func(pairs *StatStatusPairs) bool {
 			con := pairs.Stat.QuestionId != 1 && !pairs.Stat.QuestionHide && !pairs.PaidOnly
 			return con
 		})
