@@ -34,15 +34,12 @@ func Test_newStat(t *testing.T) {
 		"should count 0 if not any solved problems": {
 			table: solution.SolutionsTable{
 				solution.JavaKotlin: solutiontest.NewSolutions(),
-				solution.Python3: solutiontest.NewSolutions(
-					*solutiontest.NewSolution(solutiontest.ProblemID(1)),
-					*solutiontest.NewSolution(solutiontest.ProblemID(20)),
-				),
+				solution.Python3:    solutiontest.NewSolutions(),
 			},
 			expected: stat{
 				solvedCount: map[solution.Language]int{
-					solution.JavaKotlin: 3,
-					solution.Python3:    2,
+					solution.JavaKotlin: 0,
+					solution.Python3:    0,
 				},
 			},
 		},
