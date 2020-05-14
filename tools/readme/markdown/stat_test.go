@@ -1,8 +1,8 @@
 package markdown
 
 import (
+	tu "github.com/egugue/LeetCode/tools/readme/internal/testutil"
 	"github.com/egugue/LeetCode/tools/readme/solution"
-	"github.com/egugue/LeetCode/tools/readme/solution/solutiontest"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )
@@ -14,14 +14,14 @@ func Test_newStat(t *testing.T) {
 	}{
 		"should count solved problems": {
 			table: solution.SolutionsTable{
-				solution.JavaKotlin: solutiontest.NewSolutions(
-					*solutiontest.NewSolution(solutiontest.ProblemID(1)),
-					*solutiontest.NewSolution(solutiontest.ProblemID(2)),
-					*solutiontest.NewSolution(solutiontest.ProblemID(3)),
+				solution.JavaKotlin: tu.NewSolutions(
+					*tu.NewSolution(tu.ProblemID(1)),
+					*tu.NewSolution(tu.ProblemID(2)),
+					*tu.NewSolution(tu.ProblemID(3)),
 				),
-				solution.Python3: solutiontest.NewSolutions(
-					*solutiontest.NewSolution(solutiontest.ProblemID(1)),
-					*solutiontest.NewSolution(solutiontest.ProblemID(20)),
+				solution.Python3: tu.NewSolutions(
+					*tu.NewSolution(tu.ProblemID(1)),
+					*tu.NewSolution(tu.ProblemID(20)),
 				),
 			},
 			expected: stat{
@@ -33,8 +33,8 @@ func Test_newStat(t *testing.T) {
 		},
 		"should count 0 if not any solved problems": {
 			table: solution.SolutionsTable{
-				solution.JavaKotlin: solutiontest.NewSolutions(),
-				solution.Python3:    solutiontest.NewSolutions(),
+				solution.JavaKotlin: tu.NewSolutions(),
+				solution.Python3:    tu.NewSolutions(),
 			},
 			expected: stat{
 				solvedCount: map[solution.Language]int{

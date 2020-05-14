@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestProblems_Filter(t *testing.T) {
+func TestProblemResponse_Filter(t *testing.T) {
 	pairs := StatStatusPairs{
 		Stat{
 			QuestionId:         0,
@@ -20,7 +20,7 @@ func TestProblems_Filter(t *testing.T) {
 		false,
 	}
 
-	problems := Problems{
+	problems := ProblemResponse{
 		StatStatusPairs: []StatStatusPairs{},
 	}
 

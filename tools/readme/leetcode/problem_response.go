@@ -6,7 +6,7 @@ import (
 	"net/http"
 )
 
-type Problems struct {
+type ProblemResponse struct {
 	StatStatusPairs []StatStatusPairs `json:"stat_status_pairs"`
 }
 
@@ -47,7 +47,7 @@ const (
 	DifficultyHard
 )
 
-func GetAllProblems() (*Problems, error) {
+func GetAllProblems() (*ProblemResponse, error) {
 	resp, err := http.Get("https://leetcode.com/api/problems/all/")
 	if err != nil {
 		return nil, err
@@ -59,14 +59,14 @@ func GetAllProblems() (*Problems, error) {
 		return nil, err
 	}
 
-	allProblems := &Problems{}
+	allProblems := &ProblemResponse{}
 	if err := json.Unmarshal(body, &allProblems); err != nil {
 		return nil, err
 	}
 	return allProblems, nil
 }
 
-func (problems *Problems) Filter(predicate func(*StatStatusPairs) bool) {
+func (problems *ProblemResponse) Filter(predicate func(*StatStatusPairs) bool) {
 	i := 0
 	for _, pair := range problems.StatStatusPairs {
 		if predicate(&pair) {

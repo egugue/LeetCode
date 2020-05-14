@@ -1,4 +1,4 @@
-package solutiontest
+package testutil
 
 import (
 	"github.com/egugue/LeetCode/tools/readme/solution"

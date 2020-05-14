@@ -1,9 +1,9 @@
-package leetcodetest
+package testutil
 
 import "github.com/egugue/LeetCode/tools/readme/leetcode"
 
-func NewProblems(pairs ...leetcode.StatStatusPairs) *leetcode.Problems {
-	return &leetcode.Problems{
+func NewProblemResponse(pairs ...leetcode.StatStatusPairs) *leetcode.ProblemResponse {
+	return &leetcode.ProblemResponse{
 		StatStatusPairs: pairs,
 	}
 }

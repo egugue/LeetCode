@@ -37,7 +37,7 @@ type problem struct {
 	solutions  map[solution.Language][]solution.Solution
 }
 
-func newSortedProblems(lProblems leetcode.Problems, solutionsTable solution.SolutionsTable) problems {
+func newSortedProblems(lProblems leetcode.ProblemResponse, solutionsTable solution.SolutionsTable) problems {
 	idSet := solutionsTable.GetAllProblemIDSet()
 	lProblems.Filter(func(pairs *leetcode.StatStatusPairs) bool {
 		ok, _ := idSet[solution.ProblemID(pairs.Stat.FrontendQuestionId)]
@@ -69,7 +69,7 @@ func newSortedProblems(lProblems leetcode.Problems, solutionsTable solution.Solu
 	return problems
 }
 
-func filterProblems(problem *leetcode.Problems, solutionsTable *solution.SolutionsTable) {
+func filterProblems(problem *leetcode.ProblemResponse, solutionsTable *solution.SolutionsTable) {
 	idSet := solutionsTable.GetAllProblemIDSet()
 	problem.Filter(func(pairs *leetcode.StatStatusPairs) bool {
 		ok, _ := idSet[solution.ProblemID(pairs.Stat.FrontendQuestionId)]

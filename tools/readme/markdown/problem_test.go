@@ -1,10 +1,9 @@
 package markdown
 
 import (
+	tu "github.com/egugue/LeetCode/tools/readme/internal/testutil"
 	"github.com/egugue/LeetCode/tools/readme/leetcode"
-	. "github.com/egugue/LeetCode/tools/readme/leetcode/leetcodetest"
 	"github.com/egugue/LeetCode/tools/readme/solution"
-	. "github.com/egugue/LeetCode/tools/readme/solution/solutiontest"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )
@@ -36,33 +35,33 @@ func Test_newDifficulty(t *testing.T) {
 
 func Test_filterProblems(t *testing.T) {
 	tests := map[string]struct {
-		problems       *leetcode.Problems
+		problems       *leetcode.ProblemResponse
 		solutionsTable *solution.SolutionsTable
 		expected       []leetcode.StatStatusPairs
 	}{
 		"should drop problems such that unsolved, hidden, or paid only": {
-			problems: NewProblems(
-				*NewStatStatusPairs(StatWith(FrontendQuestionID(1))),
-				*NewStatStatusPairs(StatWith(FrontendQuestionID(2))),
-				*NewStatStatusPairs(StatWith(FrontendQuestionID(3))),
-				*NewStatStatusPairs(StatWith(FrontendQuestionID(4), QuestionHide(true))),
-				*NewStatStatusPairs(StatWith(FrontendQuestionID(5)), PaidOnly(true)),
+			problems: tu.NewProblemResponse(
+				*tu.NewStatStatusPairs(tu.StatWith(tu.FrontendQuestionID(1))),
+				*tu.NewStatStatusPairs(tu.StatWith(tu.FrontendQuestionID(2))),
+				*tu.NewStatStatusPairs(tu.StatWith(tu.FrontendQuestionID(3))),
+				*tu.NewStatStatusPairs(tu.StatWith(tu.FrontendQuestionID(4), tu.QuestionHide(true))),
+				*tu.NewStatStatusPairs(tu.StatWith(tu.FrontendQuestionID(5)), tu.PaidOnly(true)),
 			),
 			solutionsTable: &solution.SolutionsTable{
-				solution.JavaKotlin: NewSolutions(
-					*NewSolution(ProblemID(1)),
-					*NewSolution(ProblemID(2)),
-					*NewSolution(ProblemID(4)),
-					*NewSolution(ProblemID(5)),
+				solution.JavaKotlin: tu.NewSolutions(
+					*tu.NewSolution(tu.ProblemID(1)),
+					*tu.NewSolution(tu.ProblemID(2)),
+					*tu.NewSolution(tu.ProblemID(4)),
+					*tu.NewSolution(tu.ProblemID(5)),
 				),
-				solution.Python3: NewSolutions(
-					*NewSolution(ProblemID(1)),
+				solution.Python3: tu.NewSolutions(
+					*tu.NewSolution(tu.ProblemID(1)),
 				),
 			},
 			expected: []leetcode.StatStatusPairs{
-				*NewStatStatusPairs(StatWith(FrontendQuestionID(1))),
-				*NewStatStatusPairs(StatWith(FrontendQuestionID(2))),
-				*NewStatStatusPairs(StatWith(FrontendQuestionID(3))),
+				*tu.NewStatStatusPairs(tu.StatWith(tu.FrontendQuestionID(1))),
+				*tu.NewStatStatusPairs(tu.StatWith(tu.FrontendQuestionID(2))),
+				*tu.NewStatStatusPairs(tu.StatWith(tu.FrontendQuestionID(3))),
 			},
 		},
 	}
