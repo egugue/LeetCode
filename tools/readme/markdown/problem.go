@@ -8,6 +8,18 @@ import (
 
 type difficulty int8
 
+func (d difficulty) String() string {
+	switch d {
+	case easy:
+		return "Easy"
+	case medium:
+		return "Medium"
+	case hard:
+		return "Hard"
+	}
+	return ""
+}
+
 func newDifficulty(dif *leetcode.Difficulty) difficulty {
 	switch dif.Level {
 	case leetcode.DifficultyEasy:
@@ -27,49 +39,49 @@ const (
 	unknown
 )
 
-type problems []problem
+type Problems []problem
 
 type problem struct {
-	ID         solution.ProblemID
+	id         solution.ProblemID
 	title      string
 	url        string
 	difficulty difficulty
 	solutions  map[solution.Language][]solution.Solution
 }
 
-func newSortedProblems(lProblems leetcode.ProblemResponse, solutionsTable solution.SolutionsTable) problems {
-	idSet := solutionsTable.GetAllProblemIDSet()
-	lProblems.Filter(func(pairs *leetcode.StatStatusPairs) bool {
-		ok, _ := idSet[solution.ProblemID(pairs.Stat.FrontendQuestionId)]
-		return ok && !pairs.PaidOnly && !pairs.Stat.QuestionHide
-	})
+func newSortedProblems(response *leetcode.ProblemResponse, solutionsTable *solution.SolutionsTable) Problems {
+	filterUnnecessaryProblems(response, solutionsTable)
 
-	problems := make(problems, len(idSet))
-	for _, pair := range lProblems.StatStatusPairs {
+	problems := make(Problems, len((*response).StatStatusPairs))
+	for i, pair := range (*response).StatStatusPairs {
 		id := solution.ProblemID(pair.Stat.FrontendQuestionId)
 
 		solutions := make(map[solution.Language][]solution.Solution)
 		for _, language := range solution.Languages {
-			solutions[language] = solutionsTable[language][id]
+			s, ok := (*solutionsTable)[language][id]
+			if !ok {
+				continue
+			}
+			solutions[language] = s
 		}
 
-		problems = append(problems, problem{
-			ID:         id,
+		problems[i] = problem{
+			id:         id,
 			title:      pair.Stat.QuestionTitle,
 			url:        pair.Stat.QuestionUrl(),
 			difficulty: newDifficulty(&pair.Difficulty),
 			solutions:  solutions,
-		})
+		}
 	}
 
 	sort.Slice(problems, func(i, j int) bool {
-		return problems[i].ID < problems[j].ID
+		return problems[i].id < problems[j].id
 	})
 
 	return problems
 }
 
-func filterProblems(problem *leetcode.ProblemResponse, solutionsTable *solution.SolutionsTable) {
+func filterUnnecessaryProblems(problem *leetcode.ProblemResponse, solutionsTable *solution.SolutionsTable) {
 	idSet := solutionsTable.GetAllProblemIDSet()
 	problem.Filter(func(pairs *leetcode.StatStatusPairs) bool {
 		ok, _ := idSet[solution.ProblemID(pairs.Stat.FrontendQuestionId)]

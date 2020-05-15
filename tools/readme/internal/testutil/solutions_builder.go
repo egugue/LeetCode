@@ -14,7 +14,7 @@ func NewSolutions(solutions ...solution.Solution) solution.Solutions {
 
 type SolutionParam struct {
 	ProblemID solution.ProblemID
-	URL       string
+	Path      string
 }
 
 type SolutionOption func(p *SolutionParam)
@@ -25,16 +25,16 @@ func ProblemID(id solution.ProblemID) SolutionOption {
 	}
 }
 
-func URL(url string) SolutionOption {
+func Path(path string) SolutionOption {
 	return func(p *SolutionParam) {
-		p.URL = url
+		p.Path = path
 	}
 }
 
 func NewSolution(options ...SolutionOption) *solution.Solution {
 	p := &SolutionParam{
 		ProblemID: 1,
-		URL:       "https://leetcode.com/problems/two-sum/",
+		Path:      "/path",
 	}
 
 	for _, option := range options {
@@ -43,7 +43,7 @@ func NewSolution(options ...SolutionOption) *solution.Solution {
 
 	s := solution.Solution{
 		ProblemID: p.ProblemID,
-		URL:       p.URL,
+		Path:      p.Path,
 	}
 
 	return &s

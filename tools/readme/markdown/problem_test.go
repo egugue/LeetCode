@@ -33,7 +33,7 @@ func Test_newDifficulty(t *testing.T) {
 	}
 }
 
-func Test_filterProblems(t *testing.T) {
+func Test_filterUnnecessaryProblems(t *testing.T) {
 	tests := map[string]struct {
 		problems       *leetcode.ProblemResponse
 		solutionsTable *solution.SolutionsTable
@@ -48,7 +48,7 @@ func Test_filterProblems(t *testing.T) {
 				*tu.NewStatStatusPairs(tu.StatWith(tu.FrontendQuestionID(5)), tu.PaidOnly(true)),
 			),
 			solutionsTable: &solution.SolutionsTable{
-				solution.JavaKotlin: tu.NewSolutions(
+				solution.Java: tu.NewSolutions(
 					*tu.NewSolution(tu.ProblemID(1)),
 					*tu.NewSolution(tu.ProblemID(2)),
 					*tu.NewSolution(tu.ProblemID(4)),
@@ -68,7 +68,7 @@ func Test_filterProblems(t *testing.T) {
 
 	for name, tt := range tests {
 		t.Run(name, func(t *testing.T) {
-			filterProblems(tt.problems, tt.solutionsTable)
+			filterUnnecessaryProblems(tt.problems, tt.solutionsTable)
 			assert.Equal(t, tt.expected, tt.problems.StatStatusPairs)
 		})
 	}

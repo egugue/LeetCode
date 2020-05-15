@@ -1,20 +1,33 @@
 package main
 
 import (
-	"fmt"
 	"github.com/egugue/LeetCode/tools/readme/leetcode"
+	"github.com/egugue/LeetCode/tools/readme/markdown"
+	"github.com/egugue/LeetCode/tools/readme/solution"
+	"go.uber.org/zap"
+	"log"
 	"os"
 )
 
 func main() {
-	problems, err := leetcode.GetAllProblems()
+	logger, err := zap.NewDevelopment()
 	if err != nil {
-		//noinspection ALL
-		fmt.Fprintf(os.Stderr, "couldn't retrieve problems.\n%v\n", err)
+		log.Fatalf("Initialization error.\n%v\n", err)
+	}
+	defer logger.Sync()
+	undo := zap.ReplaceGlobals(logger)
+	defer undo()
+
+	response, err := leetcode.GetProblemResponse()
+	if err != nil {
+		zap.S().Error("couldn't retrieve problems\n%v\n", err)
 		os.Exit(1)
 	}
 
-	for _, pairs := range problems.StatStatusPairs[:20] {
-		fmt.Printf("%v\n", pairs)
+	solutionsTable := solution.GetAllSolutions()
+
+	err = markdown.WriteREADME(response, &solutionsTable)
+	if err != nil {
+		zap.S().Error("couldn't write README\n%v\n", err)
 	}
 }

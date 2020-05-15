@@ -47,7 +47,7 @@ const (
 	DifficultyHard
 )
 
-func GetAllProblems() (*ProblemResponse, error) {
+func GetProblemResponse() (*ProblemResponse, error) {
 	resp, err := http.Get("https://leetcode.com/api/problems/all/")
 	if err != nil {
 		return nil, err

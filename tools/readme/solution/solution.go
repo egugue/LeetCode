@@ -4,17 +4,17 @@ type Language int
 type ProblemID int
 
 const (
-	JavaKotlin Language = iota
+	Java Language = iota
 	Python3
 )
 
 var Languages = []Language{
-	JavaKotlin, Python3,
+	Java, Python3,
 }
 
 type Solution struct {
 	ProblemID ProblemID
-	URL       string
+	Path      string
 }
 
 type Solutions map[ProblemID][]Solution
@@ -38,6 +38,7 @@ func (table *SolutionsTable) GetAllProblemIDSet() map[ProblemID]bool {
 func GetAllSolutions() SolutionsTable {
 	r := make(map[Language]Solutions)
 	r[Python3] = getPython3Solutions()
+	r[Java] = getJavaSolutions()
 	return r
 }
 
@@ -52,8 +53,17 @@ func buildSolutions(list []Solution) Solutions {
 func getPython3Solutions() Solutions {
 	// TODO
 	response := []Solution{
-		{ProblemID: 1, URL: "111"},
-		{ProblemID: 2, URL: "222"},
+		{ProblemID: 1, Path: "111"},
+		{ProblemID: 1, Path: "333"},
+		{ProblemID: 2, Path: "222"},
+		{ProblemID: 100, Path: "222"},
+	}
+	return buildSolutions(response)
+}
+
+func getJavaSolutions() Solutions {
+	response := []Solution{
+		{ProblemID: 3, Path: "222"},
 	}
 	return buildSolutions(response)
 }

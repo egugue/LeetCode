@@ -14,7 +14,7 @@ func Test_newStat(t *testing.T) {
 	}{
 		"should count solved problems": {
 			table: solution.SolutionsTable{
-				solution.JavaKotlin: tu.NewSolutions(
+				solution.Java: tu.NewSolutions(
 					*tu.NewSolution(tu.ProblemID(1)),
 					*tu.NewSolution(tu.ProblemID(2)),
 					*tu.NewSolution(tu.ProblemID(3)),
@@ -26,20 +26,20 @@ func Test_newStat(t *testing.T) {
 			},
 			expected: stat{
 				solvedCount: map[solution.Language]int{
-					solution.JavaKotlin: 3,
-					solution.Python3:    2,
+					solution.Java:    3,
+					solution.Python3: 2,
 				},
 			},
 		},
 		"should count 0 if not any solved problems": {
 			table: solution.SolutionsTable{
-				solution.JavaKotlin: tu.NewSolutions(),
-				solution.Python3:    tu.NewSolutions(),
+				solution.Java:    tu.NewSolutions(),
+				solution.Python3: tu.NewSolutions(),
 			},
 			expected: stat{
 				solvedCount: map[solution.Language]int{
-					solution.JavaKotlin: 0,
-					solution.Python3:    0,
+					solution.Java:    0,
+					solution.Python3: 0,
 				},
 			},
 		},
@@ -47,7 +47,7 @@ func Test_newStat(t *testing.T) {
 
 	for name, tt := range tests {
 		t.Run(name, func(t *testing.T) {
-			actual := newStat(tt.table)
+			actual := newStat(&tt.table)
 			assert.Equal(t, tt.expected, actual)
 		})
 	}
