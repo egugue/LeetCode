@@ -5,7 +5,7 @@ import (
 	"github.com/egugue/LeetCode/tools/readme/leetcode"
 	"github.com/egugue/LeetCode/tools/readme/solution"
 	"os"
-	"strconv"
+	. "strconv"
 	"strings"
 )
 
@@ -34,40 +34,50 @@ func WriteREADME(response *leetcode.ProblemResponse, solutionsTable *solution.So
 }
 
 func writeHeader(f *os.File, stat *stat) error {
-	// TODO: create header using solutions.Languages dynamically
-	head := `
-| # | Title | Difficulty | Java (%v) | Python3 (%v) |
-| --- | --- | --- | --- | --- |
-`
-	_, err := fmt.Fprintf(f,
-		head,
-		stat.solvedCount[solution.Java],
-		stat.solvedCount[solution.Python3],
-	)
+	header := "| # | Title | Difficulty | "
+	for _, language := range solution.Languages {
+		header = header + language.String() + " (" + Itoa(stat.solvedCount[language]) + ") | "
+	}
+
+	if _, err := fmt.Fprintln(f, header); err != nil {
+		return err
+	}
+
+	header = "| :---: | :--- | :---: | "
+	for range solution.Languages {
+		header = header + " :---: | "
+	}
+	_, err := fmt.Fprintln(f, header)
 	return err
 }
 
 func writeRow(f *os.File, problem *problem) error {
-	// TODO: create header using solutions.Languages dynamically
-	format := "| %v | %v | %v | %v | %v |\n"
-
-	solutionTexts := []interface{}{problem.id, problem.title, problem.difficulty}
+	elements := []interface{}{problem.id, problem.title, problem.difficulty}
 	for _, language := range solution.Languages {
-		solutionTexts = append(solutionTexts, buildSolutionsText(problem.solutions[language]))
+		elements = append(elements, buildSolutionsText(problem.solutions[language]))
 	}
 
-	_, err := fmt.Fprintf(f,
-		format,
-		solutionTexts...,
-	)
+	var sb strings.Builder
+	sb.WriteString("| ")
+	for range elements {
+		sb.WriteString("%v")
+		sb.WriteString(" | ")
+	}
+	sb.WriteString("\n")
+
+	_, err := fmt.Fprintf(f, sb.String(), elements...)
 	return err
 }
 
 func buildSolutionsText(solutions []solution.Solution) string {
+	if len(solutions) == 0 {
+		return " - "
+	}
+
 	var sb strings.Builder
 	for i, s := range solutions {
 		sb.WriteString("[Solution_")
-		sb.WriteString(strconv.Itoa(i + 1))
+		sb.WriteString(Itoa(i + 1))
 		sb.WriteString("](")
 		sb.WriteString(s.Path)
 		sb.WriteString(")<br>")

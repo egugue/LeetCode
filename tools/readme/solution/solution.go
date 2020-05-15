@@ -1,7 +1,6 @@
 package solution
 
 type Language int
-type ProblemID int
 
 const (
 	Java Language = iota
@@ -11,6 +10,19 @@ const (
 var Languages = []Language{
 	Java, Python3,
 }
+
+func (l Language) String() string {
+	switch l {
+	case Java:
+		return "Java"
+	case Python3:
+		return "Python3"
+
+	}
+	return ""
+}
+
+type ProblemID int
 
 type Solution struct {
 	ProblemID ProblemID
