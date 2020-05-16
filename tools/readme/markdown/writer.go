@@ -34,7 +34,11 @@ func WriteREADME(response *leetcode.ProblemResponse, solutionsTable *solution.So
 }
 
 func writeHeader(f *os.File, stat *stat) error {
-	header := "| # | Title | Difficulty | "
+	header := ` 
+This repo commits only free problems.  
+https://leetcode.com/egugue/
+
+| # | Title | Difficulty | `
 	for _, language := range solution.Languages {
 		header = header + language.String() + " (" + Itoa(stat.solvedCount[language]) + ") | "
 	}
