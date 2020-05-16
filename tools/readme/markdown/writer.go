@@ -34,24 +34,26 @@ func WriteREADME(response *leetcode.ProblemResponse, solutionsTable *solution.So
 }
 
 func writeHeader(f *os.File, stat *stat) error {
-	header := ` 
+	var sb strings.Builder
+	sb.WriteString(` 
 This repo commits only free problems.  
 https://leetcode.com/egugue/
 
-| # | Title | Difficulty | `
+| # | Title | Difficulty | `)
 	for _, language := range solution.Languages {
-		header = header + language.String() + " (" + Itoa(stat.solvedCount[language]) + ") | "
+		sb.WriteString(language.String() + " (" + Itoa(stat.solvedCount[language]) + ") | ")
 	}
 
-	if _, err := fmt.Fprintln(f, header); err != nil {
+	if _, err := fmt.Fprintln(f, sb.String()); err != nil {
 		return err
 	}
 
-	header = "| :---: | :--- | :---: | "
+	sb.Reset()
+	sb.WriteString("| :---: | :--- | :---: | ")
 	for range solution.Languages {
-		header = header + " :---: | "
+		sb.WriteString(" :---: | ")
 	}
-	_, err := fmt.Fprintln(f, header)
+	_, err := fmt.Fprintln(f, sb.String())
 	return err
 }
 
