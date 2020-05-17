@@ -10,22 +10,22 @@ import (
 )
 
 func WriteREADME(response *leetcode.ProblemResponse, solutionsTable *solution.SolutionsTable) error {
-	problems := newSortedProblems(response, solutionsTable)
+	langs := solutionsTable.Languages()
+	problems := newSortedProblems(response, solutionsTable, langs)
 	stat := newStat(solutionsTable)
 
-	// TODO
-	file, err := os.Create("test.md")
+	file, err := os.Create("../../README.md")
 	if err != nil {
 		return err
 	}
 	defer file.Close()
 
-	if err = writeHeader(file, &stat); err != nil {
+	if err = writeHeader(file, &stat, langs); err != nil {
 		return err
 	}
 
 	for _, p := range problems {
-		if err = writeRow(file, &p); err != nil {
+		if err = writeRow(file, &p, langs); err != nil {
 			return err
 		}
 	}
@@ -33,14 +33,14 @@ func WriteREADME(response *leetcode.ProblemResponse, solutionsTable *solution.So
 	return nil
 }
 
-func writeHeader(f *os.File, stat *stat) error {
+func writeHeader(f *os.File, stat *stat, languages *[]solution.Language) error {
 	var sb strings.Builder
 	sb.WriteString(` 
 This repo commits only free problems.  
 https://leetcode.com/egugue/
 
 | # | Title | Difficulty | `)
-	for _, language := range solution.Languages {
+	for _, language := range *languages {
 		sb.WriteString(language.String() + " (" + Itoa(stat.solvedCount[language]) + ") | ")
 	}
 
@@ -50,16 +50,20 @@ https://leetcode.com/egugue/
 
 	sb.Reset()
 	sb.WriteString("| :---: | :--- | :---: | ")
-	for range solution.Languages {
+	for range *languages {
 		sb.WriteString(" :---: | ")
 	}
 	_, err := fmt.Fprintln(f, sb.String())
 	return err
 }
 
-func writeRow(f *os.File, problem *problem) error {
-	elements := []interface{}{problem.id, problem.title, problem.difficulty}
-	for _, language := range solution.Languages {
+func writeRow(f *os.File, problem *problem, languages *[]solution.Language) error {
+	elements := []interface{}{
+		problem.id,
+		"[" + problem.title + "](" + problem.url + ")",
+		problem.difficulty,
+	}
+	for _, language := range *languages {
 		elements = append(elements, buildSolutionsText(problem.solutions[language]))
 	}
 
@@ -84,7 +88,7 @@ func buildSolutionsText(solutions []solution.Solution) string {
 	for i, s := range solutions {
 		sb.WriteString("[Solution_")
 		sb.WriteString(Itoa(i + 1))
-		sb.WriteString("](")
+		sb.WriteString("](./")
 		sb.WriteString(s.Path)
 		sb.WriteString(")<br>")
 	}

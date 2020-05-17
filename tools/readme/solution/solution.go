@@ -1,32 +1,18 @@
 package solution
 
-type Language int
+import "sort"
 
-const (
-	Java Language = iota
-	Python3
-)
+type Language string
 
-var Languages = []Language{
-	Java, Python3,
-}
-
-func (l Language) String() string {
-	switch l {
-	case Java:
-		return "Java"
-	case Python3:
-		return "Python3"
-
-	}
-	return ""
+func (l *Language) String() string {
+	return string(*l)
 }
 
 type ProblemID int
 
 type Solution struct {
-	ProblemID ProblemID
-	Path      string
+	ProblemID ProblemID `json:"problem_id"`
+	Path      string    `json:"path"`
 }
 
 type Solutions map[ProblemID][]Solution
@@ -37,6 +23,19 @@ func (s *Solutions) SolvedCount() int {
 	return len(*s)
 }
 
+func (table *SolutionsTable) Languages() *[]Language {
+	var languages []Language
+	for language := range *table {
+		languages = append(languages, language)
+	}
+
+	sort.SliceStable(languages, func(i, j int) bool {
+		return languages[i] < languages[j]
+	})
+
+	return &languages
+}
+
 func (table *SolutionsTable) GetAllProblemIDSet() map[ProblemID]bool {
 	idSet := make(map[ProblemID]bool)
 	for _, solutions := range *table {
@@ -45,13 +44,6 @@ func (table *SolutionsTable) GetAllProblemIDSet() map[ProblemID]bool {
 		}
 	}
 	return idSet
-}
-
-func GetAllSolutions() SolutionsTable {
-	r := make(map[Language]Solutions)
-	r[Python3] = getPython3Solutions()
-	r[Java] = getJavaSolutions()
-	return r
 }
 
 func buildSolutions(list []Solution) Solutions {

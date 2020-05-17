@@ -49,7 +49,7 @@ type problem struct {
 	solutions  map[solution.Language][]solution.Solution
 }
 
-func newSortedProblems(response *leetcode.ProblemResponse, solutionsTable *solution.SolutionsTable) Problems {
+func newSortedProblems(response *leetcode.ProblemResponse, solutionsTable *solution.SolutionsTable, langs *[]solution.Language) Problems {
 	filterUnnecessaryProblems(response, solutionsTable)
 
 	problems := make(Problems, len((*response).StatStatusPairs))
@@ -57,7 +57,7 @@ func newSortedProblems(response *leetcode.ProblemResponse, solutionsTable *solut
 		id := solution.ProblemID(pair.Stat.FrontendQuestionId)
 
 		solutions := make(map[solution.Language][]solution.Solution)
-		for _, language := range solution.Languages {
+		for _, language := range *langs {
 			s, ok := (*solutionsTable)[language][id]
 			if !ok {
 				continue

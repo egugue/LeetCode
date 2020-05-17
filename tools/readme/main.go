@@ -7,6 +7,8 @@ import (
 	"go.uber.org/zap"
 	"log"
 	"os"
+	"path"
+	"runtime"
 )
 
 func main() {
@@ -18,16 +20,23 @@ func main() {
 	undo := zap.ReplaceGlobals(logger)
 	defer undo()
 
+	_, filename, _, _ := runtime.Caller(0)
+	dir := path.Dir(filename)
+	solutionsTable, err := solution.ReadSolutionsTable(dir + "/assets/solutions/")
+	if err != nil {
+		zap.S().Errorf("couldn't read json\n %v \n", err)
+		os.Exit(1)
+	}
+
 	response, err := leetcode.GetProblemResponse()
 	if err != nil {
 		zap.S().Errorf("couldn't retrieve problems\n%v\n", err)
 		os.Exit(1)
 	}
 
-	solutionsTable := solution.GetAllSolutions()
-
-	err = markdown.WriteREADME(response, &solutionsTable)
+	err = markdown.WriteREADME(response, solutionsTable)
 	if err != nil {
 		zap.S().Errorf("couldn't write README\n%v\n", err)
+		os.Exit(1)
 	}
 }
