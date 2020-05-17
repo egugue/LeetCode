@@ -1,5 +1,6 @@
 import os
 import re
+import sys
 from dataclasses import dataclass
 from pathlib import Path
 from typing import List
@@ -31,7 +32,11 @@ class Solutions:
 
 if __name__ == '__main__':
     absPath = os.path.abspath(__file__)
-    absDir = os.path.dirname(absPath) + "/"
+    absDir = os.path.dirname(absPath)
+
+    if not os.path.isdir(absDir):
+        print("Error: " + absDir + " is not a directory.", file=sys.stderr)
+        exit(1)
 
     p = Path(absDir)
     solutions = list(p.glob("*.py"))
