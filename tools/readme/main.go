@@ -12,9 +12,14 @@ import (
 )
 
 func main() {
+	os.Exit(run())
+}
+
+func run() int {
 	logger, err := zap.NewDevelopment()
 	if err != nil {
 		log.Fatalf("Initialization error.\n%v\n", err)
+		return 1
 	}
 	defer logger.Sync()
 	undo := zap.ReplaceGlobals(logger)
@@ -25,18 +30,20 @@ func main() {
 	solutionsTable, err := solution.ReadSolutionsTable(dir + "/assets/solutions/")
 	if err != nil {
 		zap.S().Errorf("couldn't read json\n %v \n", err)
-		os.Exit(1)
+		return 1
 	}
 
 	response, err := leetcode.GetProblemResponse()
 	if err != nil {
 		zap.S().Errorf("couldn't retrieve problems\n%v\n", err)
-		os.Exit(1)
+		return 1
 	}
 
 	err = markdown.WriteREADME(response, solutionsTable)
 	if err != nil {
 		zap.S().Errorf("couldn't write README\n%v\n", err)
-		os.Exit(1)
+		return 1
 	}
+
+	return 0
 }
