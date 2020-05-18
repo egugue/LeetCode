@@ -1,4 +1,4 @@
-package com.htoyama.leetcode._047;
+package com.htoyama.leetcode._046;
 
 import com.htoyama.leetcode.utils.Backtracking;
 import com.htoyama.leetcode.utils.Level;
