@@ -2,7 +2,6 @@
 
 set -eu
 
-script_file_path=${BASH_SOURCE:-$0}
 git_root_dir=$(git rev-parse --show-superproject-working-tree --show-toplevel | head -1)
 
 collect_java_solutions() {
@@ -21,7 +20,14 @@ collect_java_solutions() {
 collect_ptyhon3_solutions() {
   echo ""
   echo "collect python3 solutions..."
-  command python3 "$git_root_dir/python/solutions.py" > "$git_root_dir/tools/readme/assets/solutions/python3.json"
+
+  prev_dir=$(pwd)
+
+  cd "$git_root_dir/python/"
+  pipenv install
+  pipenv run sollutions
+
+  cd "$prev_dir"
   echo "finish"
 }
 
