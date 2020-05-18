@@ -3,8 +3,6 @@ name: updateREADME
 on:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
 
 jobs:
   build:
@@ -34,17 +32,17 @@ jobs:
        
     - name: Update README.md
       run: |
-        sh ./leetcode/readme.sh
-    
+        ./readme.sh
+
     - name: Commit README.md
       run: |
         git config --local user.email "dummy@dummy.com"
-        git config --local user.name "Dummy"
-        git add ./leetcode/README.md
+        git config --local user.name "README_BOT"
+        git add ./README.md
         git commit -m "Update README.md" || true
-  
+
     - name: Push README.md
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: ${GITHUB_REF##*/}
+

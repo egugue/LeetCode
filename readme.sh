@@ -25,7 +25,7 @@ collect_ptyhon3_solutions() {
 
   cd "$git_root_dir/python/"
   pipenv install
-  pipenv run sollutions
+  pipenv run solutions > "$git_root_dir/tools/readme/assets/solutions/python3.json"
 
   cd "$prev_dir"
   echo "finish"
