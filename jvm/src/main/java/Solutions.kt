@@ -29,8 +29,7 @@ fun main(args: Array<String>) {
 private fun readSolutionList(sourceDir: Path): List<Solution> {
   return Files.walk(sourceDir).use { pathStream ->
     pathStream
-      .filter { it.toFile().isDirectory }
-      .filter { it.fileName.toString().matches(solutionDirPattern) }
+      .filter { it.isDirectory() && it.fileName.toString().matches(solutionDirPattern) }
       .map { newSolution(it) }
       .toList()
   }
@@ -44,11 +43,18 @@ private fun newSolution(dir: Path): Solution {
     throw IllegalStateException("couldn't find problemId. dir = $dir")
   }
 
+  val files = Files.walk(dir).use { children ->
+    children.filter { it.isDirectory().not() } .toList()
+  }
+  val path = if (files.size == 1) "$dirName/${files.first().fileName}" else dirName
+
   return Solution(
     problem_id = problemID,
-    path = "jvm/src/main/java/com/htoyama/leetcode/$dirName"
+    path = "jvm/src/main/java/com/htoyama/leetcode/$path"
   )
 }
+
+private fun Path.isDirectory() = toFile().isDirectory
 
 private data class Solutions(
   val language: String,
