@@ -24,8 +24,8 @@ collect_ptyhon3_solutions() {
   prev_dir=$(pwd)
 
   cd "$git_root_dir/python/"
-  pipenv install
-  pipenv run solutions > "$git_root_dir/tools/readme/assets/solutions/python3.json"
+  command pipenv install
+  command pipenv run solutions > "$git_root_dir/tools/readme/assets/solutions/python3.json"
 
   cd "$prev_dir"
   echo "finish"
@@ -45,8 +45,52 @@ write_readme() {
   echo "finish"
 }
 
-cd "$git_root_dir"
 
-collect_java_solutions
-collect_ptyhon3_solutions
-write_readme
+
+#
+# main
+#
+
+flagJava=0
+flagPython3=0
+flagReadme=0
+
+if [ "$#" = 0 ]; then
+  flagJava=1
+  flagPython3=1
+  flagReadme=1
+else
+  for OPT in "$@"; do
+    case $OPT in
+    -java)
+      flagJava=1
+      ;;
+    -python3)
+      flagPython3=1
+      ;;
+    -readme)
+      flagReadme=1
+      ;;
+    *)
+      echo "Error: Unexpected option $OPT"
+      exit 1
+      ;;
+    esac
+    shift
+  done
+fi
+
+if [ $flagJava = 1 ]; then
+  collect_java_solutions
+fi
+
+if [ $flagPython3 = 1 ]; then
+  collect_ptyhon3_solutions
+fi
+
+if [ $flagReadme = 1 ]; then
+  write_readme
+fi
+
+command echo ""
+command echo "~~~all finished~~~"

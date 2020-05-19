@@ -5,35 +5,69 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
+  java_solutions:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
-
     - name: Set up JDK 1.8
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
+    - name: Collect Java Solutions
+      run: |
+        ./readme.sh -java
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: java.json
+        path: tools/readme/assets/solutions/java.json
+    
+  python3_solutions:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
     - name: Set up Python 3.8
       uses: actions/setup-python@v2
       with:
         python-version: 3.8
+    - name: Install Python dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install wheel pipenv
+    - name: Update README.md
+      run: |
+        python -m pip install --upgrade pip
+        pip install wheel pipenv
+        ./readme.sh -python3
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: python3.json
+        path: tools/readme/assets/solutions/python3.json
+    
+  update-readme:
+    needs: [java_solutions, python3_solutions]
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
     - name: Set up Go 1.x
       uses: actions/setup-go@v2
       with:
         go-version: ^1.13
       id: go
-
-    - name: Install Python dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install wheel pipenv
-       
+    - name: Download java solutions
+      uses: actions/download-artifact@v2
+      with:
+        name: java.json
+        path: tools/readme/assets/solutions/
+    - name: Download python3 solutions
+      uses: actions/download-artifact@v2
+      with:
+        name: python3.json
+        path: tools/readme/assets/solutions/
     - name: Update README.md
       run: |
-        ./readme.sh
-
+        ./readme.sh -readme
     - name: Commit README.md
       run: |
         git config --local user.email "dummy@dummy.com"
