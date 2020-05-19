@@ -8,6 +8,7 @@ import (
 	"log"
 	"os"
 	"path"
+	"path/filepath"
 	"runtime"
 )
 
@@ -27,7 +28,7 @@ func run() int {
 
 	_, filename, _, _ := runtime.Caller(0)
 	dir := path.Dir(filename)
-	solutionsTable, err := solution.ReadSolutionsTable(dir + "/assets/solutions/")
+	solutionsTable, err := solution.ReadSolutionsTable(filepath.Join(dir, "assets", "solutions"))
 	if err != nil {
 		zap.S().Errorf("couldn't read json\n %v \n", err)
 		return 1

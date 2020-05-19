@@ -36,6 +36,7 @@ func WriteREADME(response *leetcode.ProblemResponse, solutionsTable *solution.So
 func writeHeader(f *os.File, stat *stat, languages *[]solution.Language) error {
 	var sb strings.Builder
 	sb.WriteString(` 
+![updateREADME](https://github.com/egugue/LeetCode/workflows/updateREADME/badge.svg)  
 This repo commits only free problems.  
 https://leetcode.com/egugue/
 

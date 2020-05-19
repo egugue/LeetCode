@@ -68,7 +68,7 @@ func collectJsonFiles(jsonDirPath string) ([]string, error) {
 
 	paths := make([]string, len(files))
 	for i, file := range files {
-		paths[i] = jsonDirPath + file.Name()
+		paths[i] = filepath.Join(jsonDirPath, file.Name())
 	}
 
 	return paths, err
