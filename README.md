@@ -1,4 +1,5 @@
  
+![updateREADME](https://github.com/egugue/LeetCode/workflows/updateREADME/badge.svg)  
 This repo commits only free problems.  
 https://leetcode.com/egugue/
 
