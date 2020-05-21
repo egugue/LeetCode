@@ -2,7 +2,9 @@ name: updateREADME
 
 on:
   push:
-    branches: [ master ]
+    branches:
+      - master
+      - cache
 
 jobs:
   java_solutions:
