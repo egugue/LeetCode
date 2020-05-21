@@ -3,7 +3,7 @@
 This repo commits only free problems.  
 https://leetcode.com/egugue/
 
-| # | Title | Difficulty | Java (105) | Python3 (22) | 
+| # | Title | Difficulty | Java (106) | Python3 (22) | 
 | :---: | :--- | :---: |  :---: |  :---: | 
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_001/Solution.kt)<br> | [Solution_1](././python/001.py)<br> | 
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_002/Solution.kt)<br> | [Solution_1](././python/002.py)<br> | 
@@ -23,6 +23,7 @@ https://leetcode.com/egugue/
 | 34 | [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_034/Solution.java)<br> | [Solution_1](././python/034.py)<br> | 
 | 35 | [Search Insert Position](https://leetcode.com/problems/search-insert-position) | Easy |  -  | [Solution_1](././python/035.py)<br> | 
 | 39 | [Combination Sum](https://leetcode.com/problems/combination-sum) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_039/Solution.java)<br> | [Solution_1](././python/039.py)<br> | 
+| 42 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_042/Solution.java)<br> |  -  | 
 | 46 | [Permutations](https://leetcode.com/problems/permutations) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_046/Solution.java)<br> | [Solution_1](././python/046.py)<br> | 
 | 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_049/Solution.kt)<br> | [Solution_1](././python/049.py)<br> | 
 | 50 | [Pow(x, n)](https://leetcode.com/problems/powx-n) | Medium |  -  | [Solution_1](././python/050.py)<br> | 
