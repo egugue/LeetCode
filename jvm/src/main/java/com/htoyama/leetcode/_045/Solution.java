@@ -1,6 +1,4 @@
-package com.htoyama.leetcode;
-
-import java.util.Arrays;
+package com.htoyama.leetcode._045;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
