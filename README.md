@@ -3,7 +3,7 @@
 This repo commits only free problems.  
 https://leetcode.com/egugue/
 
-| # | Title | Difficulty | Java (108) | Python3 (22) | 
+| # | Title | Difficulty | Java (109) | Python3 (22) | 
 | :---: | :--- | :---: |  :---: |  :---: | 
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_001/Solution.kt)<br> | [Solution_1](././python/001.py)<br> | 
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_002/Solution.kt)<br> | [Solution_1](././python/002.py)<br> | 
@@ -24,6 +24,7 @@ https://leetcode.com/egugue/
 | 35 | [Search Insert Position](https://leetcode.com/problems/search-insert-position) | Easy |  -  | [Solution_1](././python/035.py)<br> | 
 | 39 | [Combination Sum](https://leetcode.com/problems/combination-sum) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_039/Solution.java)<br> | [Solution_1](././python/039.py)<br> | 
 | 42 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_042/Solution.java)<br> |  -  | 
+| 45 | [Jump Game II](https://leetcode.com/problems/jump-game-ii) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_045/Solution.java)<br> |  -  | 
 | 46 | [Permutations](https://leetcode.com/problems/permutations) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_046/Solution.java)<br> | [Solution_1](././python/046.py)<br> | 
 | 48 | [Rotate Image](https://leetcode.com/problems/rotate-image) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_048/Solution.java)<br> |  -  | 
 | 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_049/Solution.kt)<br> | [Solution_1](././python/049.py)<br> | 
