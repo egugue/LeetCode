@@ -3,7 +3,7 @@
 This repo commits only free problems.  
 https://leetcode.com/egugue/
 
-| # | Title | Difficulty | Java (106) | Python3 (22) | 
+| # | Title | Difficulty | Java (107) | Python3 (22) | 
 | :---: | :--- | :---: |  :---: |  :---: | 
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_001/Solution.kt)<br> | [Solution_1](././python/001.py)<br> | 
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_002/Solution.kt)<br> | [Solution_1](././python/002.py)<br> | 
@@ -28,6 +28,7 @@ https://leetcode.com/egugue/
 | 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_049/Solution.kt)<br> | [Solution_1](././python/049.py)<br> | 
 | 50 | [Pow(x, n)](https://leetcode.com/problems/powx-n) | Medium |  -  | [Solution_1](././python/050.py)<br> | 
 | 53 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_053/Solution.kt)<br> | [Solution_1](././python/053.py)<br> | 
+| 55 | [Jump Game](https://leetcode.com/problems/jump-game) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_055/Solution.java)<br> |  -  | 
 | 56 | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_056/Solution.java)<br> | [Solution_1](././python/056.py)<br> | 
 | 62 | [Unique Paths](https://leetcode.com/problems/unique-paths) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_062/Solution.java)<br> | [Solution_1](././python/062.py)<br> | 
 | 63 | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_063/Solution.java)<br> | [Solution_1](././python/063.py)<br> | 
