@@ -11,21 +11,27 @@ class Solution {
     assertThat(s.jump(new int[]{2, 1, 1, 1, 4})).isEqualTo(3);
   }
 
+  /**
+   * 2 ms	41.5 MB
+   *
+   * https://www.youtube.com/watch?v=vBdo7wtwlXs&t=181s
+   */
   public int jump(int[] nums) {
     if (nums.length <= 1) return 0;
 
-    int[] dp = new int[nums.length];
-    Arrays.fill(dp, nums.length);
-    dp[0] = 0;
-
-    for (int i = 0; i < nums.length; i++) {
-      if (i + nums[i] >= nums.length - 1) return dp[i] + 1;
-
-      for (int x = i; x <= i + nums[i] && x < nums.length; x++) {
-        dp[x] = Math.min(dp[x], dp[i] + 1);
+    int curLadder = 0;
+    int jumps = 0;
+    int longestLadder = nums[0];
+    for (int i = 1; i < nums.length; i++) {
+      if (curLadder < i) {
+        // need to switch longer ladder
+        curLadder = longestLadder;
+        jumps++;
       }
+
+      longestLadder = Math.max(longestLadder, i + nums[i]);
     }
 
-    return dp[nums.length - 1];
+    return jumps;
   }
 }
