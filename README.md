@@ -3,7 +3,7 @@
 This repo commits only free problems.  
 https://leetcode.com/egugue/
 
-| # | Title | Difficulty | Java (109) | Python3 (22) | 
+| # | Title | Difficulty | Java (110) | Python3 (22) | 
 | :---: | :--- | :---: |  :---: |  :---: | 
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_001/Solution.kt)<br> | [Solution_1](././python/001.py)<br> | 
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_002/Solution.kt)<br> | [Solution_1](././python/002.py)<br> | 
@@ -43,6 +43,7 @@ https://leetcode.com/egugue/
 | 83 | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_083/Solution.java)<br> |  -  | 
 | 90 | [Subsets II](https://leetcode.com/problems/subsets-ii) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_090/Solution.java)<br> |  -  | 
 | 94 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_094/Solution.java)<br> |  -  | 
+| 98 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_098/Solution.java)<br> |  -  | 
 | 100 | [Same Tree](https://leetcode.com/problems/same-tree) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_100/Solution.kt)<br> |  -  | 
 | 101 | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_101/Solution.java)<br> |  -  | 
 | 102 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_102/Solution.java)<br> |  -  | 
