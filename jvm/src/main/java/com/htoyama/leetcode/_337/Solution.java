@@ -11,25 +11,27 @@ class Solution {
     assertThat(s.rob(TreeNode.of(3, 4, 5, 1, 3, null, 1))).isEqualTo(9);
   }
 
+  private static final int ROBBED = 0;
+  private static final int SKIPPED = 1;
+
   /**
-   * 1700 ms	39.7 MB
+   * 0 ms	39.3 MB
    */
   public int rob(TreeNode root) {
     if (root == null) return 0;
-    return Math.max(helper(root, true), helper(root, false));
+    int[] result = helper(root);
+    return Math.max(result[ROBBED], result[SKIPPED]);
   }
 
-  private int helper(TreeNode root, boolean shouldSkip) {
-    if (root == null) return 0;
+  private int[] helper(TreeNode root) {
+    if (root == null) return new int[2];
 
-    int skipLeft = helper(root.left, false);
-    int skipRight = helper(root.right, false);
-    if (shouldSkip) {
-      return skipLeft + skipRight;
-    }
+    int[] left = helper(root.left);
+    int[] right = helper(root.right);
 
-    int robLeft = helper(root.left, true);
-    int robRight = helper(root.right, true);
-    return Math.max(skipLeft + skipRight, root.val + robLeft + robRight);
+    int[] r = new int[2];
+    r[ROBBED] = root.val + left[SKIPPED] + right[SKIPPED];
+    r[SKIPPED] = Math.max(left[ROBBED], left[SKIPPED]) + Math.max(right[ROBBED], right[SKIPPED]);
+    return r;
   }
 }
