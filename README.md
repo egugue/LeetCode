@@ -3,7 +3,7 @@
 This repo commits only free problems.  
 https://leetcode.com/egugue/
 
-| # | Title | Difficulty | Java (110) | Python3 (22) | 
+| # | Title | Difficulty | Java (110) | Python3 (24) | 
 | :---: | :--- | :---: |  :---: |  :---: | 
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_001/Solution.kt)<br> | [Solution_1](././python/001.py)<br> | 
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_002/Solution.kt)<br> | [Solution_1](././python/002.py)<br> | 
@@ -34,8 +34,8 @@ https://leetcode.com/egugue/
 | 56 | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_056/Solution.java)<br> | [Solution_1](././python/056.py)<br> | 
 | 62 | [Unique Paths](https://leetcode.com/problems/unique-paths) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_062/Solution.java)<br> | [Solution_1](././python/062.py)<br> | 
 | 63 | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_063/Solution.java)<br> | [Solution_1](././python/063.py)<br> | 
-| 64 | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_064/Solution.java)<br> |  -  | 
-| 67 | [Add Binary](https://leetcode.com/problems/add-binary) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_067/Solution.kt)<br> |  -  | 
+| 64 | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_064/Solution.java)<br> | [Solution_1](././python/064.py)<br> | 
+| 67 | [Add Binary](https://leetcode.com/problems/add-binary) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_067/Solution.kt)<br> | [Solution_1](././python/067.py)<br> | 
 | 75 | [Sort Colors](https://leetcode.com/problems/sort-colors) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_075/Solution.java)<br> |  -  | 
 | 77 | [Combinations](https://leetcode.com/problems/combinations) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_077/Solution.java)<br> |  -  | 
 | 78 | [Subsets](https://leetcode.com/problems/subsets) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_078/Solution.java)<br> |  -  | 
