@@ -81,9 +81,7 @@ class LRUCache {
 
   public int get(int key) {
     Node node = map.get(key);
-    if (node == null) {
-      return -1;
-    }
+    if (node == null) return -1;
 
     updateMostUsedNode(node);
     return node.value;
@@ -99,15 +97,14 @@ class LRUCache {
 
     if (map.containsKey(key)) {
       Node node = map.get(key);
-      updateMostUsedNode(node);
       node.value = value;
+      updateMostUsedNode(node);
       return;
     }
 
-    if (map.size() >= capacity) {
+    if (map.size() == capacity) {
       map.remove(leastUsed.key);
-      leastUsed = leastUsed.prev;
-      if (leastUsed != null) leastUsed.next = null;
+      updateLeastUsedNode(leastUsed.prev);
     }
 
     Node node = new Node(key, value);
@@ -116,25 +113,27 @@ class LRUCache {
   }
 
   private void updateMostUsedNode(Node node) {
+    if (node == null) return;
     if (node == mostUsed) return;
 
+    if (node == leastUsed) updateLeastUsedNode(node.prev);
+
     // skip this node
-    if (node.prev != null) {
-      node.prev.next = node.next;
-      if (node.prev.next == null) leastUsed = node.prev;
-    }
-    if (node.next != null) {
-      node.next.prev = node.prev;
-    }
+    if (node.prev != null) node.prev.next = node.next;
+    if (node.next != null) node.next.prev = node.prev;
 
     Node secondMost = mostUsed;
     mostUsed = node;
     mostUsed.prev = null;
     mostUsed.next = secondMost;
     secondMost.prev = mostUsed;
-    if (secondMost.next == null) {
-      leastUsed = secondMost;
-    }
+  }
+
+  private void updateLeastUsedNode(Node node) {
+    if (node == null) return;
+    if (node == leastUsed) return;
+    leastUsed = node;
+    leastUsed.next = null;
   }
 
   private static class Node {
