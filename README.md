@@ -3,7 +3,7 @@
 This repo commits only free problems.  
 https://leetcode.com/egugue/
 
-| # | Title | Difficulty | Java (113) | Python3 (29) | 
+| # | Title | Difficulty | Java (113) | Python3 (31) | 
 | :---: | :--- | :---: |  :---: |  :---: | 
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_001/Solution.kt)<br> | [Solution_1](././python/001.py)<br> | 
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_002/Solution.kt)<br> | [Solution_1](././python/002.py)<br> | 
@@ -41,8 +41,8 @@ https://leetcode.com/egugue/
 | 78 | [Subsets](https://leetcode.com/problems/subsets) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_078/Solution.java)<br> | [Solution_1](././python/078.py)<br> | 
 | 82 | [Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_082/Solution.java)<br> | [Solution_1](././python/082.py)<br> | 
 | 83 | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_083/Solution.java)<br> | [Solution_1](././python/083.py)<br> | 
-| 90 | [Subsets II](https://leetcode.com/problems/subsets-ii) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_090/Solution.java)<br> |  -  | 
-| 94 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_094/Solution.java)<br> |  -  | 
+| 90 | [Subsets II](https://leetcode.com/problems/subsets-ii) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_090/Solution.java)<br> | [Solution_1](././python/90.py)<br> | 
+| 94 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_094/Solution.java)<br> | [Solution_1](././python/094.py)<br> | 
 | 98 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_098/Solution.java)<br> |  -  | 
 | 100 | [Same Tree](https://leetcode.com/problems/same-tree) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_100/Solution.kt)<br> |  -  | 
 | 101 | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_101/Solution.java)<br> |  -  | 
