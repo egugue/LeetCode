@@ -2,6 +2,8 @@ package com.htoyama.leetcode._230;
 
 import com.htoyama.leetcode.utils.data.TreeNode;
 
+import java.util.Stack;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 class Solution {
@@ -12,6 +14,17 @@ class Solution {
     assertThat(s.kthSmallest(TreeNode.of(
       31, 30, 48, 3, null, 38, 49, 0, 16, 35, 47, null, null, null, 2, 15, 27, 33, 37, 39, null, 1, null, 5, null, 22, 28, 32, 34, 36, null, null, 43, null, null, 4, 11, 19, 23, null, 29, null, null, null, null, null, null, 40, 46, null, null, 7, 14, 17, 21, null, 26, null, null, null, 41, 44, null, 6, 10, 13, null, null, 18, 20, null, 25, null, null, 42, null, 45, null, null, 8, null, 12, null, null, null, null, null, 24, null, null, null, null, null, null, 9
     ), 1)).isEqualTo(0);
+  }
+
+  public int kthSmallest_loop(TreeNode root, int k) {
+    if (root == null) return -1;
+    Stack<TreeNode> stack = new Stack<>();
+    stack.push(root);
+
+    while(!stack.isEmpty() && k > 0) {
+      while(stack.peek().left != null) stack.push(stack.peek().left);
+    }
+    return 1;
   }
 
   /**
