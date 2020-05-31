@@ -3,7 +3,7 @@
 This repo commits only free problems.  
 https://leetcode.com/egugue/
 
-| # | Title | Difficulty | Java (113) | Python3 (31) | 
+| # | Title | Difficulty | Java (116) | Python3 (31) | 
 | :---: | :--- | :---: |  :---: |  :---: | 
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_001/Solution.kt)<br> | [Solution_1](././python/001.py)<br> | 
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_002/Solution.kt)<br> | [Solution_1](././python/002.py)<br> | 
@@ -42,7 +42,7 @@ https://leetcode.com/egugue/
 | 82 | [Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_082/Solution.java)<br> | [Solution_1](././python/082.py)<br> | 
 | 83 | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_083/Solution.java)<br> | [Solution_1](././python/083.py)<br> | 
 | 90 | [Subsets II](https://leetcode.com/problems/subsets-ii) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_090/Solution.java)<br> | [Solution_1](././python/90.py)<br> | 
-| 94 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_094/Solution.java)<br> | [Solution_1](././python/094.py)<br> | 
+| 94 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_094/Solution.java)<br> | [Solution_1](././python/094.py)<br> | 
 | 98 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_098/Solution.java)<br> |  -  | 
 | 100 | [Same Tree](https://leetcode.com/problems/same-tree) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_100/Solution.kt)<br> |  -  | 
 | 101 | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_101/Solution.java)<br> |  -  | 
@@ -79,6 +79,8 @@ https://leetcode.com/egugue/
 | 230 | [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_230/Solution.java)<br> |  -  | 
 | 231 | [Power of Two](https://leetcode.com/problems/power-of-two) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_231/Solution.kt)<br> |  -  | 
 | 234 | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_234/Solution.java)<br> |  -  | 
+| 236 | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_236/Solution.java)<br> |  -  | 
+| 239 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_239/Solution.java)<br> |  -  | 
 | 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_242/Solution.java)<br> |  -  | 
 | 257 | [Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_257/Solution.kt)<br> |  -  | 
 | 258 | [Add Digits](https://leetcode.com/problems/add-digits) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_258/Solution.kt)<br> |  -  | 
@@ -111,6 +113,7 @@ https://leetcode.com/egugue/
 | 438 | [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_438/Solution.java)<br> |  -  | 
 | 461 | [Hamming Distance](https://leetcode.com/problems/hamming-distance) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_461/Solution.java)<br> |  -  | 
 | 494 | [Target Sum](https://leetcode.com/problems/target-sum) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_494/Solution.java)<br> |  -  | 
+| 560 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_560/Solution.java)<br> |  -  | 
 | 617 | [Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_617/Solution.java)<br> |  -  | 
 | 684 | [Redundant Connection](https://leetcode.com/problems/redundant-connection) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_684/Solution.java)<br> |  -  | 
 | 739 | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_739/Solution.java)<br> |  -  | 
