@@ -1,5 +1,6 @@
 package com.htoyama.leetcode._239;
 
+import java.util.ArrayDeque;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
@@ -12,12 +13,41 @@ class Solution {
       .containsExactly(3, 3, 5, 5, 6, 7);
   }
 
+  public int[] maxSlidingWindow(int[] nums, int k) {
+    return queue(nums, k);
+//    return heap(nums, k);
+  }
+
+  /**
+   * 11 ms	53.3 MB
+   */
+  public static int[] queue(int[] nums, int k) {
+    if (nums.length == 0) return new int[0];
+
+    // Max capacity equals k because first while statement in the for loop makes the queue remove index out of sliding window.
+    ArrayDeque<Integer> queue = new ArrayDeque<>(k);
+    int[] windows = new int[nums.length - k + 1];
+
+    for (int right = 0; right < nums.length; right++) {
+      int left = right - k + 1;
+      while (!queue.isEmpty() && queue.peek() < left) queue.remove();
+      while (!queue.isEmpty() && nums[queue.getLast()] < nums[right]) queue.removeLast();
+
+      if (left >= 0) {
+        windows[left] = queue.isEmpty() ? nums[right] : nums[queue.peek()];
+      }
+      queue.add(right);
+    }
+
+    return windows;
+  }
+
   private static final Comparator<int[]> maxComparator = (o1, o2) -> o2[1] - o1[1];
 
   /**
    * 14 ms	51.4 MB
    */
-  public int[] maxSlidingWindow(int[] nums, int k) {
+  public static int[] heap(int[] nums, int k) {
     if (nums.length == 0) return new int[0];
     int[] windows = new int[nums.length - k + 1];
     PriorityQueue<int[]> maxHeap = new PriorityQueue<>(maxComparator);
