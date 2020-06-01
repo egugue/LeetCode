@@ -3,7 +3,7 @@
 This repo commits only free problems.  
 https://leetcode.com/egugue/
 
-| # | Title | Difficulty | Java (116) | Python3 (31) | 
+| # | Title | Difficulty | Java (116) | Python3 (32) | 
 | :---: | :--- | :---: |  :---: |  :---: | 
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_001/Solution.kt)<br> | [Solution_1](././python/001.py)<br> | 
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_002/Solution.kt)<br> | [Solution_1](././python/002.py)<br> | 
@@ -44,7 +44,7 @@ https://leetcode.com/egugue/
 | 90 | [Subsets II](https://leetcode.com/problems/subsets-ii) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_090/Solution.java)<br> | [Solution_1](././python/90.py)<br> | 
 | 94 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_094/Solution.java)<br> | [Solution_1](././python/094.py)<br> | 
 | 98 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_098/Solution.java)<br> |  -  | 
-| 100 | [Same Tree](https://leetcode.com/problems/same-tree) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_100/Solution.kt)<br> |  -  | 
+| 100 | [Same Tree](https://leetcode.com/problems/same-tree) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_100/Solution.kt)<br> | [Solution_1](././python/100.py)<br> | 
 | 101 | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_101/Solution.java)<br> |  -  | 
 | 102 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_102/Solution.java)<br> |  -  | 
 | 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_104/Solution.java)<br> |  -  | 
