@@ -10,7 +10,11 @@ class Solution {
     assertThat(s.diameterOfBinaryTree(TreeNode.of(1, 2, 3, 4, 5))).isEqualTo(3);
   }
 
+  /**
+   * 0 ms	39.7 MB
+   */
   public int diameterOfBinaryTree(TreeNode root) {
+    if (root ==null) return 0;
     maxLength = 0;
     length(root);
     return maxLength - 1;
