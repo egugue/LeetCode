@@ -3,7 +3,7 @@
 This repo commits only free problems.  
 https://leetcode.com/egugue/
 
-| # | Title | Difficulty | Java (116) | Python3 (33) | 
+| # | Title | Difficulty | Java (117) | Python3 (35) | 
 | :---: | :--- | :---: |  :---: |  :---: | 
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_001/Solution.kt)<br> | [Solution_1](././python/001.py)<br> | 
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_002/Solution.kt)<br> | [Solution_1](././python/002.py)<br> | 
@@ -46,8 +46,8 @@ https://leetcode.com/egugue/
 | 98 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_098/Solution.java)<br> |  -  | 
 | 100 | [Same Tree](https://leetcode.com/problems/same-tree) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_100/Solution.kt)<br> | [Solution_1](././python/100.py)<br> | 
 | 101 | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_101/Solution.java)<br> | [Solution_1](././python/101.py)<br> | 
-| 102 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_102/Solution.java)<br> |  -  | 
-| 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_104/Solution.java)<br> |  -  | 
+| 102 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_102/Solution.java)<br> | [Solution_1](././python/102.py)<br> | 
+| 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_104/Solution.java)<br> | [Solution_1](././python/104.py)<br> | 
 | 105 | [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_105/Solution.java)<br> |  -  | 
 | 107 | [Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_107/Solution.kt)<br> |  -  | 
 | 108 | [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_108/Solution.java)<br> |  -  | 
@@ -113,6 +113,7 @@ https://leetcode.com/egugue/
 | 438 | [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_438/Solution.java)<br> |  -  | 
 | 461 | [Hamming Distance](https://leetcode.com/problems/hamming-distance) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_461/Solution.java)<br> |  -  | 
 | 494 | [Target Sum](https://leetcode.com/problems/target-sum) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_494/Solution.java)<br> |  -  | 
+| 543 | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_543/Solution.java)<br> |  -  | 
 | 560 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_560/Solution.java)<br> |  -  | 
 | 617 | [Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_617/Solution.java)<br> |  -  | 
 | 684 | [Redundant Connection](https://leetcode.com/problems/redundant-connection) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_684/Solution.java)<br> |  -  | 
