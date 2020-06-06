@@ -3,7 +3,26 @@ from shared.TreeNode import TreeNode
 
 class Solution:
     def minDepth(self, root: TreeNode) -> int:
-        return recursive(root)
+        return iterative(root)
+        # return recursive(root)
+
+
+def iterative(root: TreeNode) -> int:
+    if not root:
+        return 0
+
+    from collections import deque
+    queue = deque([(root, 1)])
+    while len(queue) != 0:
+        node, level = queue.popleft()
+        if not node.left and not node.right:
+            return level
+        if node.left:
+            queue.append((node.left, level + 1))
+        if node.right:
+            queue.append((node.right, level + 1))
+
+    return -1
 
 
 def recursive(root: TreeNode) -> int:
