@@ -6,7 +6,25 @@ class Solution:
         """
         Do not return anything, modify root in-place instead.
         """
-        recursive(root)
+        iterative(root)
+        # recursive(root)
+
+
+def iterative(root: TreeNode) -> None:
+    # 48 ms	14.7 MB
+    if not root:
+        return
+
+    stack = [root]
+    while len(stack) != 0:
+        node = stack.pop()
+        if node.right:
+            stack.append(node.right)
+        if node.left:
+            stack.append(node.left)
+        if len(stack) != 0:
+            node.right = stack[-1]
+        node.left = None
 
 
 def recursive(root: TreeNode) -> None:
