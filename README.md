@@ -3,7 +3,7 @@
 This repo commits only free problems.  
 https://leetcode.com/egugue/
 
-| # | Title | Difficulty | Java (117) | Python3 (36) | 
+| # | Title | Difficulty | Java (118) | Python3 (38) | 
 | :---: | :--- | :---: |  :---: |  :---: | 
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_001/Solution.kt)<br> | [Solution_1](././python/001.py)<br> | 
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_002/Solution.kt)<br> | [Solution_1](././python/002.py)<br> | 
@@ -49,8 +49,8 @@ https://leetcode.com/egugue/
 | 102 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_102/Solution.java)<br> | [Solution_1](././python/102.py)<br> | 
 | 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_104/Solution.java)<br> | [Solution_1](././python/104.py)<br> | 
 | 105 | [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_105/Solution.java)<br> | [Solution_1](././python/105.py)<br> | 
-| 107 | [Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_107/Solution.kt)<br> |  -  | 
-| 108 | [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_108/Solution.java)<br> |  -  | 
+| 107 | [Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_107/Solution.kt)<br> | [Solution_1](././python/107.py)<br> | 
+| 108 | [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_108/Solution.java)<br> | [Solution_1](././python/108.py)<br> | 
 | 111 | [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_111/Solution.java)<br> |  -  | 
 | 112 | [Path Sum](https://leetcode.com/problems/path-sum) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_112/Solution.java)<br> |  -  | 
 | 114 | [Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_114/Solution.java)<br> |  -  | 
@@ -70,6 +70,7 @@ https://leetcode.com/egugue/
 | 204 | [Count Primes](https://leetcode.com/problems/count-primes) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_204/Solution.kt)<br> |  -  | 
 | 205 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_205/Solution.java)<br> |  -  | 
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_206/Solution.java)<br> |  -  | 
+| 208 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_208/Trie.java)<br> |  -  | 
 | 209 | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_209/Solution.java)<br> |  -  | 
 | 213 | [House Robber II](https://leetcode.com/problems/house-robber-ii) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_213/Solution.java)<br> |  -  | 
 | 215 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_215/Solution.java)<br> |  -  | 
