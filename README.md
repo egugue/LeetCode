@@ -3,7 +3,7 @@
 This repo commits only free problems.  
 https://leetcode.com/egugue/
 
-| # | Title | Difficulty | Java (118) | Python3 (38) | 
+| # | Title | Difficulty | Java (120) | Python3 (42) | 
 | :---: | :--- | :---: |  :---: |  :---: | 
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_001/Solution.kt)<br> | [Solution_1](././python/001.py)<br> | 
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_002/Solution.kt)<br> | [Solution_1](././python/002.py)<br> | 
@@ -51,10 +51,10 @@ https://leetcode.com/egugue/
 | 105 | [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_105/Solution.java)<br> | [Solution_1](././python/105.py)<br> | 
 | 107 | [Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_107/Solution.kt)<br> | [Solution_1](././python/107.py)<br> | 
 | 108 | [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_108/Solution.java)<br> | [Solution_1](././python/108.py)<br> | 
-| 111 | [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_111/Solution.java)<br> |  -  | 
-| 112 | [Path Sum](https://leetcode.com/problems/path-sum) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_112/Solution.java)<br> |  -  | 
-| 114 | [Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_114/Solution.java)<br> |  -  | 
-| 118 | [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_118/Solution.java)<br> |  -  | 
+| 111 | [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_111/Solution.java)<br> | [Solution_1](././python/111.py)<br> | 
+| 112 | [Path Sum](https://leetcode.com/problems/path-sum) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_112/Solution.java)<br> | [Solution_1](././python/112.py)<br> | 
+| 114 | [Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_114/Solution.java)<br> | [Solution_1](././python/114.py)<br> | 
+| 118 | [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_118/Solution.java)<br> | [Solution_1](././python/118.py)<br> | 
 | 119 | [Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_119/Solution.java)<br> |  -  | 
 | 120 | [Triangle](https://leetcode.com/problems/triangle) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_120/Solution.java)<br> |  -  | 
 | 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_121/Solution.java)<br> |  -  | 
@@ -107,6 +107,7 @@ https://leetcode.com/egugue/
 | 399 | [Evaluate Division](https://leetcode.com/problems/evaluate-division) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_399/Solution.java)<br> |  -  | 
 | 404 | [Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_404/Solution.java)<br> |  -  | 
 | 405 | [Convert a Number to Hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_405/Solution.java)<br> |  -  | 
+| 406 | [Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_406/Solution.java)<br> |  -  | 
 | 409 | [Longest Palindrome](https://leetcode.com/problems/longest-palindrome) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_409/Solution.kt)<br> |  -  | 
 | 412 | [Fizz Buzz](https://leetcode.com/problems/fizz-buzz) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_412/Solution.java)<br> |  -  | 
 | 415 | [Add Strings](https://leetcode.com/problems/add-strings) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_415/Solution.java)<br> |  -  | 
@@ -117,6 +118,7 @@ https://leetcode.com/egugue/
 | 543 | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_543/Solution.java)<br> |  -  | 
 | 560 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_560/Solution.java)<br> |  -  | 
 | 617 | [Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_617/Solution.java)<br> |  -  | 
+| 647 | [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_647/Solution.java)<br> |  -  | 
 | 684 | [Redundant Connection](https://leetcode.com/problems/redundant-connection) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_684/Solution.java)<br> |  -  | 
 | 739 | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_739/Solution.java)<br> |  -  | 
 | 743 | [Network Delay Time](https://leetcode.com/problems/network-delay-time) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_743/Solution.java)<br> |  -  | 
