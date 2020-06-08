@@ -3,7 +3,7 @@
 This repo commits only free problems.  
 https://leetcode.com/egugue/
 
-| # | Title | Difficulty | Java (120) | Python3 (43) | 
+| # | Title | Difficulty | Java (122) | Python3 (44) | 
 | :---: | :--- | :---: |  :---: |  :---: | 
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_001/Solution.kt)<br> | [Solution_1](././python/001.py)<br> | 
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_002/Solution.kt)<br> | [Solution_1](././python/002.py)<br> | 
@@ -56,7 +56,7 @@ https://leetcode.com/egugue/
 | 114 | [Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_114/Solution.java)<br> | [Solution_1](././python/114.py)<br> | 
 | 118 | [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_118/Solution.java)<br> | [Solution_1](././python/118.py)<br> | 
 | 119 | [Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_119/Solution.java)<br> | [Solution_1](././python/119.py)<br> | 
-| 120 | [Triangle](https://leetcode.com/problems/triangle) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_120/Solution.java)<br> |  -  | 
+| 120 | [Triangle](https://leetcode.com/problems/triangle) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_120/Solution.java)<br> | [Solution_1](././python/120.py)<br> | 
 | 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_121/Solution.java)<br> |  -  | 
 | 128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_128/Solution.java)<br> |  -  | 
 | 129 | [Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_129/Solution.java)<br> |  -  | 
@@ -113,11 +113,13 @@ https://leetcode.com/egugue/
 | 415 | [Add Strings](https://leetcode.com/problems/add-strings) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_415/Solution.java)<br> |  -  | 
 | 416 | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_416/Solution.java)<br> |  -  | 
 | 438 | [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_438/Solution.java)<br> |  -  | 
+| 448 | [Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_448/Solution.java)<br> |  -  | 
 | 461 | [Hamming Distance](https://leetcode.com/problems/hamming-distance) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_461/Solution.java)<br> |  -  | 
 | 494 | [Target Sum](https://leetcode.com/problems/target-sum) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_494/Solution.java)<br> |  -  | 
 | 543 | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_543/Solution.java)<br> |  -  | 
 | 560 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_560/Solution.java)<br> |  -  | 
 | 617 | [Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_617/Solution.java)<br> |  -  | 
+| 621 | [Task Scheduler](https://leetcode.com/problems/task-scheduler) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_621/Solution.java)<br> |  -  | 
 | 647 | [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_647/Solution.java)<br> |  -  | 
 | 684 | [Redundant Connection](https://leetcode.com/problems/redundant-connection) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_684/Solution.java)<br> |  -  | 
 | 739 | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_739/Solution.java)<br> |  -  | 
