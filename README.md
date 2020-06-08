@@ -3,7 +3,7 @@
 This repo commits only free problems.  
 https://leetcode.com/egugue/
 
-| # | Title | Difficulty | Java (120) | Python3 (42) | 
+| # | Title | Difficulty | Java (120) | Python3 (43) | 
 | :---: | :--- | :---: |  :---: |  :---: | 
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_001/Solution.kt)<br> | [Solution_1](././python/001.py)<br> | 
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_002/Solution.kt)<br> | [Solution_1](././python/002.py)<br> | 
@@ -55,7 +55,7 @@ https://leetcode.com/egugue/
 | 112 | [Path Sum](https://leetcode.com/problems/path-sum) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_112/Solution.java)<br> | [Solution_1](././python/112.py)<br> | 
 | 114 | [Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_114/Solution.java)<br> | [Solution_1](././python/114.py)<br> | 
 | 118 | [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_118/Solution.java)<br> | [Solution_1](././python/118.py)<br> | 
-| 119 | [Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_119/Solution.java)<br> |  -  | 
+| 119 | [Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_119/Solution.java)<br> | [Solution_1](././python/119.py)<br> | 
 | 120 | [Triangle](https://leetcode.com/problems/triangle) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_120/Solution.java)<br> |  -  | 
 | 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_121/Solution.java)<br> |  -  | 
 | 128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_128/Solution.java)<br> |  -  | 
