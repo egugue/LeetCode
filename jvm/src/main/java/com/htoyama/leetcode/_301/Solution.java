@@ -28,9 +28,10 @@ class Solution {
   }
 
   /**
-   * 37 ms	39.8 MB
+   * 37 ms	37.8 MB
    */
   public List<String> removeInvalidParentheses(String s) {
+    // calc expected length
     int open = 0;
     int invalidClose = 0;
     for (int i = 0; i < s.length(); i++) {
@@ -41,11 +42,10 @@ class Solution {
         else open--;
       }
     }
-    int invalidOpen = open;
+    int expectedLength = s.length() - open - invalidClose;
 
     HashSet<String> result = new HashSet<>();
-    int expectedSize = s.length() - invalidOpen - invalidClose;
-    backtrack(s, expectedSize, 0, new StringBuilder(expectedSize), 0, 0, result);
+    backtrack(s, expectedLength, 0, new StringBuilder(expectedLength), 0, result);
     return new ArrayList<>(result);
   }
 
@@ -54,13 +54,12 @@ class Solution {
     int expectedLength,
     int i,
     StringBuilder sb,
-    int open,
-    int close,
+    int parenthesisCount,
     Set<String> result
   ) {
-    if (open < close) return; // minus means close is more than open
+    if (parenthesisCount < 0) return; // minus means close is more than open
     if (sb.length() == expectedLength) {
-      if (open == close) result.add(sb.toString());
+      if (parenthesisCount == 0) result.add(sb.toString());
       return;
     }
     if (i == s.length()) return;
@@ -68,19 +67,19 @@ class Solution {
     char ch = s.charAt(i);
     if (ch != '(' && ch != ')') {
       sb.append(s.charAt(i));
-      backtrack(s, expectedLength, i + 1, sb, open, close, result);
+      backtrack(s, expectedLength, i + 1, sb, parenthesisCount, result);
       sb.setLength(sb.length() - 1);
       return;
     }
 
     sb.append(ch);
     if (ch == '(') {
-      backtrack(s, expectedLength, i + 1, sb, open + 1, close, result);
+      backtrack(s, expectedLength, i + 1, sb, parenthesisCount + 1, result);
     } else {
-      backtrack(s, expectedLength, i + 1, sb, open, close + 1, result);
+      backtrack(s, expectedLength, i + 1, sb, parenthesisCount - 1, result);
     }
     sb.setLength(sb.length() - 1);
 
-    backtrack(s, expectedLength, i + 1, sb, open, close, result);
+    backtrack(s, expectedLength, i + 1, sb, parenthesisCount, result);
   }
 }
