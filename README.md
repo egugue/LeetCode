@@ -3,7 +3,7 @@
 This repo commits only free problems.  
 https://leetcode.com/egugue/
 
-| # | Title | Difficulty | Java (122) | Python3 (44) | 
+| # | Title | Difficulty | Java (123) | Python3 (46) | 
 | :---: | :--- | :---: |  :---: |  :---: | 
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_001/Solution.kt)<br> | [Solution_1](././python/001.py)<br> | 
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_002/Solution.kt)<br> | [Solution_1](././python/002.py)<br> | 
@@ -57,9 +57,9 @@ https://leetcode.com/egugue/
 | 118 | [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_118/Solution.java)<br> | [Solution_1](././python/118.py)<br> | 
 | 119 | [Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_119/Solution.java)<br> | [Solution_1](././python/119.py)<br> | 
 | 120 | [Triangle](https://leetcode.com/problems/triangle) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_120/Solution.java)<br> | [Solution_1](././python/120.py)<br> | 
-| 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_121/Solution.java)<br> |  -  | 
+| 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_121/Solution.java)<br> | [Solution_1](././python/121.py)<br> | 
 | 128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_128/Solution.java)<br> |  -  | 
-| 129 | [Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_129/Solution.java)<br> |  -  | 
+| 129 | [Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_129/Solution.java)<br> | [Solution_1](././python/129.py)<br> | 
 | 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_141/Solution.java)<br> |  -  | 
 | 142 | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_142/Solution.java)<br> |  -  | 
 | 146 | [LRU Cache](https://leetcode.com/problems/lru-cache) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_146/LRUCache.java)<br> |  -  | 
@@ -92,6 +92,7 @@ https://leetcode.com/egugue/
 | 283 | [Move Zeroes](https://leetcode.com/problems/move-zeroes) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_283/Solution.kt)<br> |  -  | 
 | 290 | [Word Pattern](https://leetcode.com/problems/word-pattern) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_290/Solution.kt)<br> |  -  | 
 | 297 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_297/Codec.java)<br> |  -  | 
+| 301 | [Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_301/Solution.java)<br> |  -  | 
 | 309 | [Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_309/Solution.java)<br> |  -  | 
 | 322 | [Coin Change](https://leetcode.com/problems/coin-change) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_322/Solution.java)<br> |  -  | 
 | 332 | [Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_332/Solution.java)<br> |  -  | 
