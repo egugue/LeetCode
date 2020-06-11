@@ -3,6 +3,12 @@ class ListNode:
         self.val = val
         self.next = next
 
+    def tail(self):
+        node = self
+        while node.next:
+            node = node.next
+        return node
+
     @staticmethod
     def of(s: str):
         split = s.split("->")
