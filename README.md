@@ -3,7 +3,7 @@
 This repo commits only free problems.  
 https://leetcode.com/egugue/
 
-| # | Title | Difficulty | Java (125) | Python3 (46) | 
+| # | Title | Difficulty | Java (126) | Python3 (47) | 
 | :---: | :--- | :---: |  :---: |  :---: | 
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_001/Solution.kt)<br> | [Solution_1](././python/001.py)<br> | 
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_002/Solution.kt)<br> | [Solution_1](././python/002.py)<br> | 
@@ -20,6 +20,7 @@ https://leetcode.com/egugue/
 | 23 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_023/Solution.java)<br> | [Solution_1](././python/023.py)<br> | 
 | 24 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_024/Solution.java)<br> | [Solution_1](././python/024.py)<br> | 
 | 28 | [Implement strStr()](https://leetcode.com/problems/implement-strstr) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_028/Solution.kt)<br> |  -  | 
+| 33 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_033/Solution.java)<br> |  -  | 
 | 34 | [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_034/Solution.java)<br> | [Solution_1](././python/034.py)<br> | 
 | 35 | [Search Insert Position](https://leetcode.com/problems/search-insert-position) | Easy |  -  | [Solution_1](././python/035.py)<br> | 
 | 39 | [Combination Sum](https://leetcode.com/problems/combination-sum) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_039/Solution.java)<br> | [Solution_1](././python/039.py)<br> | 
@@ -61,7 +62,7 @@ https://leetcode.com/egugue/
 | 124 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_124/Solution.java)<br> |  -  | 
 | 128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_128/Solution.java)<br> |  -  | 
 | 129 | [Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_129/Solution.java)<br> | [Solution_1](././python/129.py)<br> | 
-| 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_141/Solution.java)<br> |  -  | 
+| 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_141/Solution.java)<br> | [Solution_1](././python/141.py)<br> | 
 | 142 | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_142/Solution.java)<br> |  -  | 
 | 146 | [LRU Cache](https://leetcode.com/problems/lru-cache) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_146/LRUCache.java)<br> |  -  | 
 | 148 | [Sort List](https://leetcode.com/problems/sort-list) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_148/Solution.java)<br> |  -  | 
