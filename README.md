@@ -3,7 +3,7 @@
 This repo commits only free problems.  
 https://leetcode.com/egugue/
 
-| # | Title | Difficulty | Java (126) | Python3 (47) | 
+| # | Title | Difficulty | Java (128) | Python3 (48) | 
 | :---: | :--- | :---: |  :---: |  :---: | 
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_001/Solution.kt)<br> | [Solution_1](././python/001.py)<br> | 
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_002/Solution.kt)<br> | [Solution_1](././python/002.py)<br> | 
@@ -44,6 +44,7 @@ https://leetcode.com/egugue/
 | 83 | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_083/Solution.java)<br> | [Solution_1](././python/083.py)<br> | 
 | 90 | [Subsets II](https://leetcode.com/problems/subsets-ii) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_090/Solution.java)<br> | [Solution_1](././python/090.py)<br> | 
 | 94 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_094/Solution.java)<br> | [Solution_1](././python/094.py)<br> | 
+| 96 | [Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_096/Solution.java)<br> |  -  | 
 | 98 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_098/Solution.java)<br> |  -  | 
 | 100 | [Same Tree](https://leetcode.com/problems/same-tree) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_100/Solution.kt)<br> | [Solution_1](././python/100.py)<br> | 
 | 101 | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_101/Solution.java)<br> | [Solution_1](././python/101.py)<br> | 
@@ -60,12 +61,13 @@ https://leetcode.com/egugue/
 | 120 | [Triangle](https://leetcode.com/problems/triangle) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_120/Solution.java)<br> | [Solution_1](././python/120.py)<br> | 
 | 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_121/Solution.java)<br> | [Solution_1](././python/121.py)<br> | 
 | 124 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_124/Solution.java)<br> |  -  | 
-| 128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_128/Solution.java)<br> |  -  | 
+| 128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_128/Solution.java)<br> | [Solution_1](././python/128.py)<br> | 
 | 129 | [Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_129/Solution.java)<br> | [Solution_1](././python/129.py)<br> | 
 | 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_141/Solution.java)<br> | [Solution_1](././python/141.py)<br> | 
 | 142 | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_142/Solution.java)<br> |  -  | 
 | 146 | [LRU Cache](https://leetcode.com/problems/lru-cache) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_146/LRUCache.java)<br> |  -  | 
 | 148 | [Sort List](https://leetcode.com/problems/sort-list) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_148/Solution.java)<br> |  -  | 
+| 152 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_152/Solution.java)<br> |  -  | 
 | 160 | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_160/Solution.java)<br> |  -  | 
 | 169 | [Majority Element](https://leetcode.com/problems/majority-element) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_169/Solution.java)<br> |  -  | 
 | 198 | [House Robber](https://leetcode.com/problems/house-robber) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_198/Solution.java)<br> |  -  | 
