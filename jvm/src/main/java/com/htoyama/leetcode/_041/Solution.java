@@ -45,7 +45,7 @@ class Solution {
       }
     }
 
-    // find 0 or a positive number, which means didn't appear in the original array.
+    // find 0 or a positive number, which means the number didn't appear in the original array.
     for (int i = 0; i < nums.length; i++) {
       if (nums[i] >= 0) return i + 1;
     }
