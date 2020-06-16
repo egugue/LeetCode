@@ -3,7 +3,7 @@
 This repo commits only free problems.  
 https://leetcode.com/egugue/
 
-| # | Title | Difficulty | Java (132) | Python3 (59) | 
+| # | Title | Difficulty | Java (132) | Python3 (60) | 
 | :---: | :--- | :---: |  :---: |  :---: | 
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_001/Solution.kt)<br> | [Solution_1](././python/001.py)<br> | 
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_002/Solution.kt)<br> | [Solution_1](././python/002.py)<br> | 
@@ -76,7 +76,7 @@ https://leetcode.com/egugue/
 | 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_200/Solution.java)<br> |  -  | 
 | 204 | [Count Primes](https://leetcode.com/problems/count-primes) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_204/Solution.kt)<br> | [Solution_1](././python/204.py)<br> | 
 | 205 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_205/Solution.java)<br> | [Solution_1](././python/205.py)<br> | 
-| 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_206/Solution.java)<br> |  -  | 
+| 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_206/Solution.java)<br> | [Solution_1](././python/206.py)<br> | 
 | 208 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_208/Trie.java)<br> |  -  | 
 | 209 | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_209/Solution.java)<br> | [Solution_1](././python/209.py)<br> | 
 | 213 | [House Robber II](https://leetcode.com/problems/house-robber-ii) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_213/Solution.java)<br> | [Solution_1](././python/213.py)<br> | 
