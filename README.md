@@ -3,7 +3,7 @@
 This repo commits only free problems.  
 https://leetcode.com/egugue/
 
-| # | Title | Difficulty | Java (133) | Python3 (62) | 
+| # | Title | Difficulty | Java (133) | Python3 (65) | 
 | :---: | :--- | :---: |  :---: |  :---: | 
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_001/Solution.kt)<br> | [Solution_1](././python/001.py)<br> | 
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_002/Solution.kt)<br> | [Solution_1](././python/002.py)<br> | 
@@ -85,11 +85,11 @@ https://leetcode.com/egugue/
 | 219 | [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_219/Solution.kt)<br> |  -  | 
 | 226 | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_226/Solution.kt)<br> | [Solution_1](././python/226.py)<br> | 
 | 230 | [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_230/Solution.java)<br> | [Solution_1](././python/230.py)<br> | 
-| 231 | [Power of Two](https://leetcode.com/problems/power-of-two) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_231/Solution.kt)<br> |  -  | 
-| 234 | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_234/Solution.java)<br> |  -  | 
+| 231 | [Power of Two](https://leetcode.com/problems/power-of-two) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_231/Solution.kt)<br> | [Solution_1](././python/231.py)<br> | 
+| 234 | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_234/Solution.java)<br> | [Solution_1](././python/234.py)<br> | 
 | 236 | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_236/Solution.java)<br> |  -  | 
 | 239 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_239/Solution.java)<br> |  -  | 
-| 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_242/Solution.java)<br> |  -  | 
+| 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_242/Solution.java)<br> | [Solution_1](././python/242.py)<br> | 
 | 257 | [Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_257/Solution.kt)<br> |  -  | 
 | 258 | [Add Digits](https://leetcode.com/problems/add-digits) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_258/Solution.kt)<br> |  -  | 
 | 263 | [Ugly Number](https://leetcode.com/problems/ugly-number) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_263/Solution.kt)<br> |  -  | 
