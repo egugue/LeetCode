@@ -3,7 +3,7 @@
 This repo commits only free problems.  
 https://leetcode.com/egugue/
 
-| # | Title | Difficulty | Java (132) | Python3 (62) | 
+| # | Title | Difficulty | Java (133) | Python3 (62) | 
 | :---: | :--- | :---: |  :---: |  :---: | 
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_001/Solution.kt)<br> | [Solution_1](././python/001.py)<br> | 
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_002/Solution.kt)<br> | [Solution_1](././python/002.py)<br> | 
@@ -100,6 +100,7 @@ https://leetcode.com/egugue/
 | 287 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_287/Solution.java)<br> |  -  | 
 | 290 | [Word Pattern](https://leetcode.com/problems/word-pattern) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_290/Solution.kt)<br> |  -  | 
 | 297 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_297/Codec.java)<br> |  -  | 
+| 300 | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_300/Solution.java)<br> |  -  | 
 | 301 | [Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_301/Solution.java)<br> |  -  | 
 | 309 | [Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_309/Solution.java)<br> |  -  | 
 | 322 | [Coin Change](https://leetcode.com/problems/coin-change) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_322/Solution.java)<br> |  -  | 
