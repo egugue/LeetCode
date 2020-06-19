@@ -1,6 +1,17 @@
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
-        return using_map(s, t)
+        return using_sort(s, t)
+        # return using_map(s, t)
+
+
+def using_sort(s: str, t: str) -> bool:
+    # 44 ms	14.6 MB
+    if len(s) != len(t):
+        return False
+
+    s = sorted(s)
+    t = sorted(t)
+    return s == t
 
 
 def using_map(s: str, t: str) -> bool:
