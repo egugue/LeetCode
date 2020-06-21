@@ -7,7 +7,30 @@ class Solution:
     def binaryTreePaths(self, root: TreeNode) -> List[str]:
         if not root:
             return []
-        return recursive(root)
+        return iterative(root)
+        # return recursive(root)
+
+
+def iterative(root: TreeNode) -> List[str]:
+    # 32 ms	13.8 MB
+    result = []
+    stack = [(root, str(root.val))]
+    while len(stack) != 0:
+        node, path = stack.pop()
+        if not node.left and not node.right:
+            result.append(path)
+
+        path += "->"
+        if node.left:
+            stack.append(
+                (node.left, path + str(node.left.val))
+            )
+        if node.right:
+            stack.append(
+                (node.right, path + str(node.right.val))
+            )
+
+    return result
 
 
 def recursive(root: TreeNode) -> List[str]:
