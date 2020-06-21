@@ -3,7 +3,7 @@
 This repo commits only free problems.  
 https://leetcode.com/egugue/
 
-| # | Title | Difficulty | Java (133) | Python3 (65) | 
+| # | Title | Difficulty | Java (134) | Python3 (67) | 
 | :---: | :--- | :---: |  :---: |  :---: | 
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_001/Solution.kt)<br> | [Solution_1](././python/001.py)<br> | 
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_002/Solution.kt)<br> | [Solution_1](././python/002.py)<br> | 
@@ -43,6 +43,7 @@ https://leetcode.com/egugue/
 | 78 | [Subsets](https://leetcode.com/problems/subsets) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_078/Solution.java)<br> | [Solution_1](././python/078.py)<br> | 
 | 82 | [Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_082/Solution.java)<br> | [Solution_1](././python/082.py)<br> | 
 | 83 | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_083/Solution.java)<br> | [Solution_1](././python/083.py)<br> | 
+| 84 | [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_084/Solution.java)<br> |  -  | 
 | 90 | [Subsets II](https://leetcode.com/problems/subsets-ii) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_090/Solution.java)<br> | [Solution_1](././python/090.py)<br> | 
 | 94 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_094/Solution.java)<br> | [Solution_1](././python/094.py)<br> | 
 | 96 | [Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_096/Solution.java)<br> |  -  | 
@@ -90,9 +91,9 @@ https://leetcode.com/egugue/
 | 236 | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_236/Solution.java)<br> |  -  | 
 | 239 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_239/Solution.java)<br> |  -  | 
 | 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_242/Solution.java)<br> | [Solution_1](././python/242.py)<br> | 
-| 257 | [Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_257/Solution.kt)<br> |  -  | 
+| 257 | [Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_257/Solution.kt)<br> | [Solution_1](././python/257.py)<br> | 
 | 258 | [Add Digits](https://leetcode.com/problems/add-digits) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_258/Solution.kt)<br> |  -  | 
-| 263 | [Ugly Number](https://leetcode.com/problems/ugly-number) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_263/Solution.kt)<br> |  -  | 
+| 263 | [Ugly Number](https://leetcode.com/problems/ugly-number) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_263/Solution.kt)<br> | [Solution_1](././python/263.py)<br> | 
 | 268 | [Missing Number](https://leetcode.com/problems/missing-number) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_268/Solution.kt)<br> |  -  | 
 | 278 | [First Bad Version](https://leetcode.com/problems/first-bad-version) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_278/Solution.java)<br> |  -  | 
 | 279 | [Perfect Squares](https://leetcode.com/problems/perfect-squares) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_279/Solution.java)<br> |  -  | 
