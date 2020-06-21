@@ -1,8 +1,36 @@
 class Solution:
     def numSquares(self, n: int) -> int:
-        return dp(n)
+        return bfs(n)
+        # return dp(n)
 
-def
+
+def bfs(n: int) -> int:
+    # 204 ms	14.6 MB
+    if n < 2:
+        return n
+
+    squares = []
+    i = 1
+    while i ** 2 <= n:
+        squares.append(i ** 2)
+        i += 1
+
+    count = 0
+    rest_nums = {n}
+    while len(rest_nums) != 0:
+        count += 1
+        next = set()
+        for rest_num in rest_nums:
+            for square in squares:
+                if rest_num == square:
+                    return count
+                if rest_num < square:
+                    break
+                next.add(rest_num - square)
+        rest_nums = next
+
+    return count
+
 
 def dp(n: int) -> int:
     # Time Limit Exceeded
@@ -26,7 +54,7 @@ def dp(n: int) -> int:
 
 if __name__ == '__main__':
     s = Solution()
-    print(s.numSquares(12))
-    print(s.numSquares(13))
-    print(s.numSquares(14))
+    # print(s.numSquares(12))
+    # print(s.numSquares(13))
+    # print(s.numSquares(14))
     print(s.numSquares(255))
