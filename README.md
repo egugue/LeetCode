@@ -3,7 +3,7 @@
 This repo commits only free problems.  
 https://leetcode.com/egugue/
 
-| # | Title | Difficulty | Java (134) | Python3 (67) | 
+| # | Title | Difficulty | Java (136) | Python3 (68) | 
 | :---: | :--- | :---: |  :---: |  :---: | 
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_001/Solution.kt)<br> | [Solution_1](././python/001.py)<br> | 
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_002/Solution.kt)<br> | [Solution_1](././python/002.py)<br> | 
@@ -90,16 +90,18 @@ https://leetcode.com/egugue/
 | 234 | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_234/Solution.java)<br> | [Solution_1](././python/234.py)<br> | 
 | 236 | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_236/Solution.java)<br> |  -  | 
 | 239 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_239/Solution.java)<br> |  -  | 
+| 240 | [Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_240/Solution.java)<br> |  -  | 
 | 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_242/Solution.java)<br> | [Solution_1](././python/242.py)<br> | 
 | 257 | [Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_257/Solution.kt)<br> | [Solution_1](././python/257.py)<br> | 
 | 258 | [Add Digits](https://leetcode.com/problems/add-digits) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_258/Solution.kt)<br> |  -  | 
 | 263 | [Ugly Number](https://leetcode.com/problems/ugly-number) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_263/Solution.kt)<br> | [Solution_1](././python/263.py)<br> | 
 | 268 | [Missing Number](https://leetcode.com/problems/missing-number) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_268/Solution.kt)<br> |  -  | 
 | 278 | [First Bad Version](https://leetcode.com/problems/first-bad-version) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_278/Solution.java)<br> |  -  | 
-| 279 | [Perfect Squares](https://leetcode.com/problems/perfect-squares) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_279/Solution.java)<br> |  -  | 
+| 279 | [Perfect Squares](https://leetcode.com/problems/perfect-squares) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_279/Solution.java)<br> | [Solution_1](././python/279.py)<br> | 
 | 283 | [Move Zeroes](https://leetcode.com/problems/move-zeroes) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_283/Solution.kt)<br> |  -  | 
 | 287 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_287/Solution.java)<br> |  -  | 
 | 290 | [Word Pattern](https://leetcode.com/problems/word-pattern) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_290/Solution.kt)<br> |  -  | 
+| 295 | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_295/MedianFinder.java)<br> |  -  | 
 | 297 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_297/Codec.java)<br> |  -  | 
 | 300 | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_300/Solution.java)<br> |  -  | 
 | 301 | [Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_301/Solution.java)<br> |  -  | 
