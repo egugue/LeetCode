@@ -3,7 +3,7 @@
 This repo commits only free problems.  
 https://leetcode.com/egugue/
 
-| # | Title | Difficulty | Java (136) | Python3 (68) | 
+| # | Title | Difficulty | Java (137) | Python3 (69) | 
 | :---: | :--- | :---: |  :---: |  :---: | 
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_001/Solution.kt)<br> | [Solution_1](././python/001.py)<br> | 
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_002/Solution.kt)<br> | [Solution_1](././python/002.py)<br> | 
@@ -20,6 +20,7 @@ https://leetcode.com/egugue/
 | 23 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_023/Solution.java)<br> | [Solution_1](././python/023.py)<br> | 
 | 24 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_024/Solution.java)<br> | [Solution_1](././python/024.py)<br> | 
 | 28 | [Implement strStr()](https://leetcode.com/problems/implement-strstr) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_028/Solution.kt)<br> |  -  | 
+| 32 | [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_032/Solution.java)<br> |  -  | 
 | 33 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_033/Solution.java)<br> |  -  | 
 | 34 | [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_034/Solution.java)<br> | [Solution_1](././python/034.py)<br> | 
 | 35 | [Search Insert Position](https://leetcode.com/problems/search-insert-position) | Easy |  -  | [Solution_1](././python/035.py)<br> | 
@@ -96,7 +97,7 @@ https://leetcode.com/egugue/
 | 258 | [Add Digits](https://leetcode.com/problems/add-digits) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_258/Solution.kt)<br> |  -  | 
 | 263 | [Ugly Number](https://leetcode.com/problems/ugly-number) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_263/Solution.kt)<br> | [Solution_1](././python/263.py)<br> | 
 | 268 | [Missing Number](https://leetcode.com/problems/missing-number) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_268/Solution.kt)<br> |  -  | 
-| 278 | [First Bad Version](https://leetcode.com/problems/first-bad-version) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_278/Solution.java)<br> |  -  | 
+| 278 | [First Bad Version](https://leetcode.com/problems/first-bad-version) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_278/Solution.java)<br> | [Solution_1](././python/278.py)<br> | 
 | 279 | [Perfect Squares](https://leetcode.com/problems/perfect-squares) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_279/Solution.java)<br> | [Solution_1](././python/279.py)<br> | 
 | 283 | [Move Zeroes](https://leetcode.com/problems/move-zeroes) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_283/Solution.kt)<br> |  -  | 
 | 287 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_287/Solution.java)<br> |  -  | 
