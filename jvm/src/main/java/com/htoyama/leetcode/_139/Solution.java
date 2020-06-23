@@ -22,7 +22,7 @@ class Solution {
     if (s.isEmpty() || wordDict.isEmpty()) return false;
 
     HashSet<String> set = new HashSet<>(wordDict);
-    HashSet<Integer> lengths = new HashSet<>(wordDict.size());
+    HashSet<Integer> lengths = new HashSet<>();
     for (String word : wordDict) lengths.add(word.length());
 
     boolean[] dp = new boolean[s.length()];
