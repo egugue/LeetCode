@@ -3,7 +3,7 @@
 This repo commits only free problems.  
 https://leetcode.com/egugue/
 
-| # | Title | Difficulty | Java (137) | Python3 (69) | 
+| # | Title | Difficulty | Java (138) | Python3 (71) | 
 | :---: | :--- | :---: |  :---: |  :---: | 
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_001/Solution.kt)<br> | [Solution_1](././python/001.py)<br> | 
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_002/Solution.kt)<br> | [Solution_1](././python/002.py)<br> | 
@@ -67,6 +67,7 @@ https://leetcode.com/egugue/
 | 128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_128/Solution.java)<br> | [Solution_1](././python/128.py)<br> | 
 | 129 | [Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_129/Solution.java)<br> | [Solution_1](././python/129.py)<br> | 
 | 138 | [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_138/Solution.java)<br> |  -  | 
+| 139 | [Word Break](https://leetcode.com/problems/word-break) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_139/Solution.java)<br> |  -  | 
 | 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_141/Solution.java)<br> | [Solution_1](././python/141.py)<br> | 
 | 142 | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_142/Solution.java)<br> | [Solution_1](././python/142.py)<br> | 
 | 146 | [LRU Cache](https://leetcode.com/problems/lru-cache) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_146/LRUCache.java)<br> |  -  | 
@@ -99,9 +100,9 @@ https://leetcode.com/egugue/
 | 268 | [Missing Number](https://leetcode.com/problems/missing-number) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_268/Solution.kt)<br> |  -  | 
 | 278 | [First Bad Version](https://leetcode.com/problems/first-bad-version) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_278/Solution.java)<br> | [Solution_1](././python/278.py)<br> | 
 | 279 | [Perfect Squares](https://leetcode.com/problems/perfect-squares) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_279/Solution.java)<br> | [Solution_1](././python/279.py)<br> | 
-| 283 | [Move Zeroes](https://leetcode.com/problems/move-zeroes) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_283/Solution.kt)<br> |  -  | 
+| 283 | [Move Zeroes](https://leetcode.com/problems/move-zeroes) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_283/Solution.kt)<br> | [Solution_1](././python/283.py)<br> | 
 | 287 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_287/Solution.java)<br> |  -  | 
-| 290 | [Word Pattern](https://leetcode.com/problems/word-pattern) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_290/Solution.kt)<br> |  -  | 
+| 290 | [Word Pattern](https://leetcode.com/problems/word-pattern) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_290/Solution.kt)<br> | [Solution_1](././python/290.py)<br> | 
 | 295 | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_295/MedianFinder.java)<br> |  -  | 
 | 297 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_297/Codec.java)<br> |  -  | 
 | 300 | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_300/Solution.java)<br> |  -  | 
