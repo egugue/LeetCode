@@ -3,7 +3,7 @@
 This repo commits only free problems.  
 https://leetcode.com/egugue/
 
-| # | Title | Difficulty | Java (138) | Python3 (71) | 
+| # | Title | Difficulty | Java (140) | Python3 (71) | 
 | :---: | :--- | :---: |  :---: |  :---: | 
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_001/Solution.kt)<br> | [Solution_1](././python/001.py)<br> | 
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_002/Solution.kt)<br> | [Solution_1](././python/002.py)<br> | 
@@ -109,6 +109,7 @@ https://leetcode.com/egugue/
 | 301 | [Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_301/Solution.java)<br> |  -  | 
 | 309 | [Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_309/Solution.java)<br> |  -  | 
 | 322 | [Coin Change](https://leetcode.com/problems/coin-change) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_322/Solution.java)<br> |  -  | 
+| 328 | [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_328/Solution.java)<br> |  -  | 
 | 332 | [Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_332/Solution.java)<br> |  -  | 
 | 337 | [House Robber III](https://leetcode.com/problems/house-robber-iii) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_337/Solution.java)<br> |  -  | 
 | 338 | [Counting Bits](https://leetcode.com/problems/counting-bits) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_338/Solution.java)<br> |  -  | 
@@ -119,6 +120,7 @@ https://leetcode.com/egugue/
 | 389 | [Find the Difference](https://leetcode.com/problems/find-the-difference) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_389/Solution.kt)<br> |  -  | 
 | 392 | [Is Subsequence](https://leetcode.com/problems/is-subsequence) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_392/Solution.java)<br> |  -  | 
 | 394 | [Decode String](https://leetcode.com/problems/decode-string) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_394/Solution.java)<br> |  -  | 
+| 395 | [Longest Substring with At Least K Repeating Characters](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_395/Solution.java)<br> |  -  | 
 | 399 | [Evaluate Division](https://leetcode.com/problems/evaluate-division) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_399/Solution.java)<br> |  -  | 
 | 404 | [Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_404/Solution.java)<br> |  -  | 
 | 405 | [Convert a Number to Hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_405/Solution.java)<br> |  -  | 
