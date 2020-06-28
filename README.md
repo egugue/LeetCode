@@ -3,7 +3,7 @@
 This repo commits only free problems.  
 https://leetcode.com/egugue/
 
-| # | Title | Difficulty | Java (140) | Python3 (73) | 
+| # | Title | Difficulty | Java (142) | Python3 (74) | 
 | :---: | :--- | :---: |  :---: |  :---: | 
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_001/Solution.kt)<br> | [Solution_1](././python/001.py)<br> | 
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_002/Solution.kt)<br> | [Solution_1](././python/002.py)<br> | 
@@ -82,6 +82,7 @@ https://leetcode.com/egugue/
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_206/Solution.java)<br> | [Solution_1](././python/206.py)<br> | 
 | 208 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_208/Trie.java)<br> |  -  | 
 | 209 | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_209/Solution.java)<br> | [Solution_1](././python/209.py)<br> | 
+| 210 | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_210/Solution.java)<br> |  -  | 
 | 213 | [House Robber II](https://leetcode.com/problems/house-robber-ii) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_213/Solution.java)<br> | [Solution_1](././python/213.py)<br> | 
 | 215 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_215/Solution.java)<br> | [Solution_1](././python/215.py)<br> | 
 | 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_217/Solution.kt)<br> | [Solution_1](././python/217.py)<br> | 
@@ -110,7 +111,8 @@ https://leetcode.com/egugue/
 | 309 | [Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_309/Solution.java)<br> | [Solution_1](././python/309.py)<br> | 
 | 322 | [Coin Change](https://leetcode.com/problems/coin-change) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_322/Solution.java)<br> | [Solution_1](././python/322.py)<br> | 
 | 328 | [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_328/Solution.java)<br> |  -  | 
-| 332 | [Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_332/Solution.java)<br> |  -  | 
+| 332 | [Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_332/Solution.java)<br> | [Solution_1](././python/332.py)<br> | 
+| 334 | [Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_334/Solution.java)<br> |  -  | 
 | 337 | [House Robber III](https://leetcode.com/problems/house-robber-iii) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_337/Solution.java)<br> |  -  | 
 | 338 | [Counting Bits](https://leetcode.com/problems/counting-bits) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_338/Solution.java)<br> |  -  | 
 | 342 | [Power of Four](https://leetcode.com/problems/power-of-four) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_342/Solution.kt)<br> |  -  | 
