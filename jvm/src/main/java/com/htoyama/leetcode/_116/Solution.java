@@ -27,7 +27,8 @@ class Node {
 class Solution {
 
   public Node connect(Node root) {
-    dfs(root);
+//    dfs(root);
+    bfs(root, null);
     return root;
   }
 
@@ -50,6 +51,25 @@ class Solution {
         queue.add(node.left);
         queue.add(node.right);
       }
+    }
+  }
+
+  /**
+   * 0 ms	39.7 MB
+   */
+  private static void bfs(Node node, Node right) {
+    if (node == null) return;
+    if (node.left == null && node.right == null) return;
+    assert node.left != null;
+
+    node.left.next = node.right;
+    bfs(node.left, node.right);
+
+    if (right != null) {
+      node.right.next = right.left;
+      bfs(node.right, right.left);
+    } else {
+      bfs(node.right, null);
     }
   }
 }
