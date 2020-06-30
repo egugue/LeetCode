@@ -3,7 +3,7 @@
 This repo commits only free problems.  
 https://leetcode.com/egugue/
 
-| # | Title | Difficulty | Java (143) | Python3 (78) | 
+| # | Title | Difficulty | Java (144) | Python3 (78) | 
 | :---: | :--- | :---: |  :---: |  :---: | 
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_001/Solution.kt)<br> | [Solution_1](././python/001.py)<br> | 
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_002/Solution.kt)<br> | [Solution_1](././python/002.py)<br> | 
@@ -59,6 +59,7 @@ https://leetcode.com/egugue/
 | 111 | [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_111/Solution.java)<br> | [Solution_1](././python/111.py)<br> | 
 | 112 | [Path Sum](https://leetcode.com/problems/path-sum) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_112/Solution.java)<br> | [Solution_1](././python/112.py)<br> | 
 | 114 | [Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_114/Solution.java)<br> | [Solution_1](././python/114.py)<br> | 
+| 116 | [Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_116/Solution.java)<br> |  -  | 
 | 118 | [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_118/Solution.java)<br> | [Solution_1](././python/118.py)<br> | 
 | 119 | [Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_119/Solution.java)<br> | [Solution_1](././python/119.py)<br> | 
 | 120 | [Triangle](https://leetcode.com/problems/triangle) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_120/Solution.java)<br> | [Solution_1](././python/120.py)<br> | 
