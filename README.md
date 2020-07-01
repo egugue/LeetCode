@@ -3,7 +3,7 @@
 This repo commits only free problems.  
 https://leetcode.com/egugue/
 
-| # | Title | Difficulty | Java (144) | Python3 (78) | 
+| # | Title | Difficulty | Java (145) | Python3 (78) | 
 | :---: | :--- | :---: |  :---: |  :---: | 
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_001/Solution.kt)<br> | [Solution_1](././python/001.py)<br> | 
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_002/Solution.kt)<br> | [Solution_1](././python/002.py)<br> | 
@@ -117,6 +117,7 @@ https://leetcode.com/egugue/
 | 334 | [Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_334/Solution.java)<br> |  -  | 
 | 337 | [House Robber III](https://leetcode.com/problems/house-robber-iii) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_337/Solution.java)<br> | [Solution_1](././python/337.py)<br> | 
 | 338 | [Counting Bits](https://leetcode.com/problems/counting-bits) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_338/Solution.java)<br> | [Solution_1](././python/338.py)<br> | 
+| 341 | [Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_341/NestedIterator.java)<br> |  -  | 
 | 342 | [Power of Four](https://leetcode.com/problems/power-of-four) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_342/Solution.kt)<br> | [Solution_1](././python/342.py)<br> | 
 | 344 | [Reverse String](https://leetcode.com/problems/reverse-string) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_344/Solution.kt)<br> | [Solution_1](././python/344.py)<br> | 
 | 347 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_347/Solution.java)<br> |  -  | 
