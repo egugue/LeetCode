@@ -3,7 +3,7 @@
 This repo commits only free problems.  
 https://leetcode.com/egugue/
 
-| # | Title | Difficulty | Java (145) | Python3 (78) | 
+| # | Title | Difficulty | Java (146) | Python3 (79) | 
 | :---: | :--- | :---: |  :---: |  :---: | 
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_001/Solution.kt)<br> | [Solution_1](././python/001.py)<br> | 
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_002/Solution.kt)<br> | [Solution_1](././python/002.py)<br> | 
@@ -67,6 +67,7 @@ https://leetcode.com/egugue/
 | 124 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_124/Solution.java)<br> |  -  | 
 | 128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_128/Solution.java)<br> | [Solution_1](././python/128.py)<br> | 
 | 129 | [Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_129/Solution.java)<br> | [Solution_1](././python/129.py)<br> | 
+| 134 | [Gas Station](https://leetcode.com/problems/gas-station) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_134/Solution.java)<br> |  -  | 
 | 138 | [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_138/Solution.java)<br> |  -  | 
 | 139 | [Word Break](https://leetcode.com/problems/word-break) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_139/Solution.java)<br> |  -  | 
 | 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_141/Solution.java)<br> | [Solution_1](././python/141.py)<br> | 
@@ -120,7 +121,7 @@ https://leetcode.com/egugue/
 | 341 | [Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_341/NestedIterator.java)<br> |  -  | 
 | 342 | [Power of Four](https://leetcode.com/problems/power-of-four) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_342/Solution.kt)<br> | [Solution_1](././python/342.py)<br> | 
 | 344 | [Reverse String](https://leetcode.com/problems/reverse-string) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_344/Solution.kt)<br> | [Solution_1](././python/344.py)<br> | 
-| 347 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_347/Solution.java)<br> |  -  | 
+| 347 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_347/Solution.java)<br> | [Solution_1](././python/347.py)<br> | 
 | 387 | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_387/Solution.java)<br> |  -  | 
 | 389 | [Find the Difference](https://leetcode.com/problems/find-the-difference) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_389/Solution.kt)<br> |  -  | 
 | 392 | [Is Subsequence](https://leetcode.com/problems/is-subsequence) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_392/Solution.java)<br> |  -  | 
