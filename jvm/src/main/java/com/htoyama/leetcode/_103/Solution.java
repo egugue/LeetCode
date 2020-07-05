@@ -2,10 +2,7 @@ package com.htoyama.leetcode._103;
 
 import com.htoyama.leetcode.utils.data.TreeNode;
 
-import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -24,16 +21,21 @@ class Solution {
     );
   }
 
+  public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
+    if (root == null) return new ArrayList<>();
+    ArrayList<List<Integer>> order = new ArrayList<>();
+//    iterative(root, order);
+    recursive(root, order, 0);
+    return order;
+  }
+
   /**
    * 1 ms	38.5 MB
    */
-  public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
-    if (root == null) return new ArrayList<>();
-
+  private static void iterative(TreeNode root, List<List<Integer>> order) {
     ArrayDeque<TreeNode> queue = new ArrayDeque<>();
     queue.add(root);
     boolean leftToRight = true;
-    ArrayList<List<Integer>> order = new ArrayList<>();
 
     while (!queue.isEmpty()) {
       int size = queue.size();
@@ -52,7 +54,25 @@ class Solution {
       leftToRight = !leftToRight;
       order.add(Arrays.asList(nodes));
     }
+  }
 
-    return order;
+  /**
+   * 1 ms	39.9 MB
+   */
+  private static void recursive(TreeNode root, List<List<Integer>> order, int level) {
+    if (root == null) return;
+    if (order.size() <= level) {
+      order.add(new LinkedList<>());
+    }
+
+    List<Integer> nodes = order.get(level);
+    if (level % 2 == 0) {
+      nodes.add(root.val);
+    } else {
+      nodes.add(0, root.val);
+    }
+
+    recursive(root.left, order, level + 1);
+    recursive(root.right, order, level + 1);
   }
 }
