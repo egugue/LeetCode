@@ -3,7 +3,7 @@
 This repo commits only free problems.  
 https://leetcode.com/egugue/
 
-| # | Title | Difficulty | Java (153) | Python3 (81) | 
+| # | Title | Difficulty | Java (154) | Python3 (82) | 
 | :---: | :--- | :---: |  :---: |  :---: | 
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_001/Solution.kt)<br> | [Solution_1](././python/001.py)<br> | 
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_002/Solution.kt)<br> | [Solution_1](././python/002.py)<br> | 
@@ -81,6 +81,7 @@ https://leetcode.com/egugue/
 | 160 | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_160/Solution.java)<br> | [Solution_1](././python/160.py)<br> | 
 | 162 | [Find Peak Element](https://leetcode.com/problems/find-peak-element) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_162/Solution.java)<br> |  -  | 
 | 169 | [Majority Element](https://leetcode.com/problems/majority-element) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_169/Solution.java)<br> | [Solution_1](././python/169.py)<br> | 
+| 179 | [Largest Number](https://leetcode.com/problems/largest-number) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_179/Solution.java)<br> |  -  | 
 | 198 | [House Robber](https://leetcode.com/problems/house-robber) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_198/Solution.java)<br> | [Solution_1](././python/198.py)<br> | 
 | 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_200/Solution.java)<br> |  -  | 
 | 204 | [Count Primes](https://leetcode.com/problems/count-primes) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_204/Solution.kt)<br> | [Solution_1](././python/204.py)<br> | 
@@ -131,7 +132,7 @@ https://leetcode.com/egugue/
 | 384 | [Shuffle an Array](https://leetcode.com/problems/shuffle-an-array) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_384/Solution.java)<br> |  -  | 
 | 387 | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_387/Solution.java)<br> | [Solution_1](././python/387.py)<br> | 
 | 389 | [Find the Difference](https://leetcode.com/problems/find-the-difference) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_389/Solution.kt)<br> | [Solution_1](././python/389.py)<br> | 
-| 392 | [Is Subsequence](https://leetcode.com/problems/is-subsequence) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_392/Solution.java)<br> |  -  | 
+| 392 | [Is Subsequence](https://leetcode.com/problems/is-subsequence) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_392/Solution.java)<br> | [Solution_1](././python/392.py)<br> | 
 | 394 | [Decode String](https://leetcode.com/problems/decode-string) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_394/Solution.java)<br> |  -  | 
 | 395 | [Longest Substring with At Least K Repeating Characters](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_395/Solution.java)<br> |  -  | 
 | 399 | [Evaluate Division](https://leetcode.com/problems/evaluate-division) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_399/Solution.java)<br> |  -  | 
