@@ -3,7 +3,7 @@
 This repo commits only free problems.  
 https://leetcode.com/egugue/
 
-| # | Title | Difficulty | Java (151) | Python3 (80) | 
+| # | Title | Difficulty | Java (153) | Python3 (81) | 
 | :---: | :--- | :---: |  :---: |  :---: | 
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_001/Solution.kt)<br> | [Solution_1](././python/001.py)<br> | 
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_002/Solution.kt)<br> | [Solution_1](././python/002.py)<br> | 
@@ -110,6 +110,7 @@ https://leetcode.com/egugue/
 | 279 | [Perfect Squares](https://leetcode.com/problems/perfect-squares) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_279/Solution.java)<br> | [Solution_1](././python/279.py)<br> | 
 | 283 | [Move Zeroes](https://leetcode.com/problems/move-zeroes) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_283/Solution.kt)<br> | [Solution_1](././python/283.py)<br> | 
 | 287 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_287/Solution.java)<br> |  -  | 
+| 289 | [Game of Life](https://leetcode.com/problems/game-of-life) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_289/Solution.java)<br> |  -  | 
 | 290 | [Word Pattern](https://leetcode.com/problems/word-pattern) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_290/Solution.kt)<br> | [Solution_1](././python/290.py)<br> | 
 | 295 | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_295/MedianFinder.java)<br> |  -  | 
 | 297 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_297/Codec.java)<br> |  -  | 
@@ -126,9 +127,10 @@ https://leetcode.com/egugue/
 | 342 | [Power of Four](https://leetcode.com/problems/power-of-four) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_342/Solution.kt)<br> | [Solution_1](././python/342.py)<br> | 
 | 344 | [Reverse String](https://leetcode.com/problems/reverse-string) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_344/Solution.kt)<br> | [Solution_1](././python/344.py)<br> | 
 | 347 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_347/Solution.java)<br> | [Solution_1](././python/347.py)<br> | 
+| 378 | [Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_378/Solution.java)<br> |  -  | 
 | 384 | [Shuffle an Array](https://leetcode.com/problems/shuffle-an-array) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_384/Solution.java)<br> |  -  | 
 | 387 | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_387/Solution.java)<br> | [Solution_1](././python/387.py)<br> | 
-| 389 | [Find the Difference](https://leetcode.com/problems/find-the-difference) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_389/Solution.kt)<br> |  -  | 
+| 389 | [Find the Difference](https://leetcode.com/problems/find-the-difference) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_389/Solution.kt)<br> | [Solution_1](././python/389.py)<br> | 
 | 392 | [Is Subsequence](https://leetcode.com/problems/is-subsequence) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_392/Solution.java)<br> |  -  | 
 | 394 | [Decode String](https://leetcode.com/problems/decode-string) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_394/Solution.java)<br> |  -  | 
 | 395 | [Longest Substring with At Least K Repeating Characters](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_395/Solution.java)<br> |  -  | 
