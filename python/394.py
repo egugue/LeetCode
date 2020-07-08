@@ -1,48 +1,30 @@
 class Solution:
     def decodeString(self, s: str) -> str:
-        # 394. Decode String
+        # 36 ms	13.7 MB
         length = len(s)
         if length == 0:
             return ""
 
         num_stack = []
-        string_stack = [""]
-        i = 0
-        while i < length:
-            ch = s[i]
-            if ch.isdecimal():
-                left = i
-                while s[i].isdecimal():
-                    i += 1
-                    if i == length:
-                        break
-                num_stack.append(int(s[left:i]))
-                continue
-
-            if ch == '[':
-                string_stack.append("")
-                i += 1
-                continue
-
-            if ch == ']':
-                i += 1
-                string = string_stack.pop()
+        string_stack = []
+        num = 0
+        string = ""
+        for char in s:
+            if char == '[':
+                string_stack.append(string)
+                num_stack.append(num)
+                num = 0
+                string = ""
+            elif char == ']':
                 repeat = num_stack.pop()
-                string_stack[-1] += string * repeat
-
+                prev_string = string_stack.pop()
+                string = prev_string + string * repeat
+            elif char.isdigit():
+                num = num * 10 + int(char)
             else:
-                encoded_left_index = i
-                while not (s[i].isdecimal() or s[i] == '[' or s[i] == ']'):
-                    i += 1
-                    if i == length:
-                        break
-                string_stack[-1] += s[encoded_left_index:i]
+                string += char
 
-        result = ""
-        for i in range(len(string_stack)):
-            result += string_stack[i]
-        print(result)
-        return result
+        return string
 
 
 if __name__ == '__main__':
