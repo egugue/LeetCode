@@ -19,7 +19,7 @@ class Solution {
   }
 
   /**
-   * 10 ms	52.5 MB
+   * 8 ms	52.4 MB
    */
   public int longestIncreasingPath(int[][] matrix) {
     if (matrix.length == 0 || matrix[0].length == 0) return 0;
@@ -42,22 +42,22 @@ class Solution {
     int maxPath = 0;
 
     if (i >= 1 && value < matrix[i - 1][j]) {
-      if (dp[i - 1][j] == 0) traverse(matrix, i - 1, j, dp);
+      traverse(matrix, i - 1, j, dp);
       maxPath = Math.max(maxPath, dp[i - 1][j]);
     }
 
     if (i <= matrix.length - 2 && value < matrix[i + 1][j]) {
-      if (dp[i + 1][j] == 0) traverse(matrix, i + 1, j, dp);
+      traverse(matrix, i + 1, j, dp);
       maxPath = Math.max(maxPath, dp[i + 1][j]);
     }
 
     if (j >= 1 && value < matrix[i][j - 1]) {
-      if (dp[i][j - 1] == 0) traverse(matrix, i, j - 1, dp);
+      traverse(matrix, i, j - 1, dp);
       maxPath = Math.max(maxPath, dp[i][j - 1]);
     }
 
     if (j <= matrix[0].length - 2 && value < matrix[i][j + 1]) {
-      if (dp[i][j + 1] == 0) traverse(matrix, i, j + 1, dp);
+      traverse(matrix, i, j + 1, dp);
       maxPath = Math.max(maxPath, dp[i][j + 1]);
     }
 
