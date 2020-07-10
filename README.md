@@ -3,7 +3,7 @@
 This repo commits only free problems.  
 https://leetcode.com/egugue/
 
-| # | Title | Difficulty | Java (155) | Python3 (83) | 
+| # | Title | Difficulty | Java (156) | Python3 (84) | 
 | :---: | :--- | :---: |  :---: |  :---: | 
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_001/Solution.kt)<br> | [Solution_1](././python/001.py)<br> | 
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_002/Solution.kt)<br> | [Solution_1](././python/002.py)<br> | 
@@ -121,6 +121,7 @@ https://leetcode.com/egugue/
 | 309 | [Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_309/Solution.java)<br> | [Solution_1](././python/309.py)<br> | 
 | 322 | [Coin Change](https://leetcode.com/problems/coin-change) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_322/Solution.java)<br> | [Solution_1](././python/322.py)<br> | 
 | 328 | [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_328/Solution.java)<br> |  -  | 
+| 329 | [Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_329/Solution.java)<br> |  -  | 
 | 332 | [Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_332/Solution.java)<br> | [Solution_1](././python/332.py)<br> | 
 | 334 | [Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_334/Solution.java)<br> |  -  | 
 | 337 | [House Robber III](https://leetcode.com/problems/house-robber-iii) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_337/Solution.java)<br> | [Solution_1](././python/337.py)<br> | 
@@ -136,7 +137,7 @@ https://leetcode.com/egugue/
 | 392 | [Is Subsequence](https://leetcode.com/problems/is-subsequence) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_392/Solution.java)<br> | [Solution_1](././python/392.py)<br> | 
 | 394 | [Decode String](https://leetcode.com/problems/decode-string) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_394/Solution.java)<br> | [Solution_1](././python/394.py)<br> | 
 | 395 | [Longest Substring with At Least K Repeating Characters](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_395/Solution.java)<br> |  -  | 
-| 399 | [Evaluate Division](https://leetcode.com/problems/evaluate-division) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_399/Solution.java)<br> |  -  | 
+| 399 | [Evaluate Division](https://leetcode.com/problems/evaluate-division) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_399/Solution.java)<br> | [Solution_1](././python/399.py)<br> | 
 | 404 | [Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_404/Solution.java)<br> |  -  | 
 | 405 | [Convert a Number to Hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_405/Solution.java)<br> |  -  | 
 | 406 | [Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_406/Solution.java)<br> |  -  | 
