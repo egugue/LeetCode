@@ -3,7 +3,7 @@
 This repo commits only free problems.  
 https://leetcode.com/egugue/
 
-| # | Title | Difficulty | Java (156) | Python3 (88) | 
+| # | Title | Difficulty | Java (158) | Python3 (90) | 
 | :---: | :--- | :---: |  :---: |  :---: | 
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_001/Solution.kt)<br> | [Solution_1](././python/001.py)<br> | 
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_002/Solution.kt)<br> | [Solution_1](././python/002.py)<br> | 
@@ -40,6 +40,8 @@ https://leetcode.com/egugue/
 | 63 | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_063/Solution.java)<br> | [Solution_1](././python/063.py)<br> | 
 | 64 | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_064/Solution.java)<br> | [Solution_1](././python/064.py)<br> | 
 | 67 | [Add Binary](https://leetcode.com/problems/add-binary) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_067/Solution.kt)<br> | [Solution_1](././python/067.py)<br> | 
+| 72 | [Edit Distance](https://leetcode.com/problems/edit-distance) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_072/Solution.java)<br> |  -  | 
+| 73 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_073/Solution.java)<br> |  -  | 
 | 75 | [Sort Colors](https://leetcode.com/problems/sort-colors) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_075/Solution.java)<br> | [Solution_1](././python/075.py)<br> | 
 | 77 | [Combinations](https://leetcode.com/problems/combinations) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_077/Solution.java)<br> | [Solution_1](././python/077.py)<br> | 
 | 78 | [Subsets](https://leetcode.com/problems/subsets) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_078/Solution.java)<br> | [Solution_1](././python/078.py)<br> | 
@@ -142,8 +144,8 @@ https://leetcode.com/egugue/
 | 405 | [Convert a Number to Hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_405/Solution.java)<br> | [Solution_1](././python/405.py)<br> | 
 | 406 | [Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_406/Solution.java)<br> | [Solution_1](././python/406.py)<br> | 
 | 409 | [Longest Palindrome](https://leetcode.com/problems/longest-palindrome) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_409/Solution.kt)<br> | [Solution_1](././python/409.py)<br> | 
-| 412 | [Fizz Buzz](https://leetcode.com/problems/fizz-buzz) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_412/Solution.java)<br> |  -  | 
-| 415 | [Add Strings](https://leetcode.com/problems/add-strings) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_415/Solution.java)<br> |  -  | 
+| 412 | [Fizz Buzz](https://leetcode.com/problems/fizz-buzz) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_412/Solution.java)<br> | [Solution_1](././python/412.py)<br> | 
+| 415 | [Add Strings](https://leetcode.com/problems/add-strings) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_415/Solution.java)<br> | [Solution_1](././python/415.py)<br> | 
 | 416 | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_416/Solution.java)<br> |  -  | 
 | 438 | [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_438/Solution.java)<br> |  -  | 
 | 448 | [Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_448/Solution.java)<br> |  -  | 
