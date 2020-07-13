@@ -33,30 +33,35 @@ class Solution {
   }
 
   /**
-   * 5 ms	43.7 MB
+   * 3 ms	39.6 MB
    */
   public boolean isValidSudoku(char[][] board) {
-    HashSet<Character> rows = new HashSet<>(9);
-    HashSet<Character> columns = new HashSet<>(9);
-    HashSet<Character> boxes = new HashSet<>(9);
+    HashSet<Character> shown = new HashSet<>(9);
+
+    for (char[] chars : board) {
+      for (int j = 0; j < board[0].length; j++) {
+        char ch = chars[j];
+        if (ch != '.' && !shown.add(ch)) return false;
+      }
+      shown.clear();
+    }
+
+    for (int j = 0; j < board[0].length; j++) {
+      for (char[] chars : board) {
+        char ch = chars[j];
+        if (ch != '.' && !shown.add(ch)) return false;
+      }
+      shown.clear();
+    }
 
     for (int i = 0; i < board.length; i++) {
       for (int j = 0; j < board[0].length; j++) {
-        char ch = board[i][j];
-        if (ch != '.' && !rows.add(ch)) return false;
-
-        ch = board[j][i];
-        if (ch != '.' && !columns.add(ch)) return false;
-
         int boxI = (i / 3 * 3) + j / 3;
         int boxJ = j % 3 + (i % 3 * 3);
-        ch = board[boxI][boxJ];
-        if (ch != '.' && !boxes.add(ch)) return false;
+        char ch = board[boxI][boxJ];
+        if (ch != '.' && !shown.add(ch)) return false;
       }
-
-      rows.clear();
-      columns.clear();
-      boxes.clear();
+      shown.clear();
     }
 
     return true;
