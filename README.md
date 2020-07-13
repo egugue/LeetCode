@@ -3,7 +3,7 @@
 This repo commits only free problems.  
 https://leetcode.com/egugue/
 
-| # | Title | Difficulty | Java (156) | Python3 (84) | 
+| # | Title | Difficulty | Java (156) | Python3 (88) | 
 | :---: | :--- | :---: |  :---: |  :---: | 
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_001/Solution.kt)<br> | [Solution_1](././python/001.py)<br> | 
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_002/Solution.kt)<br> | [Solution_1](././python/002.py)<br> | 
@@ -138,10 +138,10 @@ https://leetcode.com/egugue/
 | 394 | [Decode String](https://leetcode.com/problems/decode-string) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_394/Solution.java)<br> | [Solution_1](././python/394.py)<br> | 
 | 395 | [Longest Substring with At Least K Repeating Characters](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_395/Solution.java)<br> |  -  | 
 | 399 | [Evaluate Division](https://leetcode.com/problems/evaluate-division) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_399/Solution.java)<br> | [Solution_1](././python/399.py)<br> | 
-| 404 | [Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_404/Solution.java)<br> |  -  | 
-| 405 | [Convert a Number to Hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_405/Solution.java)<br> |  -  | 
-| 406 | [Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_406/Solution.java)<br> |  -  | 
-| 409 | [Longest Palindrome](https://leetcode.com/problems/longest-palindrome) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_409/Solution.kt)<br> |  -  | 
+| 404 | [Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_404/Solution.java)<br> | [Solution_1](././python/404.py)<br> | 
+| 405 | [Convert a Number to Hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_405/Solution.java)<br> | [Solution_1](././python/405.py)<br> | 
+| 406 | [Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_406/Solution.java)<br> | [Solution_1](././python/406.py)<br> | 
+| 409 | [Longest Palindrome](https://leetcode.com/problems/longest-palindrome) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_409/Solution.kt)<br> | [Solution_1](././python/409.py)<br> | 
 | 412 | [Fizz Buzz](https://leetcode.com/problems/fizz-buzz) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_412/Solution.java)<br> |  -  | 
 | 415 | [Add Strings](https://leetcode.com/problems/add-strings) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_415/Solution.java)<br> |  -  | 
 | 416 | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_416/Solution.java)<br> |  -  | 
