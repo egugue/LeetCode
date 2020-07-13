@@ -3,7 +3,7 @@
 This repo commits only free problems.  
 https://leetcode.com/egugue/
 
-| # | Title | Difficulty | Java (158) | Python3 (90) | 
+| # | Title | Difficulty | Java (159) | Python3 (91) | 
 | :---: | :--- | :---: |  :---: |  :---: | 
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_001/Solution.kt)<br> | [Solution_1](././python/001.py)<br> | 
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_002/Solution.kt)<br> | [Solution_1](././python/002.py)<br> | 
@@ -24,6 +24,7 @@ https://leetcode.com/egugue/
 | 33 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_033/Solution.java)<br> |  -  | 
 | 34 | [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_034/Solution.java)<br> | [Solution_1](././python/034.py)<br> | 
 | 35 | [Search Insert Position](https://leetcode.com/problems/search-insert-position) | Easy |  -  | [Solution_1](././python/035.py)<br> | 
+| 36 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_036/Solution.java)<br> |  -  | 
 | 39 | [Combination Sum](https://leetcode.com/problems/combination-sum) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_039/Solution.java)<br> | [Solution_1](././python/039.py)<br> | 
 | 41 | [First Missing Positive](https://leetcode.com/problems/first-missing-positive) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_041/Solution.java)<br> |  -  | 
 | 42 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_042/Solution.java)<br> |  -  | 
@@ -146,7 +147,7 @@ https://leetcode.com/egugue/
 | 409 | [Longest Palindrome](https://leetcode.com/problems/longest-palindrome) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_409/Solution.kt)<br> | [Solution_1](././python/409.py)<br> | 
 | 412 | [Fizz Buzz](https://leetcode.com/problems/fizz-buzz) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_412/Solution.java)<br> | [Solution_1](././python/412.py)<br> | 
 | 415 | [Add Strings](https://leetcode.com/problems/add-strings) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_415/Solution.java)<br> | [Solution_1](././python/415.py)<br> | 
-| 416 | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_416/Solution.java)<br> |  -  | 
+| 416 | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_416/Solution.java)<br> | [Solution_1](././python/416.py)<br> | 
 | 438 | [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_438/Solution.java)<br> |  -  | 
 | 448 | [Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_448/Solution.java)<br> |  -  | 
 | 461 | [Hamming Distance](https://leetcode.com/problems/hamming-distance) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_461/Solution.java)<br> |  -  | 
