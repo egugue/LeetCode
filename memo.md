@@ -7,6 +7,8 @@
       - [448. Find All Numbers Disappeared in an Array](#448-find-all-numbers-disappeared-in-an-array)
     - [case - marking only the value in a specific position first](#case---marking-only-the-value-in-a-specific-position-first)
       - [73. Set Matrix Zeroes](#73-set-matrix-zeroes)
+- [String](#string)
+  - [Substring search template](#substring-search-template)
 
 <!-- /TOC -->
 
@@ -36,3 +38,8 @@ Examples
 https://leetcode.com/problems/set-matrix-zeroes/
 At first, the first column and first row are set to 0,  
 then the others are checked to set to 0 or not.
+
+
+# String
+## Substring search template
+https://leetcode.com/problems/find-all-anagrams-in-a-string/discuss/92007/Sliding-Window-algorithm-template-to-solve-all-the-Leetcode-substring-search-problem.
