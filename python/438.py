@@ -22,7 +22,6 @@ class Solution:
                 char_count[char] -= 1
                 if char_count[char] == 0:
                     counter -= 1
-            end += 1
 
             while counter == 0:
                 f_char = s[first]
@@ -30,9 +29,11 @@ class Solution:
                     char_count[f_char] += 1
                     if char_count[f_char] > 0:
                         counter += 1
-                if end - first == p_length:
+                if end - first + 1 == p_length:
                     result.append(first)
                 first += 1
+
+            end += 1
 
         return result
 
