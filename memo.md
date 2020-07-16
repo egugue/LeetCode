@@ -1,4 +1,14 @@
+<!-- TOC -->
 
+- [Array](#array)
+  - [How to mark a specific value](#how-to-mark-a-specific-value)
+    - [case - marking value out of the range](#case---marking-value-out-of-the-range)
+      - [130. Surrounded Regions](#130-surrounded-regions)
+      - [448. Find All Numbers Disappeared in an Array](#448-find-all-numbers-disappeared-in-an-array)
+    - [case - marking only the value in a specific position first](#case---marking-only-the-value-in-a-specific-position-first)
+      - [73. Set Matrix Zeroes](#73-set-matrix-zeroes)
+
+<!-- /TOC -->
 
 # Array
 ## How to mark a specific value
@@ -8,13 +18,21 @@ In order to replace a value **in place**, marking a specific value is sometimes 
 If the range of values in an array is limited,
 marking a value out of the range could be used.
 
-Examples
-- https://leetcode.com/problems/surrounded-regions/
-  - `*` is a value out of the range
+#### 130. Surrounded Regions
+https://leetcode.com/problems/surrounded-regions/
+`*` is a value out of the range
+
+#### 448. Find All Numbers Disappeared in an Array
+https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
+
+Numbers in a array are only positive integers.  
+Taking this advantage of the limitation, Invert some numbers in the first loop.
+
 
 ### case - marking only the value in a specific position first
 
 Examples
-- https://leetcode.com/problems/set-matrix-zeroes/
-  - At first, the first column and first row are set to 0,  
-  then the others are checked to set to 0 or not.
+#### 73. Set Matrix Zeroes
+https://leetcode.com/problems/set-matrix-zeroes/
+At first, the first column and first row are set to 0,  
+then the others are checked to set to 0 or not.
