@@ -1,9 +1,6 @@
 package com.htoyama.leetcode._140;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
+import java.util.*;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -28,7 +25,42 @@ class Solution {
   }
 
   public List<String> wordBreak(String s, List<String> wordDict) {
-    return using_bt(s, wordDict);
+    return using_memorization(s, wordDict);
+//    return using_bt(s, wordDict);
+  }
+
+  /**
+   * 5 ms	39.8 MB
+   *
+   * using memorization works effectively if the answer list has the same substring.
+   * e.g. In the second example, a substring "pen apple" appears twice in the answer list.
+   */
+  private static List<String> using_memorization(String s, List<String> wordDict) {
+    return helper_memo(s, new HashSet<>(wordDict), new HashMap<>());
+  }
+
+  private static List<String> helper_memo(String s, Set<String> wordSet, HashMap<String, LinkedList<String>> map) {
+    if (map.containsKey(s)) {
+      return map.get(s);
+    }
+
+    LinkedList<String> res = new LinkedList<>();
+    if (s.isEmpty()) {
+      res.add("");
+      return res;
+    }
+
+    for (String word : wordSet) {
+      if (s.startsWith(word)) {
+        List<String> sublist = helper_memo(s.substring(word.length()), wordSet, map);
+        for (String s1 : sublist) {
+          res.add(word + (s1.isEmpty() ? s1 : " " + s1));
+        }
+      }
+    }
+
+    map.put(s, res);
+    return res;
   }
 
   /**
