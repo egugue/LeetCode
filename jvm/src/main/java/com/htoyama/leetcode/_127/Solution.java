@@ -11,8 +11,11 @@ class Solution {
     assertThat((s.ladderLength("hit", "cog", Arrays.asList("hot","dot","dog","lot","log")))).isEqualTo(0);
   }
 
+  /**
+   * 867 ms	41.5 MB, but too slow
+   */
   public int ladderLength(String beginWord, String endWord, List<String> wordList) {
-    HashSet<String> visited = new HashSet<>();
+    HashSet<Integer> visited = new HashSet<>();
     ArrayDeque<String> queue = new ArrayDeque<>();
     queue.add(beginWord);
 
@@ -23,16 +26,17 @@ class Solution {
 
       for (int i = 0; i < size; i++) {
         String intermediate = queue.poll();
-        visited.add(intermediate);
 
-        for (String word : wordList) {
-          if (visited.contains(word)) continue;
+        for (int j = 0; j < wordList.size(); j++) {
+          if (visited.contains(j)) continue;
 
+          String word = wordList.get(j);
           if (isOnlyOneLetterDifferent(intermediate, word)) {
             if (word.equals(endWord)) {
               return path + 1;
             }
             queue.add(word);
+            visited.add(j);
           }
         }
       }
