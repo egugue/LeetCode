@@ -3,7 +3,7 @@
 This repo commits only free problems.  
 https://leetcode.com/egugue/
 
-| # | Title | Difficulty | Java (159) | Python3 (91) | 
+| # | Title | Difficulty | Java (161) | Python3 (96) | 
 | :---: | :--- | :---: |  :---: |  :---: | 
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_001/Solution.kt)<br> | [Solution_1](././python/001.py)<br> | 
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_002/Solution.kt)<br> | [Solution_1](././python/002.py)<br> | 
@@ -73,6 +73,7 @@ https://leetcode.com/egugue/
 | 128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_128/Solution.java)<br> | [Solution_1](././python/128.py)<br> | 
 | 129 | [Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_129/Solution.java)<br> | [Solution_1](././python/129.py)<br> | 
 | 130 | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_130/Solution.java)<br> |  -  | 
+| 131 | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_131/Solution.java)<br> |  -  | 
 | 134 | [Gas Station](https://leetcode.com/problems/gas-station) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_134/Solution.java)<br> |  -  | 
 | 138 | [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_138/Solution.java)<br> |  -  | 
 | 139 | [Word Break](https://leetcode.com/problems/word-break) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_139/Solution.java)<br> |  -  | 
@@ -94,6 +95,7 @@ https://leetcode.com/egugue/
 | 208 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_208/Trie.java)<br> |  -  | 
 | 209 | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_209/Solution.java)<br> | [Solution_1](././python/209.py)<br> | 
 | 210 | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_210/Solution.java)<br> |  -  | 
+| 212 | [Word Search II](https://leetcode.com/problems/word-search-ii) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_212/Solution.java)<br> |  -  | 
 | 213 | [House Robber II](https://leetcode.com/problems/house-robber-ii) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_213/Solution.java)<br> | [Solution_1](././python/213.py)<br> | 
 | 215 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_215/Solution.java)<br> | [Solution_1](././python/215.py)<br> | 
 | 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_217/Solution.kt)<br> | [Solution_1](././python/217.py)<br> | 
@@ -148,11 +150,11 @@ https://leetcode.com/egugue/
 | 412 | [Fizz Buzz](https://leetcode.com/problems/fizz-buzz) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_412/Solution.java)<br> | [Solution_1](././python/412.py)<br> | 
 | 415 | [Add Strings](https://leetcode.com/problems/add-strings) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_415/Solution.java)<br> | [Solution_1](././python/415.py)<br> | 
 | 416 | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_416/Solution.java)<br> | [Solution_1](././python/416.py)<br> | 
-| 438 | [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_438/Solution.java)<br> |  -  | 
-| 448 | [Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_448/Solution.java)<br> |  -  | 
-| 461 | [Hamming Distance](https://leetcode.com/problems/hamming-distance) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_461/Solution.java)<br> |  -  | 
-| 494 | [Target Sum](https://leetcode.com/problems/target-sum) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_494/Solution.java)<br> |  -  | 
-| 543 | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_543/Solution.java)<br> |  -  | 
+| 438 | [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_438/Solution.java)<br> | [Solution_1](././python/438.py)<br> | 
+| 448 | [Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_448/Solution.java)<br> | [Solution_1](././python/448.py)<br> | 
+| 461 | [Hamming Distance](https://leetcode.com/problems/hamming-distance) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_461/Solution.java)<br> | [Solution_1](././python/461.py)<br> | 
+| 494 | [Target Sum](https://leetcode.com/problems/target-sum) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_494/Solution.java)<br> | [Solution_1](././python/494.py)<br> | 
+| 543 | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_543/Solution.java)<br> | [Solution_1](././python/543.py)<br> | 
 | 560 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_560/Solution.java)<br> |  -  | 
 | 581 | [Shortest Unsorted Continuous Subarray](https://leetcode.com/problems/shortest-unsorted-continuous-subarray) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_581/Solution.java)<br> |  -  | 
 | 617 | [Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_617/Solution.java)<br> |  -  | 
