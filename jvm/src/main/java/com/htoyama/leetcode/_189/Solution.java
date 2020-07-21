@@ -10,7 +10,7 @@ class Solution {
 //    assertThat(nums).containsExactly(5, 6, 7, 1, 2, 3, 4);
 
     nums = new int[]{-1, -100, 3, 99};
-    s.rotate(nums, 2);
+    s.rotate(nums, 1);
     assertThat(nums).containsExactly(3, 99, -1, -100);
   }
 
@@ -18,25 +18,24 @@ class Solution {
    * 1 ms	42.3 MB
    */
   public void rotate(int[] nums, int k) {
-    if (nums.length == 0) return;
-    if (nums.length == k) return;
+    if (nums.length == 0 || nums.length == k) return;
 
     int i = 0;
     int swapCount = 0;
-    do {
-      int j = i;
-      int value = nums[j];
+    while (swapCount < nums.length) {
+      int start = i;
+      int value = nums[i];
       do {
-        int next = (j + k) % nums.length;
+        int next = (i + k) % nums.length;
         int nextValue = nums[next];
         nums[next] = value;
-        j = next;
-        value = nextValue;
         swapCount++;
-      } while(j != i);
 
-      if (swapCount >= nums.length) return;
-      i++;
-    } while(i != 0);
+        i = next;
+        value = nextValue;
+      } while(i != start);
+
+      i = start + 1;
+    }
   }
 }
