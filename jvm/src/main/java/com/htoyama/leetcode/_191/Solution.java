@@ -16,21 +16,15 @@ public class Solution {
   public int hammingWeight(int n) {
     if (n == 0) return 0;
 
-    if (n > 0) {
-      int count = 0;
-      while (n != 0) {
-        if ((n & 1) == 1) count++;
-        n >>= 1;
-      }
-      return count;
-    }
+    boolean isNegative = n < 0;
+    if (isNegative) n = ~n;
 
-    n = ~n;
     int count = 0;
     while (n != 0) {
       if ((n & 1) == 1) count++;
       n >>= 1;
     }
-    return 32 - count; // 1 is highest one bit
+
+    return isNegative ? 32 - count : count;
   }
 }
