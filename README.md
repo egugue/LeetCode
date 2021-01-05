@@ -3,7 +3,7 @@
 This repo commits only free problems.  
 https://leetcode.com/egugue/
 
-| # | Title | Difficulty | Java (166) | Python3 (96) | 
+| # | Title | Difficulty | Java (172) | Python3 (96) | 
 | :---: | :--- | :---: |  :---: |  :---: | 
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_001/Solution.kt)<br> | [Solution_1](././python/001.py)<br> | 
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_002/Solution.kt)<br> | [Solution_1](././python/002.py)<br> | 
@@ -50,6 +50,7 @@ https://leetcode.com/egugue/
 | 82 | [Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_082/Solution.java)<br> | [Solution_1](././python/082.py)<br> | 
 | 83 | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_083/Solution.java)<br> | [Solution_1](././python/083.py)<br> | 
 | 84 | [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_084/Solution.java)<br> |  -  | 
+| 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_088/Solution.java)<br> |  -  | 
 | 90 | [Subsets II](https://leetcode.com/problems/subsets-ii) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_090/Solution.java)<br> | [Solution_1](././python/090.py)<br> | 
 | 94 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_094/Solution.java)<br> | [Solution_1](././python/094.py)<br> | 
 | 96 | [Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_096/Solution.java)<br> |  -  | 
@@ -71,6 +72,7 @@ https://leetcode.com/egugue/
 | 120 | [Triangle](https://leetcode.com/problems/triangle) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_120/Solution.java)<br> | [Solution_1](././python/120.py)<br> | 
 | 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_121/Solution.java)<br> | [Solution_1](././python/121.py)<br> | 
 | 124 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_124/Solution.java)<br> |  -  | 
+| 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_125/Solution.java)<br> |  -  | 
 | 127 | [Word Ladder](https://leetcode.com/problems/word-ladder) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_127/Solution.java)<br> |  -  | 
 | 128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_128/Solution.java)<br> | [Solution_1](././python/128.py)<br> | 
 | 129 | [Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_129/Solution.java)<br> | [Solution_1](././python/129.py)<br> | 
@@ -89,10 +91,14 @@ https://leetcode.com/egugue/
 | 160 | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_160/Solution.java)<br> | [Solution_1](././python/160.py)<br> | 
 | 162 | [Find Peak Element](https://leetcode.com/problems/find-peak-element) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_162/Solution.java)<br> |  -  | 
 | 169 | [Majority Element](https://leetcode.com/problems/majority-element) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_169/Solution.java)<br> | [Solution_1](././python/169.py)<br> | 
+| 171 | [Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_171/Solution.java)<br> |  -  | 
 | 179 | [Largest Number](https://leetcode.com/problems/largest-number) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_179/Solution.java)<br> |  -  | 
+| 189 | [Rotate Array](https://leetcode.com/problems/rotate-array) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_189/Solution.java)<br> |  -  | 
 | 190 | [Reverse Bits](https://leetcode.com/problems/reverse-bits) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_190/Solution.java)<br> |  -  | 
+| 191 | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_191/Solution.java)<br> |  -  | 
 | 198 | [House Robber](https://leetcode.com/problems/house-robber) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_198/Solution.java)<br> | [Solution_1](././python/198.py)<br> | 
 | 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_200/Solution.java)<br> |  -  | 
+| 202 | [Happy Number](https://leetcode.com/problems/happy-number) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_202/Solution.java)<br> |  -  | 
 | 204 | [Count Primes](https://leetcode.com/problems/count-primes) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_204/Solution.kt)<br> | [Solution_1](././python/204.py)<br> | 
 | 205 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_205/Solution.java)<br> | [Solution_1](././python/205.py)<br> | 
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_206/Solution.java)<br> | [Solution_1](././python/206.py)<br> | 
