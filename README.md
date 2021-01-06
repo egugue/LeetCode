@@ -73,7 +73,7 @@ https://leetcode.com/egugue/
 | 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_121/Solution.java)<br> | [Solution_1](././python/121.py)<br> | 
 | 124 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_124/Solution.java)<br> |  -  | 
 | 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_125/Solution.java)<br> |  -  | 
-| 127 | [Word Ladder](https://leetcode.com/problems/word-ladder) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_127/Solution.java)<br> |  -  | 
+| 127 | [Word Ladder](https://leetcode.com/problems/word-ladder) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_127/Solution.java)<br> |  -  | 
 | 128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence) | Hard | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_128/Solution.java)<br> | [Solution_1](././python/128.py)<br> | 
 | 129 | [Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_129/Solution.java)<br> | [Solution_1](././python/129.py)<br> | 
 | 130 | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_130/Solution.java)<br> |  -  | 
@@ -93,10 +93,10 @@ https://leetcode.com/egugue/
 | 169 | [Majority Element](https://leetcode.com/problems/majority-element) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_169/Solution.java)<br> | [Solution_1](././python/169.py)<br> | 
 | 171 | [Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_171/Solution.java)<br> |  -  | 
 | 179 | [Largest Number](https://leetcode.com/problems/largest-number) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_179/Solution.java)<br> |  -  | 
-| 189 | [Rotate Array](https://leetcode.com/problems/rotate-array) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_189/Solution.java)<br> |  -  | 
+| 189 | [Rotate Array](https://leetcode.com/problems/rotate-array) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_189/Solution.java)<br> |  -  | 
 | 190 | [Reverse Bits](https://leetcode.com/problems/reverse-bits) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_190/Solution.java)<br> |  -  | 
 | 191 | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_191/Solution.java)<br> |  -  | 
-| 198 | [House Robber](https://leetcode.com/problems/house-robber) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_198/Solution.java)<br> | [Solution_1](././python/198.py)<br> | 
+| 198 | [House Robber](https://leetcode.com/problems/house-robber) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_198/Solution.java)<br> | [Solution_1](././python/198.py)<br> | 
 | 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_200/Solution.java)<br> |  -  | 
 | 202 | [Happy Number](https://leetcode.com/problems/happy-number) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_202/Solution.java)<br> |  -  | 
 | 204 | [Count Primes](https://leetcode.com/problems/count-primes) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_204/Solution.kt)<br> | [Solution_1](././python/204.py)<br> | 
@@ -167,7 +167,7 @@ https://leetcode.com/egugue/
 | 494 | [Target Sum](https://leetcode.com/problems/target-sum) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_494/Solution.java)<br> | [Solution_1](././python/494.py)<br> | 
 | 543 | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_543/Solution.java)<br> | [Solution_1](././python/543.py)<br> | 
 | 560 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_560/Solution.java)<br> |  -  | 
-| 581 | [Shortest Unsorted Continuous Subarray](https://leetcode.com/problems/shortest-unsorted-continuous-subarray) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_581/Solution.java)<br> |  -  | 
+| 581 | [Shortest Unsorted Continuous Subarray](https://leetcode.com/problems/shortest-unsorted-continuous-subarray) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_581/Solution.java)<br> |  -  | 
 | 617 | [Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees) | Easy | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_617/Solution.java)<br> |  -  | 
 | 621 | [Task Scheduler](https://leetcode.com/problems/task-scheduler) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_621/Solution.java)<br> |  -  | 
 | 647 | [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings) | Medium | [Solution_1](./jvm/src/main/java/com/htoyama/leetcode/_647/Solution.java)<br> |  -  | 
