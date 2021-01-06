@@ -1,7 +1,3 @@
-use std::iter::FromIterator;
-use std::collections::HashMap;
-use std::ptr::hash;
-
 struct Solution;
 
 /// https://leetcode.com/problems/two-sum/submissions/
@@ -33,16 +29,15 @@ impl Solution {
 #[cfg(test)]
 mod test {
     use super::*;
+    use rstest::rstest;
 
-    #[test]
-    fn hash() {
-        let a = Solution::hash(&[2, 7, 11, 15].to_vec(), 9);
-        assert_eq!(a, [0, 1].to_vec());
-
-        let a = Solution::hash(&[3, 2, 4].to_vec(), 6);
-        assert_eq!(a, [1, 2].to_vec());
-
-        let a = Solution::hash(&[3, 3].to_vec(), 6);
-        assert_eq!(a, [0, 1].to_vec());
+    #[rstest(nums, target, expected,
+    case(&[2, 7, 11, 15], 9, &[0, 1]),
+    case(&[3, 2, 4], 6, &[1, 2]),
+    case(&[3, 3], 6, &[0, 1]),
+    ::trace
+    )]
+    fn hash(nums: &[i32], target: i32, expected: &[i32]) {
+        assert_eq!(Solution::hash(&nums.to_vec(), target), expected)
     }
 }

@@ -25,13 +25,16 @@ impl Solution {
 #[cfg(test)]
 mod test {
     use crate::_0009::Solution;
+    use rstest::rstest;
 
-    #[test]
-    fn reverse_integer() {
-        assert_eq!(Solution::reverse_integer(121), true);
-        assert_eq!(Solution::reverse_integer(-121), false);
-        assert_eq!(Solution::reverse_integer(10), false);
-        assert_eq!(Solution::reverse_integer(-101), false);
-        assert_eq!(Solution::reverse_integer(0), true);
+    #[rstest( x, expected,
+    case(121, true),
+    case(-121, false),
+    case(10, false),
+    case(-101, false),
+    case(0, true),
+    )]
+    fn reverse_integer(x: i32, expected: bool) {
+        assert_eq!(Solution::reverse_integer(x), expected);
     }
 }
