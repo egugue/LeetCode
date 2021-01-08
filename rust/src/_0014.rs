@@ -1,37 +1,31 @@
 struct Solution;
 impl Solution {
     pub fn longest_common_prefix(strs: Vec<String>) -> String {
-        Solution::iterate(&strs)
+        Solution::find_min(&strs)
     }
 
     /// 0 ms	2 MB
-    fn iterate(strs: &Vec<String>) -> String {
-        let length = match strs.first() {
-            None => {
+    /// find the minimum string in the strs at first
+    fn find_min(strs: &Vec<String>) -> String {
+        match strs.len() {
+            0 => {
                 return "".to_string();
             }
-            Some(s) => s.len(),
-        };
-
-        let mut common_prefix = "".to_string();
-        for i in 0..length {
-            let char = strs.first().and_then(|s| s.chars().nth(i)).unwrap();
-            for str in strs {
-                match str.chars().nth(i) {
-                    None => {
-                        return common_prefix.to_string();
-                    }
-                    Some(other) => {
-                        if char != other {
-                            return common_prefix.to_string();
-                        }
-                    }
-                }
+            1 => {
+                return strs.first().unwrap().to_string();
             }
-            common_prefix.push(char);
+            _ => {}
         }
 
-        return common_prefix;
+        let min_str = strs.iter().min().unwrap();
+        for (i, char) in min_str.chars().enumerate() {
+            let is_different = strs.iter().any(|str| char != str.chars().nth(i).unwrap());
+            if is_different {
+                return min_str[..i].to_string();
+            }
+        }
+
+        return min_str.to_string();
     }
 }
 
@@ -43,10 +37,11 @@ mod tests {
     #[rstest(strs, expected,
     case(&["flower","flow","flight"], "fl"),
     case(&["dog","racecar","car"], ""),
+    case(&["a"], "a"),
     ::trace
     )]
     fn iterate(strs: &[&str], expected: &str) {
         let vec = strs.to_vec().iter().map(|str| str.to_string()).collect();
-        assert_eq!(Solution::iterate(&vec), expected.to_string());
+        assert_eq!(Solution::find_min(&vec), expected.to_string());
     }
 }
