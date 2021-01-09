@@ -41,7 +41,10 @@ mod tests {
     ::trace
     )]
     fn iterate(strs: &[&str], expected: &str) {
-        let vec = strs.to_vec().iter().map(|str| str.to_string()).collect();
+        let vec = strs
+            .iter()
+            .map(|str| str.to_string())
+            .collect::<Vec<String>>();
         assert_eq!(Solution::find_min(&vec), expected.to_string());
     }
 }
