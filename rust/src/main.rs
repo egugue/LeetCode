@@ -4,6 +4,7 @@ mod _0007;
 mod _0009;
 mod _0014;
 mod _0020;
+mod shared;
 
 fn main() {
     println!("Hello, world!");
