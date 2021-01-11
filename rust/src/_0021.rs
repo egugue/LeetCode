@@ -1,4 +1,5 @@
 use crate::shared::list_node::ListNode;
+use std::ops::DerefMut;
 
 struct Solution;
 
@@ -8,7 +9,10 @@ impl Solution {
         l1: Option<Box<ListNode>>,
         l2: Option<Box<ListNode>>,
     ) -> Option<Box<ListNode>> {
-        Solution::iterate(l1, l2)
+        // Solution::iterate(l1, l2)
+        let mut dummy = ListNode::new(0);
+        Solution::recursive(&mut dummy, l1, l2);
+        dummy.next
     }
 
     // 0 ms	1.9 MB
@@ -45,6 +49,31 @@ impl Solution {
         dummy.next
     }
 
+    /// 0 ms	2 MB
+    fn recursive(cur: &mut ListNode, mut l1: Option<Box<ListNode>>, mut l2: Option<Box<ListNode>>) {
+        let mut cur = cur;
+        if l1.is_none() || l2.is_none() {
+            if l1.is_none() {
+                cur.next = l2;
+            } else {
+                cur.next = l1;
+            }
+            return;
+        }
+
+        let val1 = l1.as_ref().unwrap().val;
+        let val2 = l2.as_ref().unwrap().val;
+        if val1 < val2 {
+            let (head, next) = Solution::separate(l1);
+            cur.next = head;
+            Solution::recursive(cur.next.as_mut().unwrap().deref_mut(), next, l2)
+        } else {
+            let (head, next) = Solution::separate(l2);
+            cur.next = head;
+            Solution::recursive(cur.next.as_mut().unwrap().deref_mut(), l1, next)
+        }
+    }
+
     fn separate(mut l: Option<Box<ListNode>>) -> (Option<Box<ListNode>>, Option<Box<ListNode>>) {
         let next = l.as_mut().unwrap().next.take();
         let head = l.take();
@@ -62,6 +91,7 @@ mod tests {
     case(&[1], &[], &[1]),
     case(&[1, 2], &[], &[1, 2]),
     case(&[1, 2, 4], &[1, 3, 4], &[1, 1, 2, 3, 4, 4]),
+    ::trace
     )]
     fn iterate(l1: &[i32], l2: &[i32], expected: &[i32]) {
         assert_eq!(
@@ -71,6 +101,23 @@ mod tests {
             ),
             ListNode::in_option_box_from_array(expected)
         )
+    }
+
+    #[rstest(l1, l2, expected,
+    case(&[], &[], &[]),
+    case(&[1], &[], &[1]),
+    case(&[1, 2], &[], &[1, 2]),
+    case(&[1, 2, 4], &[1, 3, 4], &[1, 1, 2, 3, 4, 4]),
+    ::trace
+    )]
+    fn recursive(l1: &[i32], l2: &[i32], expected: &[i32]) {
+        let mut dummy = ListNode::new(0);
+        Solution::recursive(
+            &mut dummy,
+            ListNode::in_option_box_from_array(l1),
+            ListNode::in_option_box_from_array(l2),
+        );
+        assert_eq!(dummy.next, ListNode::in_option_box_from_array(expected))
     }
 
     #[test]
