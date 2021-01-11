@@ -6,8 +6,30 @@ pub struct ListNode {
 
 impl ListNode {
     #[inline]
-    fn new(val: i32) -> Self {
+    pub fn new(val: i32) -> Self {
         ListNode { next: None, val }
+    }
+
+    pub fn from_array(array: &[i32]) -> Self {
+        ListNode::from(array)
+    }
+
+    pub fn to_option_box(self) -> Option<Box<ListNode>> {
+        Some(Box::new(self))
+    }
+
+    pub fn to_vec(&self) -> Vec<i32> {
+        let mut vec = Vec::new();
+        self._to_vec(&mut vec);
+        vec
+    }
+
+    fn _to_vec(&self, vec: &mut Vec<i32>) {
+        vec.push(self.val);
+        match &self.next {
+            None => {}
+            Some(b) => (*b)._to_vec(vec),
+        }
     }
 }
 
@@ -28,11 +50,12 @@ impl From<&[i32]> for ListNode {
 #[cfg(test)]
 mod tests {
     use super::*;
+    use rstest::rstest;
 
     #[test]
     fn from_array() {
         let expected = ListNode::new(10);
-        assert_eq!(ListNode::from(&[10] as &[i32]), expected);
+        assert_eq!(ListNode::from_array(&[10]), expected);
 
         let expected = ListNode {
             val: 10,
@@ -44,12 +67,30 @@ mod tests {
                 })),
             })),
         };
-        assert_eq!(ListNode::from(&[10, 20, 30] as &[i32]), expected)
+        assert_eq!(ListNode::from_array(&[10, 20, 30]), expected)
     }
 
     #[test]
+    #[ignore]
     #[should_panic]
     fn from_array_panic() {
         ListNode::from(&[] as &[i32]);
+    }
+
+    #[test]
+    fn to_option_box() {
+        assert_eq!(
+            ListNode::new(10).to_option_box(),
+            Some(Box::new(ListNode::new(10)))
+        );
+    }
+
+    #[rstest(array,
+    case(&[10]),
+    case(&[10, 20, 30]),
+    ::trace
+    )]
+    fn to_vec(array: &[i32]) {
+        assert_eq!(ListNode::from_array(array).to_vec(), array.to_vec())
     }
 }
