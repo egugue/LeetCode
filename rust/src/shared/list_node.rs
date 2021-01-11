@@ -14,6 +14,14 @@ impl ListNode {
         ListNode::from(array)
     }
 
+    pub fn in_option_box_from_array(array: &[i32]) -> Option<Box<ListNode>> {
+        if array.is_empty() {
+            None
+        } else {
+            ListNode::from_array(array).to_option_box()
+        }
+    }
+
     pub fn to_option_box(self) -> Option<Box<ListNode>> {
         Some(Box::new(self))
     }
