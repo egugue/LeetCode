@@ -15,7 +15,7 @@ impl Solution {
         dummy.next
     }
 
-    // 0 ms	1.9 MB
+    /// 0 ms	1.9 MB
     fn iterate(l1: Option<Box<ListNode>>, l2: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
         let mut dummy = ListNode::new(0);
         let mut cur = &mut dummy;
@@ -49,15 +49,14 @@ impl Solution {
         dummy.next
     }
 
-    /// 0 ms	2 MB
-    fn recursive(cur: &mut ListNode, mut l1: Option<Box<ListNode>>, mut l2: Option<Box<ListNode>>) {
+    /// 0 ms	1.9 MB
+    fn recursive(cur: &mut ListNode, l1: Option<Box<ListNode>>, l2: Option<Box<ListNode>>) {
         let mut cur = cur;
-        if l1.is_none() || l2.is_none() {
-            if l1.is_none() {
-                cur.next = l2;
-            } else {
-                cur.next = l1;
-            }
+        if l1.is_none() {
+            cur.next = l2;
+            return;
+        } else if l2.is_none() {
+            cur.next = l1;
             return;
         }
 
