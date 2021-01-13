@@ -57,7 +57,7 @@ mod tests {
     case(0, 0),
     case(std::i32::MAX, 0),
     case(std::i32::MIN, 0),
-    ::trace
+    // ::trace
     )]
     fn i64(x: i32, expected: i32) {
         assert_eq!(Solution::i64(x), expected);
@@ -70,7 +70,7 @@ mod tests {
     case(0, 0),
     case(std::i32::MAX, 0),
     case(std::i32::MIN, 0),
-    ::trace
+    // ::trace
     )]
     fn i32(x: i32, expected: i32) {
         assert_eq!(Solution::i32_with_check_overflow(x), expected);

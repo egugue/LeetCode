@@ -38,7 +38,7 @@ mod tests {
     case(&["flower","flow","flight"], "fl"),
     case(&["dog","racecar","car"], ""),
     case(&["a"], "a"),
-    ::trace
+    // ::trace
     )]
     fn iterate(strs: &[&str], expected: &str) {
         let vec = strs

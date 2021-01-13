@@ -96,7 +96,7 @@ mod tests {
     #[rstest(array,
     case(&[10]),
     case(&[10, 20, 30]),
-    ::trace
+    // ::trace
     )]
     fn to_vec(array: &[i32]) {
         assert_eq!(ListNode::from_array(array).to_vec(), array.to_vec())

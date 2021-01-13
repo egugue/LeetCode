@@ -45,7 +45,7 @@ mod tests {
     case(&[1, 3, 5, 6], 7, 4),
     case(&[1, 3, 5, 6], 0, 0),
     case(&[1], 0, 0),
-    ::trace
+    // ::trace
     )]
     fn binary_search(nums: &[i32], target: i32, expected: i32) {
         assert_eq!(Solution::binary_search(nums.to_vec(), target), expected);

@@ -38,7 +38,7 @@ mod tests {
     case(&[0], 0),
     case(&[-1], -1),
     case(&[-100000], -100000),
-    ::trace
+    // ::trace
     )]
     fn dp(nums: &[i32], expected: i32) {
         assert_eq!(Solution::dp(&nums.to_vec()), expected)

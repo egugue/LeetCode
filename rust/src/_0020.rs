@@ -78,7 +78,7 @@ mod tests {
         case("{[]}", true),
         case("{", false),
         case("}", false),
-        ::trace
+        // ::trace
     )]
     fn stack(s: &str, expected: bool) {
         assert_eq!(Solution::stack(s.to_string()), expected)
@@ -94,7 +94,7 @@ mod tests {
         case("{[]}", true),
         case("{", false),
         case("}", false),
-        ::trace
+        // ::trace
     )]
     fn stack_map(s: &str, expected: bool) {
         assert_eq!(Solution::stack_map(s.to_string()), expected)
