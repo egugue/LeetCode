@@ -1,3 +1,4 @@
+use std::borrow::Borrow;
 use std::cell::RefCell;
 use std::collections::VecDeque;
 use std::rc::Rc;
@@ -74,11 +75,43 @@ impl TreeNode {
             Some(Rc::new(RefCell::new(TreeNode::from_array(array))))
         }
     }
+
+    pub fn from_str_and_wrap(str: &str) -> Option<Rc<RefCell<TreeNode>>> {
+        TreeNode::from_array_and_wrap(Value::array_from(str).borrow())
+    }
 }
 
+#[derive(Debug, Eq, PartialEq)]
 pub enum Value {
     V(i32),
     Null,
+}
+
+impl Value {
+    pub fn from(str: &str) -> Value {
+        if str == "null" {
+            Null
+        } else {
+            let value = str.parse::<i32>().unwrap();
+            V(value)
+        }
+    }
+
+    /// "1, null, 3" -> [V(1), Null, V[3]
+    pub fn array_from(str: &str) -> Vec<Value> {
+        if !str.starts_with('[') || !str.ends_with(']') {
+            panic!("invalid format: {}", str);
+        }
+
+        let str = &str[1..str.len() - 1];
+        if str.is_empty() {
+            vec![]
+        } else {
+            str.split(',')
+                .map(|s| Value::from(s.trim()))
+                .collect::<Vec<_>>()
+        }
+    }
 }
 
 #[cfg(test)]
@@ -173,5 +206,32 @@ mod tests {
             TreeNode::from_array_and_wrap(&[V(1)]),
             TreeNode::new(1).wrap()
         )
+    }
+
+    #[test]
+    fn tree_node_from_str_and_wrap() {
+        assert_eq!(TreeNode::from_str_and_wrap("[]"), None);
+        assert_eq!(
+            TreeNode::from_str_and_wrap("[1,null,3]"),
+            TreeNode {
+                val: 1,
+                left: None,
+                right: TreeNode::new(3).wrap(),
+            }
+            .wrap()
+        )
+    }
+
+    #[test]
+    fn value_array_from() {
+        assert_eq!(Value::array_from("[]"), Vec::new());
+        assert_eq!(
+            Value::array_from("[1, 2, null, -1]"),
+            vec![V(1), V(2), Null, V(-1)]
+        );
+        assert_eq!(
+            Value::array_from("[1,2,null,-1]"),
+            vec![V(1), V(2), Null, V(-1)]
+        );
     }
 }
