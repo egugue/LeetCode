@@ -12,7 +12,7 @@ pub struct TreeNode {
 }
 
 impl TreeNode {
-    pub fn wrap(self) -> Option<Rc<RefCell<TreeNode>>> {
+    fn wrap(self) -> Option<Rc<RefCell<TreeNode>>> {
         Some(Rc::new(RefCell::new(self)))
     }
 
