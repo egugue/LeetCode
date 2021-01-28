@@ -62,6 +62,14 @@ impl TreeNode {
 
         head.replace(TreeNode::new(0))
     }
+
+    pub fn from_array_and_wrap(array: &[Value]) -> Option<Rc<RefCell<TreeNode>>> {
+        if array.is_empty() {
+            None
+        } else {
+            Some(Rc::new(RefCell::new(TreeNode::from_array(array))))
+        }
+    }
 }
 
 #[derive(Debug)]
@@ -147,6 +155,15 @@ mod tests {
                 })
             }
         );
+    }
+
+    #[test]
+    fn from_array_and_wrap() {
+        assert_eq!(TreeNode::from_array_and_wrap(&[]), None);
+        assert_eq!(
+            TreeNode::from_array_and_wrap(&[V(1)]),
+            Some(Rc::new(RefCell::new(TreeNode::new(1))))
+        )
     }
 
     // means wrap
