@@ -12,10 +12,6 @@ pub struct TreeNode {
 }
 
 impl TreeNode {
-    fn wrap(self) -> Option<Rc<RefCell<TreeNode>>> {
-        Some(Rc::new(RefCell::new(self)))
-    }
-
     #[inline]
     pub fn new(val: i32) -> Self {
         TreeNode {
@@ -97,7 +93,7 @@ impl Value {
         }
     }
 
-    /// "1, null, 3" -> [V(1), Null, V[3]
+    /// "[1, null, 3]" -> vec!(V(1), Null, V[3])
     pub fn array_from(str: &str) -> Vec<Value> {
         if !str.starts_with('[') || !str.ends_with(']') {
             panic!("invalid format: {}", str);
@@ -135,8 +131,8 @@ mod tests {
             TreeNode::from_array(&[V(1), V(2), V(3)]),
             TreeNode {
                 val: 1,
-                left: TreeNode::new(2).wrap(),
-                right: TreeNode::new(3).wrap(),
+                left: w(TreeNode::new(2)),
+                right: w(TreeNode::new(3)),
             }
         );
 
@@ -145,12 +141,11 @@ mod tests {
             TreeNode {
                 val: 1,
                 left: None,
-                right: TreeNode {
+                right: w(TreeNode {
                     val: 2,
-                    left: TreeNode::new(3).wrap(),
+                    left: w(TreeNode::new(3)),
                     right: None
-                }
-                .wrap(),
+                }),
             }
         );
 
@@ -158,28 +153,24 @@ mod tests {
             TreeNode::from_array(&[V(5), V(4), V(7), V(3), Null, V(2), Null, V(-1), Null, V(9)]),
             TreeNode {
                 val: 5,
-                left: TreeNode {
+                left: w(TreeNode {
                     val: 4,
-                    left: TreeNode {
+                    left: w(TreeNode {
                         val: 3,
-                        left: TreeNode::new(-1).wrap(),
+                        left: w(TreeNode::new(-1)),
                         right: None
-                    }
-                    .wrap(),
+                    }),
                     right: None
-                }
-                .wrap(),
-                right: TreeNode {
+                }),
+                right: w(TreeNode {
                     val: 7,
-                    left: TreeNode {
+                    left: w(TreeNode {
                         val: 2,
-                        left: TreeNode::new(9).wrap(),
+                        left: w(TreeNode::new(9)),
                         right: None
-                    }
-                    .wrap(),
+                    }),
                     right: None
-                }
-                .wrap()
+                }),
             }
         );
 
@@ -188,13 +179,12 @@ mod tests {
             TreeNode::from_array(&[V(3), V(9), V(20), Null, Null, V(15), V(7)]),
             TreeNode {
                 val: 3,
-                left: TreeNode::new(9).wrap(),
-                right: TreeNode {
+                left: w(TreeNode::new(9)),
+                right: w(TreeNode {
                     val: 20,
-                    left: TreeNode::new(15).wrap(),
-                    right: TreeNode::new(7).wrap(),
-                }
-                .wrap()
+                    left: w(TreeNode::new(15)),
+                    right: w(TreeNode::new(7)),
+                })
             }
         );
     }
@@ -202,10 +192,7 @@ mod tests {
     #[test]
     fn tree_node_from_array_and_wrap() {
         assert_eq!(TreeNode::from_array_and_wrap(&[]), None);
-        assert_eq!(
-            TreeNode::from_array_and_wrap(&[V(1)]),
-            TreeNode::new(1).wrap()
-        )
+        assert_eq!(TreeNode::from_array_and_wrap(&[V(1)]), w(TreeNode::new(1)))
     }
 
     #[test]
@@ -213,12 +200,11 @@ mod tests {
         assert_eq!(TreeNode::from_str_and_wrap("[]"), None);
         assert_eq!(
             TreeNode::from_str_and_wrap("[1,null,3]"),
-            TreeNode {
+            w(TreeNode {
                 val: 1,
                 left: None,
-                right: TreeNode::new(3).wrap(),
-            }
-            .wrap()
+                right: w(TreeNode::new(3)),
+            })
         )
     }
 
@@ -233,5 +219,10 @@ mod tests {
             Value::array_from("[1,2,null,-1]"),
             vec![V(1), V(2), Null, V(-1)]
         );
+    }
+
+    // means to wrap
+    fn w(node: TreeNode) -> Option<Rc<RefCell<TreeNode>>> {
+        Some(Rc::new(RefCell::new(node)))
     }
 }
