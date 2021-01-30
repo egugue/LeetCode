@@ -30,34 +30,22 @@ impl TreeNode {
         };
 
         let head = Rc::new(RefCell::new(head));
-        let mut nodes = VecDeque::new();
-        nodes.push_front(Rc::clone(&head));
-        let mut i = 0;
-        while !nodes.is_empty() {
-            let node_rc = nodes.pop_back().unwrap();
+        let mut queue = VecDeque::new();
+        queue.push_front(Rc::clone(&head));
 
-            i += 1;
-            match array.get(i) {
-                Some(V(value)) => {
-                    let value = *value;
-                    let left = Rc::new(RefCell::new(TreeNode::new(value)));
-                    nodes.push_front(Rc::clone(&left));
-                    (*node_rc).borrow_mut().left = Some(left);
-                }
-                Some(Null) => {}
-                None => break,
+        for chunk in array[1..].chunks(2) {
+            let node_rc = queue.pop_back().unwrap();
+
+            if let V(value) = chunk[0] {
+                let left = Rc::new(RefCell::new(TreeNode::new(value)));
+                queue.push_front(Rc::clone(&left));
+                (*node_rc).borrow_mut().left = Some(left);
             }
 
-            i += 1;
-            match array.get(i) {
-                Some(V(value)) => {
-                    let value = *value;
-                    let right = Rc::new(RefCell::new(TreeNode::new(value)));
-                    nodes.push_front(Rc::clone(&right));
-                    (*node_rc).borrow_mut().right = Some(right);
-                }
-                Some(Null) => {}
-                None => break,
+            if let Some(V(value)) = chunk.get(1) {
+                let right = Rc::new(RefCell::new(TreeNode::new(*value)));
+                queue.push_front(Rc::clone(&right));
+                (*node_rc).borrow_mut().right = Some(right);
             }
         }
 
