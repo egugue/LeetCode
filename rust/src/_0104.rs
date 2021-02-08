@@ -13,15 +13,15 @@ impl Solution {
 
     /// 0 ms	2.7 MB
     fn recursive1(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
-        if root.is_none() {
-            return 0;
+        if let Some(root) = root {
+            let root = root.replace(TreeNode::new(0));
+            1 + max(
+                Solution::recursive1(root.left),
+                Solution::recursive1(root.right),
+            )
+        } else {
+            0
         }
-
-        let root = root.unwrap().replace(TreeNode::new(0));
-        return 1 + max(
-            Solution::recursive1(root.left),
-            Solution::recursive1(root.right),
-        );
     }
 
     /// 0 ms	2.6 MB
@@ -32,13 +32,13 @@ impl Solution {
         use std::ops::Deref;
 
         fn helper(node: Option<&Rc<RefCell<TreeNode>>>) -> i32 {
-            if node.is_none() {
-                return 0;
+            if let Some(node) = node {
+                let node = node.deref();
+                let node = node.borrow();
+                return 1 + max(helper(node.left.as_ref()), helper(node.right.as_ref()));
+            } else {
+                0
             }
-            let node = node.unwrap();
-            let node = node.deref();
-            let node = node.borrow();
-            return 1 + max(helper(node.left.as_ref()), helper(node.right.as_ref()));
         }
 
         helper(root.as_ref())
