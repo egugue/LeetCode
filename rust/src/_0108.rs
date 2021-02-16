@@ -18,7 +18,7 @@ impl Solution {
             }
             let mid = nums.len() / 2;
             let mut node = TreeNode::new(nums[mid]);
-            node.left = helper(&nums[0..mid]).map(|n| Rc::new(RefCell::new(n)));
+            node.left = helper(&nums[..mid]).map(|n| Rc::new(RefCell::new(n)));
             node.right = helper(&nums[mid + 1..]).map(|n| Rc::new(RefCell::new(n)));
 
             Some(node)
