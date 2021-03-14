@@ -1,4 +1,5 @@
 #![allow(dead_code)]
+
 mod _0001;
 mod _0007;
 mod _0009;
@@ -18,6 +19,7 @@ mod _0104;
 mod _0107;
 mod _0108;
 mod _0111;
+mod _0112;
 mod shared;
 
 fn main() {}
