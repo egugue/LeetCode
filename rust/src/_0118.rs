@@ -13,7 +13,7 @@ impl Solution {
         rows.push(vec![1]);
 
         for num_row in 1..num_rows {
-            let mut row = Vec::with_capacity((num_row + 1));
+            let mut row = Vec::with_capacity(num_row + 1);
             let prev: &Vec<_> = rows.get(num_row - 1).unwrap();
 
             row.push(1);
