@@ -44,7 +44,7 @@ mod tests {
     case(4, vec![vec![1], vec![1,1], vec![1, 2, 1], vec![1, 3, 3, 1]]),
     case(5, vec![vec![1], vec![1,1], vec![1, 2, 1], vec![1, 3, 3, 1], vec![1, 4, 6, 4, 1]]),
     )]
-    fn foo(num_rows: i32, expected: Vec<Vec<i32>>) {
+    fn generate(num_rows: i32, expected: Vec<Vec<i32>>) {
         assert_eq!(Solution::generate(num_rows), expected);
     }
 }
