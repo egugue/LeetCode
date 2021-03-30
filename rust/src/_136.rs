@@ -3,7 +3,7 @@ struct Solution;
 /// https://leetcode.com/problems/single-number/
 impl Solution {
     pub fn single_number(nums: Vec<i32>) -> i32 {
-        Solution::hash(nums)
+        Solution::bit(nums)
     }
 
     /// 4 ms	2.3 MB
@@ -19,6 +19,15 @@ impl Solution {
 
         *hash_set.iter().next().unwrap()
     }
+
+    /// 0 ms	2.2 MB
+    fn bit(nums: Vec<i32>) -> i32 {
+        let mut bits = 0;
+        for num in nums {
+            bits ^= num;
+        }
+        bits
+    }
 }
 
 #[cfg(test)]
@@ -26,9 +35,16 @@ mod test {
     use super::*;
 
     #[test]
-    fn test() {
-        assert_eq!(Solution::single_number(vec![2, 2, 1]), 1);
-        assert_eq!(Solution::single_number(vec![4, 1, 2, 1, 2]), 4);
-        assert_eq!(Solution::single_number(vec![1]), 1);
+    fn hash() {
+        assert_eq!(Solution::hash(vec![2, 2, 1]), 1);
+        assert_eq!(Solution::hash(vec![4, 1, 2, 1, 2]), 4);
+        assert_eq!(Solution::hash(vec![1]), 1);
+    }
+
+    #[test]
+    fn bit() {
+        assert_eq!(Solution::bit(vec![2, 2, 1]), 1);
+        assert_eq!(Solution::bit(vec![4, 1, 2, 1, 2]), 4);
+        assert_eq!(Solution::bit(vec![1]), 1);
     }
 }
