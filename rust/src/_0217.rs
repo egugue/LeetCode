@@ -22,11 +22,3 @@ impl Solution {
         false
     }
 }
-
-#[cfg(test)]
-mod test {
-    use super::*;
-
-    fn test() {
-
-    }
